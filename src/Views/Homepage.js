@@ -36,7 +36,7 @@ const App = () => {
     <VideoReveal infos={infos}/>
     <Services infos={infos}/>
     <Approche infos={infos}/>
-    <Competences />
+    {/* <Competences /> */}
     <Projets />
     <Deroule infos={infos}/>
     <Citation />

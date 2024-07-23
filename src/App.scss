@@ -33,6 +33,7 @@
   --sous-titres: 2.75em; //500 + inknut
   --sous-titresM: 1.9em; //500 + inknut
   --body: 1.2em; // 400 inknut
+  --typewriter: 1.7rem;
   --bodyM: 1.2em; // 400 inknut
   --animate-delay: 7s;
 }
@@ -95,7 +96,7 @@ p{
   line-height: 1.5;
 }
 .citation{
-  font-size: 100pt!important;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
 }
@@ -270,6 +271,7 @@ grid-template-rows: 1fr;
 grid-column-gap: 1rem;
 grid-row-gap: 1rem;
 align-items: baseline;
+
 }
 .grid-col4{
   display: grid;
@@ -465,7 +467,9 @@ border: 1px solid rgba(39, 34, 33, 0.384);
 
 /*DESCRIPTION PROJET*/
 
-
+.Typewriter{
+  font-size: var(--typewriter);
+}
 
 
 
@@ -533,20 +537,22 @@ form{
     color: var(--gold);
   }
 }
+
 #citation-form h1,
 #citation-form h2,
 #citation-form h3{
-  font-size: 80pt
+  font-size: 3em
 }
 .formulaire {
   grid-area: 1 / 2 / 2 / 3;
   font-family: var(--Titles);
 }
 .textTransition{
-  font-size: 4rem; 
+  font-size: 3rem; 
   font-family: var(--Titles);
   color: var(--gold);
   height: fit-content!important;
+  display: block;
 }
 .social{
   display: flex;
@@ -730,7 +736,7 @@ textarea{
       font-weight: 300;
     }
     .citation{
-      font-size: calc(100pt/1.5)!important;
+      font-size: calc(60pt/1.5)!important;
     }
     .Conteneur{
       width:10.5vw;
@@ -758,7 +764,10 @@ textarea{
     #citation-form h1,
 #citation-form h2,
 #citation-form h3 {
-  font-size: 66pt;
+  font-size: 2rem;
+}
+.textTransition{
+  font-size: 1.5rem;
 }
   .gridHover{
       position: absolute;
@@ -880,7 +889,9 @@ textarea{
     font-size: 1rem; /* Decrease font size for smaller screens */
   }
   .grid-col2-asym{
-    grid-template-columns : 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     ;
@@ -947,9 +958,6 @@ textarea{
     grid-template-columns: 1fr;
     margin-top: 3rem;
   }
-  .Typewriter{
-    font-size: var(--sous-titresM);
-  }
   }
   @media screen and (max-width: 425px) {
     .navbar-menu img {
@@ -970,13 +978,13 @@ textarea{
   #citation-form h1,
   #citation-form h2,
   #citation-form h3 {
-    font-size: 50pt;
+    font-size: 2rem;
   }
   .rolling-btn{
     left: 65%;
   }
   .citation{
-    font-size: 55pt !important;
+    font-size: 2rem !important;
   }
   #muguet{
     top: 22%;
@@ -1006,8 +1014,8 @@ textarea{
     }
    } 
    .citation{
-    font-size: 45pt!important;
-   }
+    font-size: 2rem !important;
+  }
    .grid-container-projets {
     width: 100%;
   }
@@ -1017,7 +1025,7 @@ textarea{
 #citation-form h1,
 #citation-form h2,
 #citation-form h3 {
-  font-size: 45pt;
+  font-size: 2rem;
 }
   .en2024 img{
     width: 85vw;
@@ -1051,7 +1059,7 @@ textarea{
       width: 89%;
     }
     .textTransition {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
     .formulaire {
       grid-area: auto;
@@ -1082,6 +1090,6 @@ textarea{
 #citation-form h1,
 #citation-form h2,
 #citation-form h3 {
-  font-size: 40pt;
+  font-size: 2rem;
 }
   } 

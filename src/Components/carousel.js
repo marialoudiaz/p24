@@ -22,7 +22,7 @@ function Carousel({ dataArray }) {
         {activeItems.map((item, index) => (
           <div key={index} className="grid-col3-item" id='carousel-item'>
             <img src={item.image} alt={item.alt} />
-            <h3>{item.titre}</h3>
+            <h3 style={{fontWeight:'bold'}}>{item.titre}</h3>
             <p>{item.text}</p>
           </div>
         ))}

@@ -525,14 +525,14 @@ return (
           {/* //Div 1 avec l'image */}
           <div className='projectImgContainer' ref={imgContainerRef} onClick={() => {setCurrentIndex(index);handleNext(index);}}>
               {/* /VIDEO ON HOVER*/}
-              <video className='projectHoverVideo' autoPlay loop muted>
+              <video className='projectHoverVideo' autoPlay loop muted playsInline>
                 <source src={projectsArr[index].video} type='video/mp4' />
               </video>
               
               {/* /si source est video ou img*/}
               {projectsArr[index].image.includes('.mp4') ? 
               (
-                <video className='projectImg' autoPlay loop muted>
+                <video className='projectImg' autoPlay loop muted playsInline>
                   <source src={projectsArr[index].image} type='video/mp4' />
                 </video>
               ) 

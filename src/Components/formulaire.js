@@ -38,7 +38,7 @@ const Formulaire = ({infos}) => {
               <h1>{form[0]}</h1>
               <h2>{form[1]}</h2>
               <h2 className='gold'>{form[2]}</h2>
-            <div className='text-block' style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display }}>
+            <div className='text-block' style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display, flexDirection:'column' }}>
               <TextTransition className='textTransition' springConfig={presets.gentle}>{words[index % words.length]}</TextTransition>
             <p>{blabla}</p>
             </div>

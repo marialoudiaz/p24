@@ -69,7 +69,7 @@ return (
             ) 
             : 
             (
-            <video className='desktop' autoPlay loop muted>
+            <video className='desktop' autoPlay loop muted playsInline>
               <source src={projectDescription.videoDesktop} type="video/mp4" />
             </video>
           )}
@@ -84,7 +84,7 @@ return (
             > 
           </iframe>   
           ) : (
-            <video className='mobile' autoPlay loop muted>
+            <video className='mobile' autoPlay loop muted playsInline>
               <source src={projectDescription.videoMobile} type="video/mp4" />
             </video>
           )}
@@ -167,7 +167,7 @@ return (
                   )}
                   {section.video && (
                     <div className='grid-col2-video-section'>
-                      <video src={section.video} autoPlay loop muted>
+                      <video src={section.video} autoPlay loop muted playsInline>
                         Your browser does not support the video tag.
                       </video>
                     </div>

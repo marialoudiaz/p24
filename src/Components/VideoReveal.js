@@ -34,10 +34,10 @@ return (
 <>
     <div className='film'>
       <div className='background-video'>
-        <video className='desktop' autoPlay loop muted>
+        <video className='desktop' autoPlay loop muted playsInline>
           <source src={ordi} type="video/mp4" />
         </video>
-        <video className='mobile' autoPlay loop muted>
+        <video className='mobile' autoPlay loop muted playsInline>
           <source src={tel} type="video/mp4" />
         </video>
       </div>
