@@ -4,7 +4,6 @@ import { useLocation } from 'react-router-dom';
 import '../App.scss';
 import Header from '../Components/header.js';
 import medaillon from '../assets/logo/medaillon.png';
-import oeil from '../assets/icons/interface/icon-eye-1.png';
 // CAROUSEL
 import prev from '../assets/icons/interface/icon-eye-1.png';
 import next from '../assets/icons/interface/icon-eye-2.png';
@@ -69,7 +68,7 @@ return (
             ) 
             : 
             (
-            <video className='desktop' autoPlay loop muted playsInline>
+            <video className='desktop' style={{height:'40vh'}} autoPlay loop muted playsInline>
               <source src={projectDescription.videoDesktop} type="video/mp4" />
             </video>
           )}
@@ -84,14 +83,14 @@ return (
             > 
           </iframe>   
           ) : (
-            <video className='mobile' autoPlay loop muted playsInline>
+            <video className='mobile' style={{height:'40vh'}} autoPlay loop muted playsInline>
               <source src={projectDescription.videoMobile} type="video/mp4" />
             </video>
           )}
         </div>
       </div>  
 
-      <div style={{marginBottom: '5rem',position: 'relative', marginTop: '5rem'}}>
+      <div  className='section' style={{marginBottom: '5rem',position: 'relative', marginTop: '5rem'}}>
         {/* SECTION 1 - FICHE INFOS */}
         <div className='grid-col2'>
 
@@ -118,15 +117,16 @@ return (
             </div>
 
             {/* DÉCOUVRIR LE SITE */}
+            {projectDescription.onClick&&
             <div className='flex-wrap' style={{width:'auto'}}>
               <div id='carousel-btn-projet' 
                 style={{ marginLeft: '1rem', marginBottom: '.2rem' }}
-                onClick={handleDiscoverClick}
               >
                 <img src={imageSource} 
                   alt='an icon of an eye to see the project description when clicked' 
                   onMouseOver={handleHover} 
                   onMouseOut={handleHoverOut} 
+                  onClick={handleDiscoverClick}
                   style={imgStyle}
                 />
               </div>
@@ -134,6 +134,7 @@ return (
                 <p>découvrir le site</p>
               </div>
             </div>
+            }
 
             {/* BESOINS */}
             <div className='flex-col'>

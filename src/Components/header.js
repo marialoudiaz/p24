@@ -5,7 +5,6 @@ import logofull from '../assets/logo/logo-full.png';
 const Header = ({infos}) => {
 
   const navigate = useNavigate();
-  
     // Log pour débogage
     const logStorageState = () => {
       const storedInfos = localStorage.getItem('infosComposants');
@@ -25,21 +24,19 @@ const Header = ({infos}) => {
         console.error('No data found in localStorage for key "infosComposants".');
       }
     };
-  
     logStorageState(); // Appelez cela pour vérifier l'état actuel du localStorage
-  
     const handleClick = () => {
       const storedInfos = JSON.parse(localStorage.getItem('infosComposants'));
   
       if (storedInfos && Array.isArray(storedInfos) && storedInfos.length > 0 && storedInfos[0]?.ids) {
         navigate(`/homepage/${storedInfos[0].ids}`, { state: { infosComposants: storedInfos } });
+        window.scrollTo(0, 0);
+
       } else {
         console.error('Stored info or ID is undefined');
       }
     };
   
-
-
   return (
     <div className="header-container">
       <div id="header-container-logo" onClick={handleClick}>

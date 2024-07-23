@@ -78,7 +78,7 @@ const Chargement = () =>{
       Lang: 'FR',
       videoOrdi: 'videoReveal3',
       videoTel: 'videoReveal4',
-      services: ['mes services','une multitude de compétences pour un projet unique','nous élaborons, ensemble, une offre sur-mesure selon vos besoins','CMS|SEO','développement fullstack JS', 'application mobile','copywriting','vidéo | photo | motion','réseaux sociaux','branding','logotype','signalétique','packaging','illustration','affiche'],
+      services: ['mes services','une multitude de compétences pour un projet unique','nous élaborons, ensemble, une offre sur-mesure selon vos besoins','CMS|SEO','développement fullstack JS', 'e-commerce', 'application mobile','vidéo | photo | motion','réseaux sociaux','copywriting','branding','logotype','signalétique','packaging','illustration','affiche'],
       logiciels: [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18],
       approche: [
         'mon approche',
@@ -124,7 +124,7 @@ const Chargement = () =>{
       Lang: 'EN', //aide pour afficher projets en FR ou EN
       videoOrdi: 'videoReveal7',
       videoTel: 'videoReveal8',
-      services: ['my services','A multitude of skills for a unique project','We develop, together, a tailor-made offer according to your needs','CMS|SEO','fullstack JS', 'App','copywriting','video | photo | motion','social medias','branding','logotype','signage','packaging','illustration','poster'],
+      services: ['my services','A multitude of skills for a unique project','We develop, together, a tailor-made offer according to your needs','CMS|SEO','fullstack JS','e-commerce','App','video | photo | motion','social medias','copywriting','branding','logotype','signage','packaging','illustration','poster'],
       logiciels: [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18],
       approche: ['my approach', 'To create is to make the invisible visible','Authenticity','Creating a form of preciousness beyond paper','Detail','The poetry of detail: symbolism, framing, choice of words','Harmony',
         'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait2],

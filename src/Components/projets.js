@@ -129,7 +129,7 @@ function Projets() {
         "Plongez dans un univers graphique rétro inspiré des années 80, où chaque interaction vous transporte dans le passé cinématographique. Avec OnSight, vous pouvez facilement gérer vos films et séries à regarder, tout en savourant un design vintage captivant. Découvrez l'application sur iOS."
       ],
       link: ['discover',"découvrir"],
-      onClick: () => window.open('https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank')
+      onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']
     },
     //pl
     {
@@ -141,7 +141,7 @@ function Projets() {
       text:["Pascale Laffon is a showcase website dedicated to her work as a micropractitioner. Explore her gentle and unique universe,", "Pascale Laffon est un site vitrine dédié à son activité de micropraticienne. Explorez son univers doux et unique,"],
       text2:["as well as her practice of holistic medicine through refined graphic design and intuitive navigation.","ainsi que sa pratique de la médecine holistique à travers un design graphique raffiné et une navigation intuitive."],
       link: ['discover',"découvrir"],
-      onClick: () => window.open('https://pascale-laffon.fr', '_blank')
+      onClick: ['https://pascale-laffon.fr', '_blank']
     },
     //pilepoele
     {
@@ -160,7 +160,7 @@ function Projets() {
             " Le projet vise à faciliter une communication culinaire universelle et interculturelle. Bien que l'inclusivité des genres soit intégrée, ce n'est pas l'objectif principal mais un aspect évident de la communication."
             ],
       link: ['discover',"découvrir"],
-      onClick: () => window.open('https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank')      
+      onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']      
     },
     //vb
     {
@@ -178,7 +178,7 @@ function Projets() {
              "La refonte visait à insuffler un nouveau dynamisme tout en respectant les valeurs et l'histoire de l'entreprise. Cela comprenait une refonte du logo, de la papeterie et de la signalétique."
             ],
       link: ['discover',"découvrir"],
-      onClick: () => window.open('https://www.vb-avocats.fr', '_blank')      
+      onClick: ['https://www.vb-avocats.fr', '_blank']      
     },
     //anchois
     {
@@ -202,7 +202,7 @@ function Projets() {
         "Plongez dans l'atmosphère unique de la Fête des Anchois 2024, où la cuisine locale et la tradition catalane sont à l'honneur. Cet événement est une célébration vivante de la culture et de la gastronomie régionales."
       ],
       link: ['discover',"découvrir"],
-      onClick: () => window.open('https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank')
+      onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
     },
     //dessin
     {
@@ -226,7 +226,7 @@ function Projets() {
         "Ce projet vise à cartographier visuellement la ville à travers des dessins détaillés et des motifs urbains uniques identifiables sur les différentes façades et devantures de portes."
       ],
       link: ['discover',"découvrir"],
-      // onClick: () => window.open('https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank')
+      onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
     },
   ];
   // Récupérer comme props l'objet (projet) au clic sur bouton 'découvrir'
@@ -487,10 +487,9 @@ function Projets() {
         ['Édition', 'Dessin'],
         ['Publication', 'Drawing'],
       ],
-      // onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank'],
       besoins:[
-        ["La fête des Anchois se tient chaque année en Juin dans la ville de Collioure. Il est donc question durant ce week-end de festivités de créer toute la communication autour de cette fête. T-shirts pour les exposants et musiciens, affiches, communication sur les réseaux sociaux. Il était donc question de créer une identité reprenant la culture et l’esprit catalan. Les anchois vêtus de pied en cap d’une barretina, faixe et vigatanes dansent la sardane scandant des expressions catalanes au son de la cobla. Les couleurs sont donc volontairement un hommage au drapeau catalan."],
-        ["The Anchovy Festival takes place every year in June in the town of Collioure. Therefore, during this weekend of festivities, the focus is on creating all the communication surrounding this event. This includes T-shirts for exhibitors and musicians, posters, and social media communication. The goal was to create an identity that reflects Catalan culture and spirit. Anchovies dressed in traditional Catalan attire, including a barretina, faixa, and vigatanes, dance the sardana while chanting Catalan expressions to the sound of the cobla. The colors are intentionally a tribute to the Catalan flag."],
+        ["Topographies est une exploration artistique de la ville de Nîmes à travers ses ornements architecturaux, mettant en lumière les dessins complexes et l'importance historique de chaque détail. Ce projet vise à cartographier visuellement la ville à travers des dessins détaillés et des motifs urbains uniques identifiables sur les différentes façades et devantures de portes, offrant un récit visuel complet de la diversité architecturale de Nîmes. C'est également un projet artistique réflexif sur les manières de parler de l'Homme par la cartographie et par sa manière de construire la ville, révélant ainsi comment l'urbanisme et l'architecture peuvent être des témoignages éloquents de la culture et de l'histoire humaine."],
+        ["Topographies is an artistic exploration of the city of Nîmes through its architectural ornaments, highlighting the intricate designs and historical significance of each detail. This project aims to visually map the city through detailed drawings and unique urban patterns identifiable on various facades and door fronts, providing a comprehensive visual narrative of Nîmes' architectural diversity. It is also a reflective artistic project on the ways of speaking about humanity through cartography and urban construction, revealing how urbanism and architecture can serve as eloquent testimonies of human culture and history."],
       ],
       technologies:
       [
@@ -578,20 +577,16 @@ return (
   <div className='social'>
               <button className='btn-black'>
                 <a target="_blank" rel='noreferrer' href='https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz'>
-                  <h3>{textVariables[3]} <b>{textVariables[4]}</b></h3>
+                  <p>{textVariables[3]} <b>{textVariables[4]}</b></p>
                 </a>
               </button>
+              <div className='social'>
+                <button className='social-button'><a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/'><FontAwesomeIcon className='svgIcon' icon={faLinkedinIn} style={{ color: "white" }} /></a></button>
+                <button className='social-button'><a target="_blank" rel='noreferrer' href='https://github.com/marialoudiaz'><FontAwesomeIcon className='svgIcon' icon={faGithub} style={{ color: "white" }} /></a></button>
+                <button className='social-button'><a target="_blank" rel='noreferrer' href='https://www.instagram.com/studio_mld/'><FontAwesomeIcon className='svgIcon' icon={faInstagram} style={{ color: "white" }} /></a></button>
+              </div> 
   </div>
 </div>
-{/* SOCIAL MEDIAS */}
-  <div className='section'>
-        
-        <div className='social'>
-          <button className='social-button'><a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/'><FontAwesomeIcon className='svgIcon' icon={faLinkedinIn} style={{ color: "white" }} /></a></button>
-          <button className='social-button'><a target="_blank" rel='noreferrer' href='https://github.com/marialoudiaz'><FontAwesomeIcon className='svgIcon' icon={faGithub} style={{ color: "white" }} /></a></button>
-          <button className='social-button'><a target="_blank" rel='noreferrer' href='https://www.instagram.com/studio_mld/'><FontAwesomeIcon className='svgIcon' icon={faInstagram} style={{ color: "white" }} /></a></button>
-        </div>            
-  </div>
     </div>
   )
 }

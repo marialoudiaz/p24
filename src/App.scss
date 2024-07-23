@@ -557,9 +557,11 @@ form{
 .social{
   display: flex;
   gap: 1rem;
-  align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
+  & p{
+    font-size: calc(var(--body)*1.1);
+  }
 }
 .social-button{
   border-radius: 100%;
@@ -687,10 +689,10 @@ textarea{
   margin: auto;
   left: 0;
   right: 0;
-  top: 35%;
+  top: 27%;
   text-align: center;
   & h3{
-    font-size: calc(var(--sous-titres)*1.2);
+    font-size: calc(var(--sous-titres)*1);
     font-family: var(--Titles);
     text-decoration: underline;
   }
@@ -735,9 +737,6 @@ textarea{
       font-size: calc(var(--sous-titres)/2)!important;
       font-weight: 300;
     }
-    .citation{
-      font-size: calc(60pt/1.5)!important;
-    }
     .Conteneur{
       width:10.5vw;
       height: auto;
@@ -776,7 +775,7 @@ textarea{
       flex-direction: column;
       margin: auto;
       & h3{
-        font-size: calc(var(--sous-titres)/1.5);
+        font-size: calc(var(--sous-titres)/1.2);
       }
     }
     .text-container{
@@ -914,7 +913,9 @@ textarea{
       justify-content: center;
     }
     .social{
-      height: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
     }
     #muguet{
       position: absolute;
@@ -983,9 +984,6 @@ textarea{
   .rolling-btn{
     left: 65%;
   }
-  .citation{
-    font-size: 2rem !important;
-  }
   #muguet{
     top: 22%;
   }
@@ -1012,10 +1010,7 @@ textarea{
     & img {
       width: 3rem;
     }
-   } 
-   .citation{
-    font-size: 2rem !important;
-  }
+   }
    .grid-container-projets {
     width: 100%;
   }
