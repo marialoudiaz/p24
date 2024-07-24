@@ -10,7 +10,6 @@ import Approche from '../Components/approche.js';
 import Competences from '../Components/competences';
 import Projets from '../Components/projets.js';
 import Deroule from '../Components/deroule.js';
-import Citation from '../Components/citation.js';
 import Formulaire from '../Components/formulaire';
 import Monogramme from '../Components/monogramme.js';
 
@@ -39,7 +38,6 @@ const App = () => {
     {/* <Competences /> */}
     <Projets />
     <Deroule infos={infos}/>
-    <Citation />
     <Formulaire infos={infos}/>
     <Monogramme />
   </div>
