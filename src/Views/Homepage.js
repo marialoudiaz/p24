@@ -7,7 +7,6 @@ import Header from '../Components//header.js';
 import VideoReveal from '../Components/VideoReveal.js';
 import Services from '../Components/services';
 import Approche from '../Components/approche.js';
-import Competences from '../Components/competences';
 import Projets from '../Components/projets.js';
 import Deroule from '../Components/deroule.js';
 import Formulaire from '../Components/formulaire';
