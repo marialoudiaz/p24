@@ -68,7 +68,7 @@ return (
             ) 
             : 
             (
-            <video className='desktop' style={{height:'40vh'}} autoPlay loop muted playsInline>
+            <video className='desktop' autoPlay loop muted playsInline>
               <source src={projectDescription.videoDesktop} type="video/mp4" />
             </video>
           )}
