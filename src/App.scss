@@ -793,6 +793,8 @@ textarea{
       flex-direction: column;
       gap: 2rem;
       text-align: center;
+      justify-content: center;
+        align-items: center;
       }
     .col-titre{
       grid-template-columns: 1fr;
