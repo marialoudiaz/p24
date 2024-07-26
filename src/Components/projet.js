@@ -83,7 +83,7 @@ return (
             > 
           </iframe>   
           ) : (
-            <video className='mobile' style={{height:'40vh'}} autoPlay loop muted playsInline>
+            <video className='mobile' autoPlay loop muted playsInline>
               <source src={projectDescription.videoMobile} type="video/mp4" />
             </video>
           )}
@@ -91,10 +91,12 @@ return (
       </div>  
 
       <div  className='section' style={{marginBottom: '5rem',position: 'relative', marginTop: '5rem'}}>
+        
+        
         {/* SECTION 1 - FICHE INFOS */}
         <div className='grid-col2'>
 
-          <div className='grid-col2-img'>
+          <div className='grid-col2-img' style={{height:'auto'}}>
             <img src={projectDescription.image} alt="image-clef du projet" style={{backgroundPosition:'center'}}/>
           </div>
 
@@ -147,8 +149,9 @@ return (
          {/* SECTION 2 - EXPLICATION PROJET */}
          {projectDescription.sections && projectDescription.sections.length > 0 ? (
             projectDescription.sections.map((section, index) => (
-              <div className='flex-col' key={index}>
-                <div className='grid-col2-section'>
+              <div className='grid-col2-section' key={index}>
+
+
                   <div className='flex-col'>
                     <h2>{section.title}</h2>
                     {/* Chapitre 1 */}
@@ -174,8 +177,9 @@ return (
                     </div>
                   )}
                 </div>
-              </div>
             ))
+
+            
           ) : (
             projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && projectDescription.sectionsImg.map((sectionImg, index) => (
               <div className='flex-col' key={index} style={{marginTop:'2rem'}}>
