@@ -35,8 +35,8 @@ const Chargement = () =>{
   // récupérer les infos
   const location = useLocation();
   const { infos } = location.state; 
-  const enDisplay =['welcome','choose your category','Independant worker','Studios'];
-  const frDisplay =['bienvenue','choisissez votre catégorie','Indépendant.es','Studios & Agences'];
+  const enDisplay =['Welcome','choose your category','Independant worker','Studios'];
+  const frDisplay =['Bienvenue','sélectionnez votre catégorie','Indépendant.es','Studios & Agences'];
 
   // conditionnel
   const displayTexts = infos.includes('en') ? enDisplay : frDisplay;

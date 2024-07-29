@@ -95,7 +95,7 @@ return (
       <div  className='section' style={{marginBottom: '5rem', marginTop: '5rem'}}>
         
         {/* SECTION 1 - FICHE INFOS */}
-        <div className='grid-col2'>
+        <div className='grid-col2-projet'>
 
           <div className='grid-col2-img' style={{height:'auto'}}>
             <img src={projectDescription.image} alt="image-clef du projet" style={{backgroundPosition:'center'}}/>
@@ -122,9 +122,7 @@ return (
             {/* DÉCOUVRIR LE SITE */}
             {projectDescription.onClick&&
             <div className='flex-wrap' style={{width:'auto'}}>
-              <div id='carousel-btn-projet' 
-                style={{ marginLeft: '1rem', marginBottom: '.2rem' }}
-              >
+              <div id='carousel-btn-projet'>
                 <img src={imageSource} 
                   alt='an icon of an eye to see the project description when clicked' 
                   onMouseOver={handleHover} 
@@ -150,10 +148,10 @@ return (
          {/* SECTION 2 - EXPLICATION PROJET */}
          {projectDescription.sections && projectDescription.sections.length > 0 ? (
             projectDescription.sections.map((section, index) => (
-              <div className='grid-col2-section' key={index}>
+              <div className='grid-col2-projet' key={index}>
 
 
-                  <div className='flex-col'>
+                  <div className='flex-col' style={{ justifyContent: 'center', alignItems:'center', textAlign:'center'}}>
                     {/* Chapitre 1 */}
                     <h3>{section.subtitle[langIndex]}</h3>
                     <div className='flex-wrap' style={{justifyContent:'center'}}>
@@ -165,7 +163,7 @@ return (
                   </div>
                   {/* IMAGE OU VIDEO */}
                   {section.image && (
-                    <div className='grid-col2-img-section'>
+                    <div className='grid-col2-img-section' style={{height:'auto'}}>
                       <img src={section.image} alt="Section visual" />
                     </div>
                   )}

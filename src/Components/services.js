@@ -63,7 +63,7 @@ const Services = ({infos}) => {
       {combinedData.slice(0, 7).map((item, index) => (
               <div className='grid-col3-item' key={index}>
                 <img src={item.image} />
-                <h3>{item.title}</h3>
+                <h3 style={{fontWeight:'bold'}}>{item.title}</h3>
               </div>
       ))}
       </div>
@@ -86,7 +86,7 @@ const Services = ({infos}) => {
       {combinedData.slice(7).map((item, index) => (
               <div className='grid-col3-item' key={index}>
                 <img src={item.image} />
-                <h3>{item.title}</h3>
+                <h3 style={{fontWeight:'bold'}}>{item.title}</h3>
               </div>
       ))}
     </div>

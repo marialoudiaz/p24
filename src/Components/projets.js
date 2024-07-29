@@ -523,6 +523,7 @@ return (
         <div className='project-wrapper' key={index} style={{marginBottom:'2rem'}}>
           {/* //Div 1 avec l'image */}
           <div className='projectImgContainer' ref={imgContainerRef} onClick={() => {setCurrentIndex(index);handleNext(index);}}>
+              
               {/* /VIDEO ON HOVER*/}
               <video className='projectHoverVideo' autoPlay loop muted playsInline>
                 <source src={projectsArr[index].video} type='video/mp4' />
@@ -555,10 +556,10 @@ return (
     <div className='flex-wrap' style={{ flexWrap: 'nowrap' }}>
       {/* Aller à la page de description */}
       <div className='btn-black' style={{ marginLeft: '3rem' }} onClick={() => handleDiscover(project.id)}>
-        {textVariables[1]}
+        <p>{textVariables[1]}</p>
       </div>
       <div className='btn-black' onClick={() => { setCurrentIndex(index); handlePrev(index); }}>
-        {textVariables[2]}
+       <p>{textVariables[2]}</p>
       </div>
     </div>
   </div>
