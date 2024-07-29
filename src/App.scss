@@ -28,10 +28,10 @@
   --non-active: white;
 
   /*TAILLES (mobile - soustraire 5 )*/
-  --titres: 2.5em; ///500 + inknut
-  --titresM : 2em;
-  --sous-titres: 2.75em; //500 + inknut
-  --sous-titresM: 1.9em; //500 + inknut
+  --titres: 2em; ///500 + inknut
+  --titresM : 1.5em;
+  --sous-titres: 2em; //500 + inknut
+  --sous-titresM: 1em; //500 + inknut
   --body: 1.2em; // 400 inknut
   --typewriter: 1.7rem;
   --bodyM: 1.2em; // 400 inknut
@@ -452,12 +452,12 @@ border: 1px solid rgba(39, 34, 33, 0.384);
 }
 .pill{
   background-color: white;
-  border : 3px solid black;
+  border : 1px solid black;
   border-radius: 60px;
   padding: .6em;
 }
 .pill {
-  font-size:1rem;
+  font-size:10px;
   font-family: var(--Titles);
 }
 
@@ -638,7 +638,6 @@ textarea{
   justify-content: center;
   align-items: flex-start;
   margin-top: 2rem;
-  height: 50vh;
   text-align: center;
   & .flex-col{
     justify-content: center;

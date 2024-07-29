@@ -90,8 +90,9 @@ return (
         </div>
       </div>  
 
-      <div  className='section' style={{marginBottom: '5rem',position: 'relative', marginTop: '5rem'}}>
-        
+
+
+      <div  className='section' style={{marginBottom: '5rem', marginTop: '5rem'}}>
         
         {/* SECTION 1 - FICHE INFOS */}
         <div className='grid-col2'>
@@ -153,14 +154,13 @@ return (
 
 
                   <div className='flex-col'>
-                    <h2>{section.title}</h2>
                     {/* Chapitre 1 */}
+                    <h3>{section.subtitle[langIndex]}</h3>
                     <div className='flex-wrap' style={{justifyContent:'center'}}>
                       {section.categories[langIndex].map((category, catIndex) => (
                         <p className='pill' key={catIndex}>{category}</p>
                       ))}
                     </div>
-                    <h3>{section.subtitle[langIndex]}</h3>
                     <p>{section.text[langIndex]}</p>
                   </div>
                   {/* IMAGE OU VIDEO */}
