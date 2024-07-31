@@ -66,8 +66,8 @@ function Projets() {
   // Déterminer la langue à afficher dans le return selon l'indice reçu
   const Lang = infosComposants ? infosComposants[0].Lang : 'defaultLang';
   const variableENorFr = [
-    ['my projects','discover','previous','discover my other projects','on behance'],
-    ['mes projets','découvrir','précédent','découvrir mes autres projets','sur behance'],
+    ['My projects','Discover','Previous','Discover my other projects','on behance','scroll right'],
+    ['Mes projets','Découvrir','Précédent','Découvrir mes autres projets','sur behance','scroller vers la droite'],
   ]
   // Détermine l'indice de langue basé sur la variable lang
   const isEnglish = Lang === 'EN';
@@ -128,7 +128,7 @@ function Projets() {
         "Immerse yourself in a retro graphic universe inspired by the 80s, where each interaction takes you into cinematic history. With OnSight, you can easily manage your movies and series to watch, all while enjoying a captivating vintage design. Available on iOS.",
         "Plongez dans un univers graphique rétro inspiré des années 80, où chaque interaction vous transporte dans le passé cinématographique. Avec OnSight, vous pouvez facilement gérer vos films et séries à regarder, tout en savourant un design vintage captivant. Découvrez l'application sur iOS."
       ],
-      link: ['discover',"découvrir"],
+      link: ['Discover',"Découvrir"],
       onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']
     },
     //pl
@@ -140,7 +140,7 @@ function Projets() {
       baseline: ['Micropracy','La micropraxie'],
       text:["Pascale Laffon is a showcase website dedicated to her work as a micropractitioner. Explore her gentle and unique universe,", "Pascale Laffon est un site vitrine dédié à son activité de micropraticienne. Explorez son univers doux et unique,"],
       text2:["as well as her practice of holistic medicine through refined graphic design and intuitive navigation.","ainsi que sa pratique de la médecine holistique à travers un design graphique raffiné et une navigation intuitive."],
-      link: ['discover',"découvrir"],
+      link: ['Discover',"Découvrir"],
       onClick: ['https://pascale-laffon.fr', '_blank']
     },
     //pilepoele
@@ -157,9 +157,9 @@ function Projets() {
             "Pile-Poële est une fonte de caractères inclusive basée sur la cuisine, créée dans le cadre d'une recherche de master à l'Université Toulouse Jean Jaurès en 2021. Elle favorise la parité des genres et permet de remplacer les mots désignant des outils, ustensiles et aliments par des pictogrammes."],      
       text2:[
             "The project aims to facilitate universal and intercultural culinary communication. While gender inclusivity is integrated, it is not the main focus but rather an inherent aspect of the communication.",
-            " Le projet vise à faciliter une communication culinaire universelle et interculturelle. Bien que l'inclusivité des genres soit intégrée, ce n'est pas l'objectif principal mais un aspect évident de la communication."
+            "Le projet vise à faciliter une communication culinaire universelle et interculturelle. Bien que l'inclusivité des genres soit intégrée, ce n'est pas l'objectif principal mais un aspect évident de la communication."
             ],
-      link: ['discover',"découvrir"],
+      link: ['Discover',"Découvrir"],
       onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']      
     },
     //vb
@@ -201,7 +201,7 @@ function Projets() {
         "Immerse yourself in the unique atmosphere of the Anchovy Festival 2024, where local cuisine and Catalan tradition take center stage. This event is a vibrant celebration of regional culture and gastronomy.",
         "Plongez dans l'atmosphère unique de la Fête des Anchois 2024, où la cuisine locale et la tradition catalane sont à l'honneur. Cet événement est une célébration vivante de la culture et de la gastronomie régionales."
       ],
-      link: ['discover',"découvrir"],
+      link: ['Discover',"Découvrir"],
       onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
     },
     //dessin
@@ -225,7 +225,7 @@ function Projets() {
         "This project aims to visually map the city through detailed drawings and unique urban patterns identifiable on various facades and door fronts.",
         "Ce projet vise à cartographier visuellement la ville à travers des dessins détaillés et des motifs urbains uniques identifiables sur les différentes façades et devantures de portes."
       ],
-      link: ['discover',"découvrir"],
+      link: ['Discover',"Découvrir"],
       onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
     },
   ];
@@ -238,19 +238,19 @@ function Projets() {
       videoMobile: onsightVideo,
       image: onSightImage,
       title: 'Onsight',
-      infos: [['2023','application mobile', 'IOS','cinéma/série'],['2023','app', 'IOS','cinema/serie']],
+      infos: [['2023','Application mobile', 'IOS','Cinéma/série'],['2023','App', 'IOS','Cinema/serie']],
       categories: 
       [
-        ['Conception graphique','Expérience utilisateur','Application mobile','maintenance'],
+        ['Conception graphique','Expérience utilisateur','Application mobile','Maintenance'],
         ['Graphic design', 'User experience', 'Mobile application', 'Maintenance']
       ],
       onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank'],
       besoins:[["Découvrez OnSight, l'application mobile de prise de notes ultime pour les cinéphiles et amateurs de séries. Plongez dans un univers graphique  aux allures rétro où chaque interaction vous transporte dans le passé. Avec OnSight, vous pouvez facilement ajouter et supprimer des films et séries de votre liste à voir, tout en profitant d'un design vintage captivant. Organisez vos visionnages à venir avec simplicité et style, et laissez la nostalgie enrichir votre expérience de planification de divertissement."],["Discover OnSight, the ultimate note-taking mobile app for movie and series enthusiasts. Immerse yourself in a retro graphical universe reminiscent of the 80s, where every interaction takes you back in time. With OnSight, you can easily add and remove movies and series from your watchlist, all while enjoying a captivating vintage design. Organize your upcoming viewings with simplicity and style, and let nostalgia enhance your entertainment planning experience."]],
-      technologies: ['react native', 'after effects', 'illustrator'],
+      technologies: ['React native', 'After effects', 'Illustrator'],
       sections: 
       [
         {title:'Onsight',
-        categories: [['Conception graphique','Expérience utilisateur','Application mobile','maintenance'],['Graphic Design', 'User Experience', 'Mobile Application', 'Maintenance']],
+        // categories: [['Conception graphique','Expérience utilisateur','Application mobile','Maintenance'],['Graphic Design', 'User Experience', 'Mobile Application', 'Maintenance']],
         subtitle: ['Repenser la prise de notes avec style', 'Rethinking Note-Taking with Style'],
         text: [
           "'OnSight' c'est l'idée de créer une application mobile toute simple pour garder en mémoire ses films et séries préférés. La question c'était de repenser l'esthétique pour ajouter une composante nostalgique. OnSight plonge les utilisateurs dans une ambiance vintage tout en leur offrant une plateforme élégante et intuitive pour créer et gérer leur liste de films et séries préférés. Inspirée par l'esthétique des années 80 et 90, l'interface se distingue par des tons bleus : calmes mais profonds & des fonts rétro. Les utilisateurs peuvent ajouter autant de titres qu'ils le souhaitent. Les films & series s'ajoutent et s'empilent sous la forme de pilules comme pour rappeler l'utilisateur de prendre sa dose quotidienne de cinéma. Rendant ainsi la gestion de sa vidéothèque plus ludique.",
@@ -259,7 +259,7 @@ function Projets() {
         image: onSightSection1Image,
         },
         {title:'Onsight',
-        categories: [['Conception graphique','Expérience utilisateur','Application mobile','maintenance'],['Graphic Design', 'User Experience', 'Mobile Application', 'Maintenance']],
+        // categories: [['Conception graphique','Expérience utilisateur','Application mobile','Maintenance'],['Graphic Design', 'User Experience', 'Mobile Application', 'Maintenance']],
         subtitle: ['Donner vie à l’identité graphique', 'Giving birth to the graphic identity'],
         text: [
           "Créer une identité forte pour OnSight, c'était aussi imaginer un logotype distinctif et son animation. Le logotype devait capturer l'essence de l'esthétique vintage de l'application tout en restant moderne et reconnaissable. L'animation a été conçue pour donner vie au logo, ajoutant un élément dynamique qui améliore l'expérience utilisateur. Ensemble, le logotype et son animation créent une identité de marque cohérente et mémorable, reflétant le caractère unique d'OnSight.",
@@ -276,26 +276,26 @@ function Projets() {
       videoMobile: plVideo,
       image: plImage,
       title: 'Pascale Laffon',
-      infos: [['2024', 'site vitrine', 'médecine holistique'],['2024', 'showcase website', 'holistic medicine']],
+      infos: [['2024', 'Site vitrine', 'Médecine holistique'],['2024', 'Showcase website', 'Holistic medicine']],
       categories: 
       [
-        ['UI/UX', 'intégration', 'charte graphique', 'SEO', 'hébergement', 'maintenance', 'motion', 'captations vidéos & photos'],
-        ['UI/UX', 'coding', 'graphic charter', 'SEO', 'hosting', 'maintenance', 'motion, video & photo']
+        ['UI/UX', 'Intégration', 'Charte graphique', 'SEO', 'Hébergement', 'Maintenance', 'Motion', 'Captations vidéos & photos'],
+        ['UI/UX', 'Coding', 'Graphic charter', 'SEO', 'Hosting', 'Maintenance', 'Motion, Video & photo']
       ],
       onClick: ['https:/www.pascalelaffon.fr', '_blank'],
       besoins:[
         ["Pascale Laffon, micropracteur de longue date, se lance désormais en tant qu'auto-entrepreneure. Pour valoriser au mieux ses services et refléter fidèlement son univers, la création d'un site vitrine s'impose comme une nécessité. Dans cette optique, nous avons entrepris de repenser sa charte graphique (incluant le logotype et l'iconographie) et de développer un site vitrine qui saura parfaitement transmettre l'essence de son activité."],
         ["Pascale Laffon, a long-time micropractor is now launching as a sole proprietor. To showcase her services effectively and accurately reflect her universe, creating a showcase website is essential. With this goal in mind, we have undertaken to redesign her visual identity (including logo and iconography) and develop a showcase website that will perfectly convey the essence of her business."]],
       technologies: [
-        ['ink', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React'],
-        ['encre', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React']
+        ['Ink', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React'],
+        ['Encre', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React']
       ],
       sections: 
       [
         {title:'Pascale Laffon',
         categories: [
-        ['typographie', 'iconographie', 'charte graphique'],
-        ['typography', 'iconography', 'graphic charter'],
+        ['Typographie', 'Iconographie', 'Charte graphique'],
+        ['Typography', 'Iconography', 'Graphic charter'],
         ],
         subtitle: ['Une police d’écriture signature', 'A signature font'],
         text: [
@@ -307,8 +307,8 @@ function Projets() {
 
         {title:'Pascale Laffon',
         categories: [
-            ['illustration','charte graphique'],
-            ['illustration','graphic charter']
+            ['Illustration','Charte graphique'],
+            ['Illustration','Graphic charter']
             ],
         subtitle: ['L’illustration comme première impression', 'Portrait as a first impression'],
         text: [
@@ -320,8 +320,8 @@ function Projets() {
 
         {title:'Pascale Laffon',
           categories: [
-            ['illustration', 'iconographie', 'charte graphique'],
-            ['illustration', 'iconography', 'graphic charter', 'motion']
+            ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
+            ['Illustration', 'Iconography', 'Graphic charter', 'Motion']
           ],
           subtitle: [' Penser une iconographie unique', 'Creating a unique iconography'],
           text: [
@@ -333,8 +333,8 @@ function Projets() {
 
           {title:'Pascale Laffon',
             categories: [
-              ['illustration', 'iconographie', 'charte graphique', 'motion'],
-              ['illustration', 'iconography', 'graphic charter', 'motion']
+              ['Illustration', 'Iconographie', 'Charte graphique', 'Motion'],
+              ['Illustration', 'Iconography', 'Graphic charter', 'Motion']
             ],
             subtitle: ['Less is more', 'Less is more'],
             text: [
@@ -353,15 +353,15 @@ function Projets() {
       image: ppImage,
       title: 'Pile-Poële',
       infos: [
-        ['2021>2024', 'police d’écriture', 'cuisine'],
-        ['2021>2024', 'font', 'cuisine']
+        ['2021>2024', 'Police d’écriture', 'Cuisine'],
+        ['2021>2024', 'Font', 'Cuisine']
       ],
       categories: 
       [
-        ['typographie', 'recherche'],
-        ['typography', 'research'],
+        ['Typographie', 'Recherche'],
+        ['Typography', 'Research'],
       ],
-      onClick: ['https:/www.pascalelaffon.fr', '_blank'],
+      // onClick: ['https:/www.pascalelaffon.fr', '_blank'],
       besoins:[
         ["Promouvoir un humanisme inclusif axé sur la cuisine. Pile-Poële est une fonte de caractères gender-inclusive avec un set de glyphes pictographiques centré autour de la cuisine. Elle prend forme dans le cadre d’une recherche de master autour de la constitution d’un système langagier basé sur la cuisine à l’Université Toulouse Jean Jaurès à Toulouse en 2021. Cette police propose une palette de caractères qui favorise la parité des genres tout en permettant dans son code de remplacer les mots désignant outils, ustensiles et aliments par leurs symboles pictographiques. Le signe alphabétique ou pictographique vient s’inscrire dans la recherche d’une transmission interculturelle culinaire. Le but premier est de permettre une forme de communication davantage universelle autour de la cuisine. Pile-Poële possède également des ligatures non-binaires. Toutefois, ici, la notion d’inclusivité des genres n’est pas le point central du projet mais devient annexe, comme une évidence dans la communication."],
         ["Promoting an inclusive humanism focused on cuisine.Pile-Poële is a gender-inclusive typeface with a set of pictographic glyphs centered around cuisine. It was developed as part of a master's research project on creating a language system based on cuisine at the University of Toulouse Jean Jaurès in Toulouse in 2021.This font offers a character set that promotes gender parity while allowing for the replacement of words denoting tools, utensils, and food with their pictographic symbols within its code. The alphabetic or pictographic symbols are part of a broader effort to achieve intercultural culinary communication. The primary goal is to enable a more universal form of communication around cuisine. Pile-Poële also features non-binary ligatures. However, in this context, gender inclusivity is not the project's central focus but rather an inherent aspect of communication."],
@@ -374,10 +374,10 @@ function Projets() {
       sections:
       [
         {title:'Pile-Poële',
-        categories: [
-          ['typographie', 'recherche'],
-          ['typography', 'research'],
-        ],
+        // categories: [
+        //   ['typographie', 'Recherche'],
+        //   ['typography', 'Research'],
+        // ],
         subtitle: ['Le dessin des caractères', 'The design of characters'],
         text: [
           "Écrire une recette se fait dans la plupart des cas, sur un bout de papier, à la main et de manière plutôt rapide. Pile-Poële dans son dessin tente de réunir cet aspect cursif de l’écriture propre à la prise de note manuscrite et le besoin de structure et de discipline de la discipline culinaire. L'exagération du type où les ligatures se dessinent naturellement ouvre de nouvelles perspectives typographiques et sociétales en facilitant la création de nouveaux glyphes. Les pictogrammes sont minimalistes dans un souci de les rendre simples à re-dessiner manuellement et facilement ré-appropriables. Toujours dans cette volonté d’inclusivité et d’accessibilité, les pictogrammes dessinent une cuisine universelle avec des ustensiles issus de la gastronomie mais également des cuisines familiales méditerranéennes (faitout, panier d’osier, pot de yaourt, etc). La cuisine à dessiner devient ainsi universelle et humaine. Au-delà des ustensiles et aliments, les systèmes métriques se représentent aussi humainement que possible : par la main (pincée, poignée, etc). Une universalité dans la communication ne repasserait-elle pas par une ré-appropriation des systèmes de mesures plus anciens basés sur le corps et des systèmes d’écriture similaires au hiéroglyphique égyptien?",
@@ -387,10 +387,10 @@ function Projets() {
         },
 
         {title:'Pile-Poële',
-        categories: [
-          ['typographie', 'recherche'],
-          ['typography', 'research'],
-            ],
+        // categories: [
+        //   ['Typographie', 'Recherche'],
+        //   ['Typography', 'Research'],
+        //     ],
         subtitle: ['Améliorations du projet', 'Project Improvements'],
         text: [
           "Ce fut ma première tentative d’une réponse typographique à ce questionnement. Elle restepour le moment probablement trop mécanique dans sa forme et insuffisamment inclusive d'un point de vue culturel. Pour pallier cet aspect mécanique du glyphe et des caractères, j’envisage également une variante cursive de la fonte. Parmi les autres améliorations à venir, il y aura le dessin des capitales et l’élargissement du set de glyphes pictographiques. Il me semble nécessaire de proposer un dessin des glyphes plus coloré afin de rendre davantage compte de l’aspect sensoriel et vivant propre à la cuisine. Pour l'instant, les pictogrammes sont principalement euro-centrés. L’idée serait donc de proposer l’intégralité des ustensiles et aliments existants mondialement afin que l’inclusivité devienne totale. En ce qui concerne les ligatures gender-inclusive disponibles, elles sont également incomplètes. Ce projet est encore en construction car l’idée d’une communication par le pictogramme est un réel challenge au vu de la pluralité des cultures et des langues existantes. En tant que personne européenne, ce qui pourrait me sembler comme une réponse satisfaisante à un système langagier universel, ne l’est pas forcément pour une personne issue d’une culture différente de la mienne. Communiquer autour de la cuisine ne nécessite pas seulement la traduction des ustensiles et aliments. Une multitude d’autres paramètres essentiels sont nécessaires à la transmission d’une recette, d’une technique ou d’un savoir-faire. Pile-Poële reste donc un début de réflexion à cette question très vaste de la sauvegarde du patrimoine culinaire populaire humain. Elle reste un début de réponse typographique toujours en construction.",
@@ -400,10 +400,10 @@ function Projets() {
         },
 
         {title:'Pile-Poële',
-          categories: [
-            ['typographie', 'recherche'],
-            ['typography', 'research'],
-          ],
+          // categories: [
+          //   ['Typographie', 'Recherche'],
+          //   ['Typography', 'Research'],
+          // ],
           subtitle: ['Publications', 'Publications'],
           text: [
             "Pile-Poele a été ajouté à l’invetaire créé par le collectif Bye-Bye Binary de 2017 à 2023.",
@@ -421,13 +421,13 @@ function Projets() {
       image: vbImage,
       title: 'VB Avocats',
       infos: [
-        ['2024', 'identité graphique', 'cabinet d’avocats', 'réalisé chez cible publicité'],
-        ['2024', 'graphic identity', 'law firm', 'designed at Cible Publicité']
+        ['2024', 'Identité graphique', 'Cabinet d’avocats', 'Réalisé chez Cible Publicité'],
+        ['2024', 'Graphic identity', 'Law firm', 'Designed at Cible Publicité']
       ],
       categories: 
       [
-        ['charte graphique', 'logotype', 'papeterie', 'signalétique'],
-        ['graphic charter', 'logotype', 'stationery', 'signage'],
+        ['Charte graphique', 'Logotype', 'Papeterie', 'Signalétique'],
+        ['Graphic charter', 'Logotype', 'Stationery', 'Signage'],
       ],
       onClick: ['https:/www.avocats-vb.fr', '_blank'],
       besoins:[
@@ -440,7 +440,7 @@ function Projets() {
         ['Photoshop', 'Ilustrator', 'Indesign'],
       ],
       sectionsImg:
-      [vbSection2aImage,vbSection2bImage,vbSection2cImage,vbSection3Image],
+      [vbSection2aImage,vbSection2bImage,vbSection2cImage],
     },
     //anchois
     {
@@ -450,8 +450,8 @@ function Projets() {
       image: anchoisImage,
       title: "La fête de l'Anchois",
       infos: [
-        ['2024', 'campagne', 'évènementiel', 'réalisé chez Cible Publicité'],
-        ['2024', 'campaign', 'event', 'designed at Cible Publicité']
+        ['2024', 'Campagne', 'Evenementiel', 'Réalisé chez Cible Publicité'],
+        ['2024', 'Campaign', 'Event', 'Designed at Cible Publicité']
       ],
       categories: 
       [
@@ -479,8 +479,8 @@ function Projets() {
       image: toposImage,
       title: "Topographies",
       infos: [
-        ['2019', 'édition', 'dessins aux charbons'],
-        ['2019', 'publication', 'charcoal drawings']
+        ['2019', 'Édition', 'Dessins aux charbons'],
+        ['2019', 'Publication', 'Charcoal drawings']
       ],
       categories: 
       [
@@ -513,7 +513,9 @@ function Projets() {
 return (
 
 <div className='section'>
-  <h2 className='en2024'>{textVariables[0]}</h2>
+  <h2>{textVariables[0]}</h2>
+  {Lang ==='EN' ?  <div className='rolling-btn'>scroll right</div> : <div className='rolling-btn'>scroller vers la droite</div> }
+ 
   {/* <img src={en2024} alt="en 2024 écrit à l'encre de chine"/> */}
   <div id='projets'>
   {/* // La grille avec tous les projets selectionnés */}
@@ -576,16 +578,16 @@ return (
 
   {/* BEHANCE */}
   <div className='social'>
-              <button className='btn-black'>
-                <a target="_blank" rel='noreferrer' href='https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz'>
-                  <p>{textVariables[3]} <b>{textVariables[4]}</b></p>
-                </a>
+              <button className='btn-black' onClick={() => window.open('https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz', '_blank', 'noreferrer')}>
+                <p>{textVariables[3]} <b>{textVariables[4]}</b></p>
               </button>
+
               <div className='social'>
-                <button className='social-button'><a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/'><FontAwesomeIcon className='svgIcon' icon={faLinkedinIn} style={{ color: "white" }} /></a></button>
-                <button className='social-button'><a target="_blank" rel='noreferrer' href='https://github.com/marialoudiaz'><FontAwesomeIcon className='svgIcon' icon={faGithub} style={{ color: "white" }} /></a></button>
-                <button className='social-button'><a target="_blank" rel='noreferrer' href='https://www.instagram.com/studio_mld/'><FontAwesomeIcon className='svgIcon' icon={faInstagram} style={{ color: "white" }} /></a></button>
+                <button className='social-button' onClick={() => window.open('https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faLinkedinIn} style={{ color: "white" }} /></button>
+                <button className='social-button' onClick={() => window.open('https://github.com/marialoudiaz', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faGithub} style={{ color: "white" }} /></button>
+                <button className='social-button' onClick={() => window.open('https://www.instagram.com/studio_mld/', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faInstagram} style={{ color: "white" }} /></button>
               </div> 
+
   </div>
 </div>
     </div>

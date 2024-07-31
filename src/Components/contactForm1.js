@@ -25,6 +25,10 @@ const Formulaire = ({userEmail}) => {
 	const [apiKey, setApiKey] = useState('keynotaskedyet');
 	const variableTags = infosComposants[0].form;
 
+	  // Extraire l'identifiant de l'URL
+		const id = location.pathname.split('/').pop();
+
+
 
 //modifier form
 const handleInputChange = (e) => {
@@ -76,21 +80,21 @@ setMessage('Au plaisir de vous rencontrer ! 🌟');
 }
 };
 //OnChange CAPTCHA
-function onChange(value) {
-  console.log("Captcha value:", value);
-	setCaptchaDone(true)
-}
+// function onChange(value) {
+//   console.log("Captcha value:", value);
+// 	setCaptchaDone(true)
+// }
 // Récupérer la clef recaptcha
-useEffect(() => {
-	// Faire une requête GET pour récupérer la clé d'API depuis votre backend
-	axios.get('http://localhost:3001/get-key')
-		.then(response => {
-			setApiKey(response.data.apiKey);
-		})
-		.catch(error => {
-			console.error('Erreur lors de la récupération de la clé d\'API :', error);
-		});
-}, []); // Ce useEffect s'exécute une seule fois au chargement du composant
+// useEffect(() => {
+// 	// Faire une requête GET pour récupérer la clé d'API depuis votre backend
+// 	axios.get('http://localhost:3001/get-key')
+// 		.then(response => {
+// 			setApiKey(response.data.apiKey);
+// 		})
+// 		.catch(error => {
+// 			console.error('Erreur lors de la récupération de la clé d\'API :', error);
+// 		});
+// }, []); // Ce useEffect s'exécute une seule fois au chargement du composant
 
 
 return (
@@ -135,12 +139,12 @@ return (
       <input type="text" id="question" name="question" value={question} onChange={(e)=>handleChange(e)}/>
     </div>   
 
-		 <ReCAPTCHA
+		 {/* <ReCAPTCHA
     sitekey={apiKey}
     onChange={onChange}
-    />  
+    />   */}
 	
-	{captchaIsDone && 
+	{/* {captchaIsDone &&  */}
 	<div className='flexForm'>
 			<button
 				className='btn-black'
@@ -150,7 +154,7 @@ return (
 			</button>
 		<div>{message}</div>
 		</div>
-	}	
+	{/* }	 */}
 	</form>
 </>
 	);

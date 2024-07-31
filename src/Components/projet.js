@@ -92,7 +92,7 @@ return (
 
 
 
-      <div  className='section' style={{marginBottom: '5rem', marginTop: '5rem'}}>
+      <div  className='section' id='projet' style={{marginBottom: '5rem', marginTop: '5rem'}}>
         
         {/* SECTION 1 - FICHE INFOS */}
         <div className='grid-col2-projet'>
@@ -132,14 +132,14 @@ return (
                 />
               </div>
               <div >
-                <p>découvrir le site</p>
+              {Lang === 'FR' ? <p>Découvrir le site</p> : <p>Discover the website</p>}
               </div>
             </div>
             }
 
             {/* BESOINS */}
             <div className='flex-col'>
-              <h3>Besoins</h3>
+            {Lang === 'FR' ? <h3>Besoins</h3> : <h3>Needs</h3>}
               <p>{projectDescription.besoins[langIndex][0]}</p>
             </div>
           </div>
@@ -155,7 +155,7 @@ return (
                     {/* Chapitre 1 */}
                     <h3>{section.subtitle[langIndex]}</h3>
                     <div className='flex-wrap' style={{justifyContent:'center'}}>
-                      {section.categories[langIndex].map((category, catIndex) => (
+                     {section.categories && section.categories[langIndex].map((category, catIndex) => (
                         <p className='pill' key={catIndex}>{category}</p>
                       ))}
                     </div>

@@ -370,7 +370,7 @@ width: 60vw;
 height: 100%;
 margin: .5rem;
 border-radius: 2rem;
-border : 1px solid #27222112;
+border : 1.7px solid #272221;
 object-fit: cover;
 opacity: 0;
 position: absolute;
@@ -558,7 +558,7 @@ form{
   display: flex;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 2rem;
+  align-items: center;
   & p{
     font-size: calc(var(--body)*1.1);
   }
@@ -567,7 +567,7 @@ form{
   border-radius: 100%;
   background-color: #272221;
   color: white;
-  padding: 1.5rem;
+  padding: .8rem;
   border: black;
 }
 /*formulaire composant*/
@@ -634,6 +634,9 @@ textarea{
     grid-template-rows: 1fr;
 }
 // section chapitres
+#projet p{
+  text-align: justify;
+}
 .grid-col2-projet{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -664,7 +667,7 @@ textarea{
   & img, video{
    width: 100%;
    height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
 
@@ -789,6 +792,7 @@ textarea{
     p {
       font-size: var(--bodyM); /* Réduit davantage la taille pour les petits écrans */
     }
+    .flex-wrap .btn-black:last-of-type{display: none;}
     #citation-form h1,
 #citation-form h2,
 #citation-form h3 {
