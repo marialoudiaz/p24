@@ -513,9 +513,7 @@ function Projets() {
 return (
 
 <div className='section'>
-  <h2>{textVariables[0]}</h2>
-  {Lang ==='EN' ?  <div className='rolling-btn'>scroll right</div> : <div className='rolling-btn'>scroller vers la droite</div> }
- 
+  <h2>{textVariables[0]}</h2> 
   {/* <img src={en2024} alt="en 2024 écrit à l'encre de chine"/> */}
   <div id='projets'>
   {/* // La grille avec tous les projets selectionnés */}
