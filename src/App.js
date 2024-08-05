@@ -1,23 +1,26 @@
-import React from 'react';
+import React, { Suspense, lazy, useRef, useState, useEffect } from 'react';
 import './App.scss';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import Langues from './Views/Langues.js';
-import Chargement from './Views/Chargement.js';
-import Homepage from './Views/Homepage.js';
-import Projet from './Components/projet.js';
+const Langues = lazy(() => import('./Views/Langues.js'));
+const Chargement = lazy(() => import('./Views/Chargement.js'));
+const Homepage = lazy(() => import('./Views/Homepage.js'));
+const Projet = lazy(() => import('./Components/projet.js'));
+
 
 const App = () => {
 
   return (
     <> 
       <Router>
-      <Routes>
-        <Route path="/" element={<Langues />} />
-        <Route path="/menu" element={<Chargement />} />
-        <Route path="/homepage/:id" element={<Homepage />} />
-        <Route path="/projet/:id" element={<Projet />} />
-      </Routes>
+        <Suspense fallback={<div>Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Langues />} />
+            <Route path="/menu" element={<Chargement />} />
+            <Route path="/homepage/:id" element={<Homepage />} />
+            <Route path="/projet/:id" element={<Projet />} />
+          </Routes>
+        </Suspense>
     </Router>   
     
   </>

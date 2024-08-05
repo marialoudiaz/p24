@@ -1,16 +1,15 @@
-import React from 'react';
-import {useRef, useState, useEffect} from 'react';
+import React, { Suspense, lazy, useRef, useState, useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import '../App.scss';
 
-import Header from '../Components//header.js';
-import VideoReveal from '../Components/VideoReveal.js';
-import Services from '../Components/services';
-import Approche from '../Components/approche.js';
-import Projets from '../Components/projets.js';
-import Deroule from '../Components/deroule.js';
-import Formulaire from '../Components/formulaire';
-import Monogramme from '../Components/monogramme.js';
+const Header = lazy(() => import('../Components//header.js'));
+const VideoReveal = lazy(() => import('../Components/VideoReveal.js'));
+const Services = lazy(() => import('../Components/services'));
+const Approche = lazy(() => import('../Components/approche.js'));
+const Projets = lazy(() => import('../Components/projets.js'));
+const Deroule = lazy(() => import('../Components/deroule.js'));
+const Formulaire = lazy(() => import('../Components/formulaire'));
+const Monogramme = lazy(() => import( '../Components/monogramme.js'));
 
 
 const App = () => {
