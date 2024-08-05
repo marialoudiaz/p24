@@ -23,6 +23,8 @@ import ppImage from '../assets/projets/pp/pp-img.png';
 import ppSection1Image from '../assets/projets/pp/pp-section1.jpg';
 import ppSection2Image from '../assets/projets/pp/pp-section2.png';
 import ppSection3Image from '../assets/projets/pp/pp-section3.jpg';
+import ppSection4Image from '../assets/projets/pp/pp-section4.png';
+import ppSection5Image from '../assets/projets/pp/pp-section5.png';
 //vb
 import vbVideo from '../assets/projets/vb/vb-video.mp4';
 import vbImage from '../assets/projets/vb/vb-img.jpg';
@@ -412,6 +414,8 @@ function Projets() {
           image: ppSection3Image,
           },
       ],
+      sectionsImg:
+      [ppSection4Image, ppSection5Image],
     },
     //vb
     {
@@ -577,7 +581,7 @@ return (
   {/* BEHANCE */}
   <div className='social'>
               <button className='btn-black' onClick={() => window.open('https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz', '_blank', 'noreferrer')}>
-                <p>{textVariables[3]} <b>{textVariables[4]}</b></p>
+                <h3>{textVariables[3]} <b>{textVariables[4]}</b></h3>
               </button>
 
               <div className='social'>

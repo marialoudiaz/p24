@@ -48,7 +48,7 @@ const Chargement = () =>{
             </div>
           </div>
         </div>
-        <video className='background-video2' autoPlay loop muted playsInline>
+        <video className='background-video2' autoPlay muted playsInline>
           <source src={video} type='video/mp4'/>
         </video> 
       </div>

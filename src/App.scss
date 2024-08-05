@@ -34,6 +34,8 @@
   --sous-titresM: 1.5em; //500 + inknut
   --body: 1.2em; // 400 inknut
   --typewriter: 1.7rem;
+  --typewriterM: 1.3rem;
+  --typewriterM2: 1.2rem;
   --bodyM: 1em; // 400 inknut
   --animate-delay: 7s;
 }
@@ -112,10 +114,12 @@ p{
     height: fit-content;
     font-family: var(--Titles);
     background-color: white;
-    & a{
+    & a, p{
       color: #272221;
     }
-    & a:hover, a h3:hover{
+    & a:hover,
+      a h3:hover,
+      p:hover{
       color: white;
     }
 }
@@ -134,7 +138,7 @@ p{
   z-index: 2;
   background-color: var(--bgColor);
   & img{
-    width: 10rem;
+    width: 13rem;
   }
 }
 #header-container-logo{
@@ -256,12 +260,12 @@ color: white;
 .tiret{
   width: 3.5rem;
   height: 50px;
-  border-right: .5px solid black;
+  border-right: .5px solid rgb(193, 158, 57);
 }
 .tiret2{
   width: 3.5rem;
   height: 50px;
-  border-left: .5px solid black;
+  border-left: .5px solid rgb(193, 158, 57);
 }
 .grid-col3{
 display: grid;
@@ -671,7 +675,15 @@ textarea{
   }
 }
 
+.section-img{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
 
+  & img{
+    width: 50vw;
+  }
+}
 
 /*CHARGEMENT*/
 
@@ -1062,6 +1074,9 @@ textarea{
       width: 3rem;
     }
    }
+   .Typewriter{
+    font-size: var(--typewriterM);
+  }
    .grid-container-projets {
     width: 100%;
   }
@@ -1100,6 +1115,9 @@ textarea{
     }
     #homez, #projetz, #contactz{
       font-size: 37pt!important ;
+    }
+    .Typewriter{
+      font-size: var(--typewriterM2);
     }
     .text-block p {
       width: 89%;

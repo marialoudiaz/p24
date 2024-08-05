@@ -90,8 +90,6 @@ return (
         </div>
       </div>  
 
-
-
       <div  className='section' id='projet' style={{marginBottom: '5rem', marginTop: '5rem'}}>
         
         {/* SECTION 1 - FICHE INFOS */}
@@ -146,45 +144,45 @@ return (
         </div>
 
          {/* SECTION 2 - EXPLICATION PROJET */}
-         {projectDescription.sections && projectDescription.sections.length > 0 ? (
+         {projectDescription.sections && projectDescription.sections.length > 0 && (
             projectDescription.sections.map((section, index) => (
               <div className='grid-col2-projet' key={index}>
-
-
-                  <div className='flex-col' style={{ justifyContent: 'center', alignItems:'center', textAlign:'center'}}>
-                    {/* Chapitre 1 */}
-                    <h3>{section.subtitle[langIndex]}</h3>
-                    <div className='flex-wrap' style={{justifyContent:'center'}}>
-                     {section.categories && section.categories[langIndex].map((category, catIndex) => (
-                        <p className='pill' key={catIndex}>{category}</p>
-                      ))}
-                    </div>
-                    <p>{section.text[langIndex]}</p>
+                <div className='flex-col' style={{ justifyContent: 'center', alignItems:'center', textAlign:'center'}}>
+                  {/* Chapitre 1 */}
+                  <h3>{section.subtitle[langIndex]}</h3>
+                  <div className='flex-wrap' style={{justifyContent:'center'}}>
+                   {section.categories && section.categories[langIndex].map((category, catIndex) => (
+                      <p className='pill' key={catIndex}>{category}</p>
+                    ))}
                   </div>
-                  {/* IMAGE OU VIDEO */}
-                  {section.image && (
-                    <div className='grid-col2-img-section' style={{height:'auto'}}>
-                      <img src={section.image} alt="Section visual" />
-                    </div>
-                  )}
-                  {section.video && (
-                    <div className='grid-col2-video-section'>
-                      <video src={section.video} autoPlay loop muted playsInline>
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  )}
+                  <p>{section.text[langIndex]}</p>
                 </div>
-            ))
-
-            
-          ) : (
-            projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && projectDescription.sectionsImg.map((sectionImg, index) => (
-              <div className='flex-col' key={index} style={{marginTop:'2rem'}}>
-                <img src={sectionImg} alt={`Section ${index + 1}`} style={{maxWidth:'100%', height:'auto'}} />
+                {/* IMAGE OU VIDEO */}
+                {section.image && (
+                  <div className='grid-col2-img-section' style={{height:'auto'}}>
+                    <img src={section.image} alt="Section visual" />
+                  </div>
+                )}
+                {section.video && (
+                  <div className='grid-col2-video-section'>
+                    <video src={section.video} autoPlay loop muted playsInline>
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                )}
               </div>
             ))
           )}
+
+          {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES */}
+          <div className='grid-col2'>
+            {projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && (
+              projectDescription.sectionsImg.map((sectionImg, index) => (
+                    <img key={index} src={sectionImg} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center' 
+                    }} />
+              ))
+            )}
+          </div>
         </div>
       </div>
     </>
