@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect} from 'react';
-import { useLocation } from 'react-router-dom';
 import '../App.scss';
 import videoReveal1 from '../assets/video/videos-introductives/D-INDEP-FR.mp4';
 import videoReveal2 from '../assets/video/videos-introductives/M-INDEP-FR.mp4';
@@ -9,9 +8,6 @@ import videoReveal5 from '../assets/video/videos-introductives/D-INDEP-EN.mp4';
 import videoReveal6 from '../assets/video/videos-introductives/M-INDEP-EN.mp4';
 import videoReveal7 from '../assets/video/videos-introductives/D-STUDIO-EN.mp4';
 import videoReveal8 from '../assets/video/videos-introductives/M-STUDIO-EN.mp4';
-import logo from '../assets/logo/medaillon.png';
-import text from '../assets/logo/nom+titre.png'; 
-
 
 
 const VideoReveal = ({infos}) => {
