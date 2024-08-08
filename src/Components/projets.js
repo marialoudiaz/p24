@@ -127,8 +127,8 @@ function Projets() {
         "OnSight est une application qui vous permet de rechercher n'importe quel film ou série et de l'ajouter à une liste que vous pouvez régulièrement mettre à jour en fonction des nouvelles sorties ou de vos préférences. ",
       ],      
       text2:[
-        "Immerse yourself in a retro graphic universe inspired by the 80s, where each interaction takes you into cinematic history. With OnSight, you can easily manage your movies and series to watch all while enjoying a captivating vintage design. Available on iOS.",
-        "Plongez dans un univers graphique rétro inspiré des années 80, où chaque interaction vous transporte dans le passé cinématographique. Avec OnSight, vous pouvez facilement gérer vos films et séries à regarder tout en savourant un design vintage captivant. Découvrez l'application sur iOS."
+        "Immerse yourself in a retro universe inspired by the 80s, where each interaction takes you into cinematic history. With OnSight, you can easily manage your movies and series to watch all while enjoying a captivating vintage design. Available on iOS.",
+        "Plongez dans un univers graphique rétro inspiré des années 80, où chaque interaction vous fait voyager. Avec OnSight, vous pouvez facilement gérer vos films et séries à regarder tout en savourant un design vintage captivant. Découvrez l'application sur iOS."
       ],
       link: ['Discover',"Découvrir"],
       onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']
@@ -141,7 +141,7 @@ function Projets() {
       title: ["Pascale Laffon","Pascale Laffon"],
       baseline: ['Micropracy','La micropraxie'],
       text:["Pascale Laffon is a showcase website dedicated to her work as a micropractitioner. Explore her gentle and unique universe", "Pascale Laffon est un site vitrine dédié à son activité de micropraticienne. Explorez son univers doux et unique"],
-      text2:["as well as her practice of holistic medicine through refined graphic design and intuitive navigation.","ainsi que sa pratique de la médecine holistique à travers un design graphique raffiné et une navigation intuitive."],
+      text2:["as well as her practice of holistic medicine through refined graphic design and intuitive experience.","ainsi que sa pratique de la médecine holistique à travers un design graphique raffiné et une expérience intuitive."],
       link: ['Discover',"Découvrir"],
       onClick: ['https://pascale-laffon.fr', '_blank']
     },
