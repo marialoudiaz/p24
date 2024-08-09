@@ -68,8 +68,8 @@ function Projets() {
   // Déterminer la langue à afficher dans le return selon l'indice reçu
   const Lang = infosComposants ? infosComposants[0].Lang : 'defaultLang';
   const variableENorFr = [
-    ['My projects','Discover','Previous','Discover my other projects','on behance','scroll right'],
-    ['Mes projets','Découvrir','Précédent','Découvrir mes autres projets','sur behance','scroller vers la droite'],
+    ['My projects','Discover','Previous','scroll right to learn more','Discover my other projects'],
+    ['Mes projets','Découvrir','Précédent','scroller à droite pour en apprendre +','Découvrir mes autres projets'],
   ]
   // Détermine l'indice de langue basé sur la variable lang
   const isEnglish = Lang === 'EN';
@@ -83,7 +83,6 @@ function Projets() {
 
 // Navigation du carousel
   const [currentIndex, setCurrentIndex] = useState(0);
-
 // Utilise l'index pour cibler la section (objet rendu)
   const handleNext = (index) => {
 // Scroll to the corresponding project description based on the index
@@ -569,10 +568,14 @@ return (
   </div>
   <div className='project-details'>
     <p style={{ fontSize: '1.5rem' }}>{projectsArr[index].title[titleIndex]}</p>
+    
     <div className='carousel-btn' style={{ marginLeft: '1rem', marginBottom: '.2rem' }} 
       onClick={() => { setCurrentIndex(index); handleNext(index); }}>
       <img src={imageSource} alt='an icon of an eye to see the project description when clicked' onMouseOver={handleHover} onMouseOut={handleHoverOut} style={imgStyle}/>
     </div>
+    <p style={{color:'black'}}>{textVariables[3]}</p>
+
+
   </div>
   </div>
   ))}
@@ -580,9 +583,9 @@ return (
 
   {/* BEHANCE */}
   <div className='social'>
-              <button className='btn-black' onClick={() => window.open('https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz', '_blank', 'noreferrer')}>
-                <h3>{textVariables[3]} <b>{textVariables[4]}</b></h3>
-              </button>
+              <div className='btn-black' onClick={() => window.open('https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz', '_blank', 'noreferrer')}>
+                <p>{textVariables[4]}</p>
+              </div>
 
               <div className='social'>
                 <button className='social-button' onClick={() => window.open('https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faLinkedinIn} style={{ color: "white" }} /></button>

@@ -84,7 +84,7 @@ const Approche = () => {
             <div className='flex-col-center'>
               <img src={medaillon} alt='le logo sous forme de médaillon' style={{width:'6rem'}}/>
               <h2>{approche}</h2>
-              <h3>
+              <h3 className='syne'>
               <Typewriter
                   options={{
                   strings: [`${citation}`],

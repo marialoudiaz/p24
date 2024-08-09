@@ -43,8 +43,8 @@ const Chargement = () =>{
         <div className='gridHover'>
           <div className='gridHoverTitle'>
             <div className='grid-col2'>
-            <p onClick={() => selectMenu('fr')} className='animate__animated animate__slideInUp'>Français</p>
-            <p onClick={() => selectMenu('en')} className='animate__animated animate__slideInUp'>English</p>
+            <p onClick={() => selectMenu('fr')} className='syne'>Français</p>
+            <p onClick={() => selectMenu('en')} className='syne'>English</p>
             </div>
           </div>
         </div>

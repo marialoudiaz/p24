@@ -57,13 +57,13 @@ const Services = ({infos}) => {
                 ))}
               </div>
         )}
-        <img src={web} style={{width:'30%'}}/>
+        <h3 className='syne gold' style={{fontSize:'3rem'}}>web</h3>
       </div>
       <div className='grid-col3'>
       {combinedData.slice(0, 7).map((item, index) => (
               <div className='grid-col3-item' key={index}>
                 <img src={item.image} />
-                <h3 style={{fontWeight:'bold'}}>{item.title}</h3>
+                <p>{item.title}</p>
               </div>
       ))}
       </div>
@@ -80,13 +80,13 @@ const Services = ({infos}) => {
                 ))}
               </div>
         )}
-        <img src={print} style={{width:'30%'}}/>
+         <h3 className='syne gold' style={{fontSize:'3rem'}}>print</h3>
       </div>
       <div className='grid-col3'>
       {combinedData.slice(7).map((item, index) => (
               <div className='grid-col3-item' key={index}>
                 <img src={item.image} />
-                <h3 style={{fontWeight:'bold'}}>{item.title}</h3>
+                <p>{item.title}</p>
               </div>
       ))}
     </div>

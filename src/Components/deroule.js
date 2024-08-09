@@ -19,7 +19,7 @@ const Deroule = ({infos}) => {
 
       <div className='flex-col'>
         <h2>{affichageSection[1]}</h2>
-        <h3>{affichageSection[2]}</h3>
+        <p>{affichageSection[2]}</p>
       </div>
 
       <div className='flex-col'>
@@ -27,7 +27,7 @@ const Deroule = ({infos}) => {
           <div className='grid-col2-asym'>
             <img src={couple} alt="icone à l'encre d'un couple de deux personnes"/>
             <div className='flex-wrap'>
-              <h3>{affichageSection[3]}</h3>
+              <h3 style={{fontWeight:'600'}}>{affichageSection[3]}</h3>
               <p>{affichageSection[4]}</p>
             </div>
           </div>
@@ -39,7 +39,7 @@ const Deroule = ({infos}) => {
           <div className='grid-col2-asym'>
             <img src={mail} alt="icone à l'encre d'une enveloppe avec un coeur"/>
             <div className='flex-wrap'>
-              <h3>{affichageSection[5]}</h3>
+              <h3 style={{fontWeight:'600'}}>{affichageSection[5]}</h3>
               <p>{affichageSection[6]}</p>
             </div>
           </div> 
@@ -52,11 +52,10 @@ const Deroule = ({infos}) => {
           <div className='grid-col2-asym'>
           <img src={cadeau} alt="icone à l'encre d'un cadeau"/>
             <div className='flex-wrap'>
-              <h3>{affichageSection[7]}</h3>
+              <h3 style={{fontWeight:'600'}}>{affichageSection[7]}</h3>
               <p>{affichageSection[8]}</p>
             </div>
           </div>
-
 
       </div>
 

@@ -35,9 +35,9 @@ const Formulaire = ({infos}) => {
     
           {/* PARTIE GAUCHE */}
           <div className='flex-col' id='citation-form'>
-              <h1>{form[0]}</h1>
-              <h2>{form[1]}</h2>
-              <h2 className='gold'>{form[2]}</h2>
+              <h3 className='syne'>{form[0]}</h3>
+              <h3 className='syne'>{form[1]}</h3>
+              <h3 className='syne gold'>{form[2]}</h3>
             <div className='text-block' style={{ borderTop: 'black 1px solid', paddingTop: '1rem', display: display, flexDirection:'column' }}>
               <TextTransition className='textTransition' springConfig={presets.gentle}>{words[index % words.length]}</TextTransition>
             <p>{blabla}</p>

@@ -1,13 +1,11 @@
 import '../App.scss';
-import Logo from '../assets/logo/medaillon.png';
 import { useNavigate } from 'react-router-dom';
+import monogramme from '../assets/icons/roue.mp4'
 
 
 const Monogramme = () => {
 
-  const contact=['contact·'];
   const navigate = useNavigate();
-
   // Aller à la fin du document
   const scrollToBottom = () => {
     window.scrollTo({
@@ -16,36 +14,15 @@ const Monogramme = () => {
     });
   };
 
-
   return(
-      <div className='Conteneur'>
+  <div className='Conteneur'>
       <a onClick={scrollToBottom}>
-      <svg
-       width="100%" 
-       height="100%"
-       viewBox="0 0 100 100"
-       xmlns="http://www.w3.org/2000/svg"
-       className='rotate-svg'
-      >
-        <path
-          id="circlePath"
-          d="M 10, 50 a 40,40 0 1,1 80,0 40,40 0 1,1 -80,0"
-          fill='transparent'
-        />
-        <text>
-          <textPath href="#circlePath">{new Array(4).fill(contact).join('')}</textPath>
-        </text>
-      </svg>
-      <div className='logo-roue'>
-       <img src={Logo} alt='logo'/>
-      </div>
+          <video autoPlay loop muted playsInline>
+            <source src={monogramme} type="video/mp4" />
+          </video>
       </a>
-      
   </div>
-
   )
-  
   };
-
+  
 export default Monogramme;
-// fill='transparent'
