@@ -148,7 +148,7 @@ const Chargement = () =>{
         <div className='gridHover'>
           <div className='gridHoverTitle'>
             {displayTexts.slice(0, 2).map((text, index) => (
-                <p key={index} className='animate__animated animate__slideInUp'>{text}</p>
+                <h2 key={index} className='animate__animated animate__slideInUp'>{text}</h2>
             ))}
           </div>
           {displayTexts.slice(2).map((text, index) => (

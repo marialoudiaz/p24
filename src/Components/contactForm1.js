@@ -2,10 +2,7 @@ import React, { useState,useRef, useEffect } from 'react';
 import '../App.scss';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import ReCAPTCHA from "react-google-recaptcha";
-
-
-
+// import ReCAPTCHA from "react-google-recaptcha";
 
 const Formulaire = ({userEmail}) => {
 
@@ -21,13 +18,12 @@ const Formulaire = ({userEmail}) => {
 	const [submitting, setSubmitting] = useState(false);
 	const [question, setQuestion] = useState('');
 	const [acceptTerms, setAcceptTerms] = useState(false); // Ajoutez l'état pour la case à cocher
-	const [captchaIsDone, setCaptchaDone]= useState(false);
-	const [apiKey, setApiKey] = useState('keynotaskedyet');
+	// const [captchaIsDone, setCaptchaDone]= useState(false);
+	// const [apiKey, setApiKey] = useState('keynotaskedyet');
 	const variableTags = infosComposants[0].form;
 
 	  // Extraire l'identifiant de l'URL
 		const id = location.pathname.split('/').pop();
-
 
 
 //modifier form
@@ -123,7 +119,6 @@ return (
 		/>
 	</div>
 	
-	
 		<div className='flexCol'>
 			<label htmlFor="message">{variableTags[5]}</label>
 			<textarea
@@ -152,7 +147,7 @@ return (
 				disabled={submitting}>		
 				{variableTags[6]}
 			</button>
-		<div>{message}</div>
+		<p>{message}</p>
 		</div>
 	{/* }	 */}
 	</form>

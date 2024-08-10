@@ -592,7 +592,7 @@ return (
               <div className='social'>
                 <button className='social-button' onClick={() => window.open('https://www.linkedin.com/in/maria-lou-diaz-1b7ba8143/', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faLinkedinIn} style={{ color: "white" }} /></button>
                 <button className='social-button' onClick={() => window.open('https://github.com/marialoudiaz', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faGithub} style={{ color: "white" }} /></button>
-                <button className='social-button' onClick={() => window.open('https://www.instagram.com/studio_mld/', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faInstagram} style={{ color: "white" }} /></button>
+                <button className='social-button' onClick={() => window.open('https://www.instagram.com/marialoudiaz/', '_blank', 'noreferrer')}><FontAwesomeIcon className='svgIcon' icon={faInstagram} style={{ color: "white" }} /></button>
               </div> 
 
   </div>
