@@ -1,16 +1,7 @@
-{
-  "version": 2,
-  "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
-  ],
+{  
   "rewrites": [
-    { "source": "/send-email", "destination": "/api/send-email" }
-  ],
-  "env": {
-    "EMAIL_RECEIVER": "@email-receiver",
-    "EMAIL_PASS": "@email-pass"
-  }
+       { "source": "/proxy/:match*",
+         "destination": "https://www.marialoudiaz.fr/:match*"
+       } 
+ ]
 }
