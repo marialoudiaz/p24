@@ -49,12 +49,17 @@ const handleSubmitQuestion = (props) => {
   };
   // if (state.succeeded) {
   // return <p>Merci pour votre message, je vous recontacte prochainement !</p>;
+
+	//url active
+	// Récupérer l'URL active (par exemple, http://localhost:3000 ou https://votresite.com)
+	const apiUrl = window.location.origin;
+
 const handleSubmit = async (e) => {
 	e.preventDefault();
 	setSubmitting(true);
   try {
 // Envoi des données au backend
-await axios.post('/send-email', {
+await axios.post('https://marialoudiaz.fr/send-email', {
 	to: process.env.EMAIL_RECEIVER, // Mettez la destination de l'e-mail ici
 	subject: 'Prise de contact via le formulaire',
 	prenom : emailData.prenom,
