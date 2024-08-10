@@ -10,7 +10,7 @@ const port = 443;
 
 app.use(cors({
 	origin: 'https://www.marialoudiaz.fr', // Permet uniquement cette origine
-	methods: ['GET', 'POST'],
+	methods: ['GET', 'POST', 'OPTIONS'],
 	allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
