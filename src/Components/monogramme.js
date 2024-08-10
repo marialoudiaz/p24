@@ -1,6 +1,6 @@
 import '../App.scss';
 import { useNavigate } from 'react-router-dom';
-import monogramme from '../assets/icons/roue.mp4'
+import monogramme from '../assets/icons/roue.mp4';
 
 
 const Monogramme = () => {

@@ -178,7 +178,7 @@ return (
           <div className='grid-col2'>
             {projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && (
               projectDescription.sectionsImg.map((sectionImg, index) => (
-                    <img key={index} src={sectionImg} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center' 
+                    <img key={index} src={sectionImg}  className={index === 2 ? 'div3' : ''} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center' 
                     }} />
               ))
             )}

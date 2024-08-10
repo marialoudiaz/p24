@@ -43,6 +43,8 @@ import anchoisSection3Image from '../assets/projets/anchois/anchois-section3.jpg
 import toposVideo from '../assets/projets/topos/topos-video.mp4';
 import toposImage from '../assets/projets/topos/topos-img.png';
 import toposSection1Image from '../assets/projets/topos/topos-section2.jpg';
+import toposSection2Image from '../assets/projets/topos/topos-section3.jpg';
+
 // CAROUSEL
 import prev from '../assets/icons/interface/icon-eye-1.png';
 import next from '../assets/icons/interface/icon-eye-2.png';
@@ -500,7 +502,7 @@ function Projets() {
         ['Charcoals', 'Coal', 'InDesign'],
       ],
       sectionsImg:
-      [toposSection1Image],
+      [toposSection1Image,toposSection2Image],
     },    
   ];  
   // Découvrir le projet
