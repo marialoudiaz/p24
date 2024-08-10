@@ -50,9 +50,6 @@ const handleSubmitQuestion = (props) => {
   // if (state.succeeded) {
   // return <p>Merci pour votre message, je vous recontacte prochainement !</p>;
 
-	//url active
-	// Récupérer l'URL active (par exemple, http://localhost:3000 ou https://votresite.com)
-	const apiUrl = window.location.origin;
 
 const handleSubmit = async (e) => {
 	e.preventDefault();

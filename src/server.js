@@ -30,6 +30,9 @@ app.use(bodyParser.json())
 //   res.json({ apiKey });
 // });
 
+// Gérer les requêtes OPTIONS
+app.options('*', cors());
+
 app.post('/send-email', async (req, res) => {
 	const { prenom, email, message } = req.body;
 	const transporter = nodemailer.createTransport({
