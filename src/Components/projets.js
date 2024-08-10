@@ -585,7 +585,7 @@ return (
 
   {/* BEHANCE */}
   <div className='social'>
-              <div className='btn-black' onClick={() => window.open('https://www.behance.net/gallery/161736831/Portfolio-2023-Maria-Lou-Diaz', '_blank', 'noreferrer')}>
+              <div className='btn-black' onClick={() => window.open('https://www.behance.net/mariadiaz116', '_blank', 'noreferrer')}>
                 <p>{textVariables[4]}</p>
               </div>
 
