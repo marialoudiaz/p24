@@ -8,11 +8,11 @@ require('dotenv').config();
 const app = express();
 const port = 443;
 
-// app.use(cors({
-// 	origin: 'https://www.marialoudiaz.fr', // Permet uniquement cette origine
-// 	methods: ['GET', 'POST'],
-// 	allowedHeaders: ['Content-Type', 'Authorization'],
-// }));
+app.use(cors({
+	origin: 'https://www.marialoudiaz.fr', // Permet uniquement cette origine
+	methods: ['GET', 'POST'],
+	allowedHeaders: ['Content-Type', 'Authorization'],
+}));
 
 app.use(function(req, res, next) { 
 	res.header("Access-Control-Allow-Origin", "*"); 

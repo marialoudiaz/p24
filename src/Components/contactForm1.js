@@ -59,7 +59,7 @@ const handleSubmit = async (e) => {
 	setSubmitting(true);
   try {
 // Envoi des données au backend
-await axios.post('https://marialoudiaz.fr/send-email', {
+await axios.post('https://www.marialoudiaz.fr/send-email', {
 	to: process.env.EMAIL_RECEIVER, // Mettez la destination de l'e-mail ici
 	subject: 'Prise de contact via le formulaire',
 	prenom : emailData.prenom,
