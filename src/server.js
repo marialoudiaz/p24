@@ -6,7 +6,7 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = (587);
+const port = (443);
 
 app.use(cors({
 	origin: 'https://www.marialoudiaz.fr', // Permet uniquement cette origine
