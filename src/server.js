@@ -8,7 +8,11 @@ require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 3001; // Utiliser le port 3000 si PORT n'est pas défini
 
-app.use(cors());
+app.use(cors({
+  origin: '*', // Autoriser toutes les origines
+  methods: ['GET', 'POST'], // Autoriser les méthodes GET et POST
+  allowedHeaders: ['Content-Type', 'Authorization'] // Autoriser les en-têtes spécifiques
+}));
 
 app.use(function(req, res, next) { 
 	res.header("Access-Control-Allow-Origin", "*"); 
