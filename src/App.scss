@@ -735,7 +735,7 @@ textarea{
   margin: auto;
   left: 0;
   right: 0;
-  top: 27%;
+  top: 25%;
   text-align: center;
   & h3{
     font-size: var(--sous-titres);
@@ -748,7 +748,7 @@ textarea{
   }
   & .gridHoverTitle{
     grid-area: 1 / 1 / 2 / 3;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     animation: slideInUp;
   }
   & h3:hover{
