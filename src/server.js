@@ -6,32 +6,20 @@ const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3000; // Utiliser le port 3000 si PORT n'est pas défini
+const port = process.env.PORT || 3001; // Utiliser le port 3000 si PORT n'est pas défini
 
-app.use(cors({
-	origin: 'https://www.marialoudiaz.fr', // Permet uniquement cette origine
-	methods: ['GET', 'POST'],
-	allowedHeaders: ['Content-Type', 'Authorization'],
-}));
+app.use(cors());
 
-// app.use(function(req, res, next) { 
-// 	res.header("Access-Control-Allow-Origin", "*"); 
-// 	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); 
-// 	res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS"); 
-// 	next(); 
-// }); 
+app.use(function(req, res, next) { 
+	res.header("Access-Control-Allow-Origin", "*"); 
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept"); 
+	res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS"); 
+	next(); 
+}); 
 
 // Ajout de nouveaux éléments pour permettre à express de gérer le corps
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
-
-// app.get('/get-key', (req, res) => {
-//   const apiKey = process.env.REACT_APP_RECAPTCHA_KEY; // Remplacez par votre véritable clé d'API
-//   res.json({ apiKey });
-// });
-
-// Gérer les requêtes OPTIONS
-// app.options('*', cors());
 
 app.post('/send-email', async (req, res) => {
 	const { prenom, email, message } = req.body;

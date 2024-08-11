@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef} from 'react';
 import '../App.scss';
 import TextTransition, { presets } from 'react-text-transition';
 import { useLocation } from 'react-router-dom';
-import ContactForm from '../Components/contactForm1';
+import ContactForm from '../Components/contactForm.js';
 import muguet from '../assets/video/muguet.mp4'
 
 
@@ -48,7 +48,7 @@ const Formulaire = ({infos}) => {
           {/* PARTIE DROITE */}
           <div className='grid-col2-asym'>
             <div className='formulaire'>
-              <ContactForm />
+              <ContactForm lang={Lang} />
             </div>
             <div id='muguet'>
               <video id='muguetvideo' autoPlay loop muted playsInline>
