@@ -56,17 +56,12 @@ const handleSubmitQuestion = (props) => {
   };
 
 
-// Définir l'URL du backend en fonction de l'environnement
-  const baseURL = window.location.hostname === 'localhost' 
-    ? 'http://localhost:3001/send-email' 
-    : 'https://www.marialoudiaz.fr/send-email';
-
 const handleSubmit = async (e) => {
 	e.preventDefault();
 	setSubmitting(true);
   try {
 // Envoi des données au backend
-await axios.post(baseURL, {
+await axios.post('https://www.marialoudiaz.fr/send-email', {
 	to: process.env.EMAIL_RECEIVER, // Mettez la destination de l'e-mail ici
 	subject: 'Prise de contact via le formulaire',
 	prenom : emailData.prenom,
