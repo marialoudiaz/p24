@@ -727,6 +727,10 @@ textarea{
     }
 }
 
+#second-h2{
+  font-size: 4rem;
+}
+
 .gridHover{
   position: absolute;
   z-index: 2;
@@ -1028,6 +1032,9 @@ textarea{
   }
   .grid-col3-item p{
       width: 80vw;
+  }
+  #second-h2{
+    font-size: 2rem;
   }
   }
   @media screen and (max-width: 425px) {
