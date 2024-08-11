@@ -53,11 +53,11 @@
   --titres: 5em; ///500 + inknut
   --titresM : 3em;
   --sous-titres: 1.5em; //500 + inknut
-  --sous-titresM: 1.5em; //500 + inknut
+  --sous-titresM: 1.2em; //500 + inknut
   --body: 1.2em; // 400 inknut
-  --typewriter: 1.7rem;
-  --typewriterM: 1.3rem;
-  --typewriterM2: 1.2rem;
+  --typewriter: 1.5rem;
+  --typewriterM: 1.2rem;
+  --typewriterM2: .9rem;
   --bodyM: 1em; // 400 inknut
   --animate-delay: 7s;
 }
@@ -1046,9 +1046,6 @@ textarea{
     .grid-col3-item img {
       width: 4rem;
     }
-    .grid-col3-item h3 {
-      font-size: calc(var(--sous-titres) / 2) !important;
-    }
   #citation-form h1,
   #citation-form h2,
   #citation-form h3 {
@@ -1078,6 +1075,9 @@ textarea{
   }
   .col-titre{
     flex-direction: column;
+  }
+  .Typewriter{
+    font-size: var(--typewriterM);
   }
   } 
   @media screen and (max-width: 375px) {
