@@ -10,7 +10,7 @@ const port = process.env.PORT || 3001; // Utiliser le port 3000 si PORT n'est pa
 
 app.use(cors({
   origin: '*', // Autoriser toutes les origines
-  methods: ['GET', 'POST'], // Autoriser les méthodes GET et POST
+  methods: ['POST'], // Autoriser les méthodes GET et POST
   allowedHeaders: ['Content-Type', 'Authorization'] // Autoriser les en-têtes spécifiques
 }));
 

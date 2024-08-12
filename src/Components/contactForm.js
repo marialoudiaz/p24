@@ -5,8 +5,6 @@ import axios from 'axios';
 
 const ContactForm = (lang) => {
 
-console.log('infox',lang);
-console.log('lang', lang.lang);
 // Recevoir & envoyer infos
 const location = useLocation();
 const { infosComposants } = location.state;
@@ -55,6 +53,9 @@ const handleSubmitQuestion = (props) => {
   }
   };
 
+	const headers = {
+		'Content-Type': 'application/json'
+	};
 
 const handleSubmit = async (e) => {
 	e.preventDefault();
@@ -70,11 +71,11 @@ await axios.post('https://www.marialoudiaz.fr/send-email', {
 // body: JSON.stringify(emailData),
 });
 
-setMessage(isEnglish ? yesmessage[0] : yesmessage[1]);
+setMessage(isEnglish=='EN' ? yesmessage[0] : yesmessage[1]);
 
 } catch (error) {
 	console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
-	setMessage(isEnglish ? nomessage[0] : nomessage[1]);
+	setMessage(isEnglish=='EN' ? nomessage[0] : nomessage[1]);
 	
 } finally {
 	setSubmitting(false);
