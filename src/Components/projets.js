@@ -164,7 +164,7 @@ function Projets() {
             "Le projet vise à faciliter une communication culinaire universelle et interculturelle. Bien que l'inclusivité des genres soit intégrée, ce n'est pas l'objectif principal du projet mais un aspect évident & crucial de la communication."
             ],
       link: ['Discover',"Découvrir"],
-      onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank']      
+      onClick: ['', '_blank']      
     },
     //vb
     {
@@ -230,7 +230,7 @@ function Projets() {
         "Ce projet vise à cartographier visuellement la ville à travers des dessins détaillés et des motifs urbains uniques identifiables sur les différentes façades et devantures de portes."
       ],
       link: ['Discover',"Découvrir"],
-      onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
+      onClick: ['', '_blank']
     },
   ];
   // Récupérer comme props l'objet (projet) au clic sur bouton 'découvrir'
