@@ -20,6 +20,7 @@
     "express": "^4.19.2",
     "fortawesome": "^0.0.1-security",
     "gsap": "^3.12.5",
+    "mailing-core": "^1.1.0",
     "nodemailer": "^6.9.14",
     "react": "^18.3.1",
     "react-app-rewired": "^2.2.1",
@@ -63,6 +64,7 @@
   },
   "devDependencies": {
     "crypto-browserify": "^3.12.0",
+    "mailing": "^1.1.0",
     "os-browserify": "^0.3.0",
     "path-browserify": "^1.0.1"
   }

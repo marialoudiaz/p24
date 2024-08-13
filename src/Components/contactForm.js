@@ -2,8 +2,11 @@ import React, { useState,useRef, useEffect } from 'react';
 import '../App.scss';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
+import sendMail from '../emails';  // Importez votre configuration mailing
+import ContactEmail from '../emails/ContactEmail';  // Importez votre template d'email
 
-const ContactForm = (lang) => {
+
+const ContactForm = ({lang}) => {
 
 // Recevoir & envoyer infos
 const location = useLocation();
@@ -53,30 +56,25 @@ const handleSubmitQuestion = (props) => {
   }
   };
 
-	const headers = {
-		'Content-Type': 'application/json'
-	};
 
 const handleSubmit = async (e) => {
 	e.preventDefault();
 	setSubmitting(true);
   try {
 // Envoi des données au backend
-await axios.post('https://www.marialoudiaz.fr/send-email', {
-	to: process.env.EMAIL_RECEIVER, // Mettez la destination de l'e-mail ici
+await sendMail({
 	subject: 'Prise de contact via le formulaire',
-	prenom : emailData.prenom,
-	email: emailData.email,
-	message: emailData.message,
+	to: process.env.EMAIL_RECEIVER, // Mettez la destination de l'e-mail ici
+	component: <ContactEmail {...emailData} />
+	// prenom : emailData.prenom,
+	// email: emailData.email,
+	// message: emailData.message,
 // body: JSON.stringify(emailData),
 });
-
 setMessage(isEnglish=='EN' ? yesmessage[0] : yesmessage[1]);
-
 } catch (error) {
 	console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
 	setMessage(isEnglish=='EN' ? nomessage[0] : nomessage[1]);
-	
 } finally {
 	setSubmitting(false);
 	setEmailData({
