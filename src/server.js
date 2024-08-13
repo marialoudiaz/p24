@@ -29,18 +29,20 @@ app.post('/send-email', async (req, res) => {
 	const { prenom, email, message } = req.body;
 	const transporter = nodemailer.createTransport({
 		// service: 'gmail',
-		host: 'ssl0.ovh.net',
-		port: 587, // Utilisation du port 465 pour SSL
+		host: 'smtp.resend.com',
 		secure: false, // Indique que nous utilisons SSL
+		port: 587, // Utilisation du port 465 pour SSL
 		auth: {
-		user: process.env.EMAIL_RECEIVER, // Utiliser l'e-mail fourni par l'utilisateur
-		pass: process.env.EMAIL_PASS,
+			user: resend, // Utiliser l'e-mail fourni par l'utilisateur
+			pass: process.env.EMAIL_PASS,
 		},
 	});
+
+
 	const mailOptions = {
 		from: email, // Utiliser l'e-mail de l'expéditeur fourni par l'utilisateur
 		to: process.env.EMAIL_RECEIVER, // Utiliser l'e-mail du destinataire fourni ou par défaut
-		// subject: subject || 'Prise de contact via le formulaire', // Utiliser le sujet fourni ou par défaut
+		subject: 'Prise de contact via le formulaire',
 		text: `Prénom: ${prenom}\nEmail: ${email}\nMessage: ${message}`,
 	};
 	try {

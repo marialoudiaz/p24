@@ -2,11 +2,8 @@ import React, { useState,useRef, useEffect } from 'react';
 import '../App.scss';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
-import sendMail from '../emails';  // Importez votre configuration mailing
-import ContactEmail from '../emails/ContactEmail';  // Importez votre template d'email
 
-
-const ContactForm = ({lang}) => {
+const ContactForm = (lang) => {
 
 // Recevoir & envoyer infos
 const location = useLocation();
@@ -14,18 +11,21 @@ const { infosComposants } = location.state;
 
 
 // EN OU FR pour messages erreurs
-const isEnglish = lang.lang
+			const isEnglish = lang.lang
+			const yesmessage = ['See you soon ! 🌟','Au plaisir de vous rencontrer ! 🌟'];
+			const nomessage = ['Please, try again soon :)','Veuillez réeesayer ultérieurement :)'];
 
-const [emailData, setEmailData] = useState({
+
+	const [emailData, setEmailData] = useState({
 		prenom: '',
 		email: '',
 		message: '',
-});
-const [message, setMessage] = useState('');
-const [submitting, setSubmitting] = useState(false);
-const [question, setQuestion] = useState('');
-const [acceptTerms, setAcceptTerms] = useState(false); // Ajoutez l'état pour la case à cocher
-const variableTags = infosComposants[0].form;
+	});
+	const [message, setMessage] = useState('');
+	const [submitting, setSubmitting] = useState(false);
+	const [question, setQuestion] = useState('');
+	const [acceptTerms, setAcceptTerms] = useState(false); // Ajoutez l'état pour la case à cocher
+	const variableTags = infosComposants[0].form;
 
 // Extraire l'identifiant de l'URL
 const id = location.pathname.split('/').pop();
@@ -53,29 +53,39 @@ const handleSubmitQuestion = (props) => {
   }
   };
 
+	const headers = {
+		'Content-Type': 'application/json'
+	};
 
-	const handleSubmit = async (e) => {
-    e.preventDefault();
-    setSubmitting(true);
-    try {
-      await sendMail({
-        subject: 'Prise de contact via le formulaire',
-        to: process.env.EMAIL_RECEIVER,
-        userEmail: emailData.email, // Passe l'email de l'utilisateur ici
-        text: `Prénom: ${emailData.prenom}\nEmail: ${emailData.email}\nMessage: ${emailData.message}`,
-      });
-      setMessage(lang.lang === 'EN' ? 'See you soon! 🌟' : 'Au plaisir de vous rencontrer! 🌟');
-    } catch (error) {
-      setMessage(lang.lang === 'EN' ? 'Please, try again soon :)' : 'Veuillez réessayer ultérieurement :)');
-    } finally {
-      setSubmitting(false);
-      setEmailData({
-        prenom: '',
-        email: '',
-        message: '',
-      });
-    }
-  };
+const handleSubmit = async (e) => {
+	e.preventDefault();
+	setSubmitting(true);
+  try {
+// Envoi des données au backend
+await axios.post('https://www.marialoudiaz.fr/send-email', {
+	to: process.env.EMAIL_RECEIVER, // Mettez la destination de l'e-mail ici
+	subject: 'Prise de contact via le formulaire',
+	prenom : emailData.prenom,
+	email: emailData.email,
+	message: emailData.message,
+// body: JSON.stringify(emailData),
+});
+
+setMessage(isEnglish=='EN' ? yesmessage[0] : yesmessage[1]);
+
+} catch (error) {
+	console.error('Erreur lors de l\'envoi de l\'e-mail:', error);
+	setMessage(isEnglish=='EN' ? nomessage[0] : nomessage[1]);
+	
+} finally {
+	setSubmitting(false);
+	setEmailData({
+	prenom: '',
+	email: '',
+	message: '',
+});
+}
+};
 
 
 return (
