@@ -30,10 +30,10 @@ app.post('/send-email', async (req, res) => {
 	const transporter = nodemailer.createTransport({
 		// service: 'gmail',
 		host: 'smtp.resend.com',
-		secure: false, // Indique que nous utilisons SSL
-		port: 587, // Utilisation du port 465 pour SSL
+		secure: true, // Indique que nous utilisons SSL
+		port: 465, // Utilisation du port 465 pour SSL
 		auth: {
-			user: resend, // Utiliser l'e-mail fourni par l'utilisateur
+			user: 'resend', // Utiliser l'e-mail fourni par l'utilisateur
 			pass: process.env.EMAIL_PASS,
 		},
 	});
