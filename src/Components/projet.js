@@ -36,6 +36,7 @@ function Projet() {
       fleWrap: 'nowrap',
       margin: '.2rem 0rem 0rem .3rem', 
       width: '50px',
+      height:'auto',
       transition: 'transform 2s ease', // Adjust the duration and easing as needed
     }
     // Ouvrir le lien

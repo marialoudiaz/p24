@@ -50,8 +50,8 @@
   --non-active: white;
 
   /*TAILLES (mobile - soustraire 5 )*/
-  --titres: 5em; ///500 + inknut
-  --titresM : 3em;
+  --titres: 4em; ///500 + inknut
+  --titresM : 2.5em;
   --sous-titres: 1.5em; //500 + inknut
   --sous-titresM: 1.2em; //500 + inknut
   --body: 1.2em; // 400 inknut
@@ -507,6 +507,31 @@ border: 1px solid rgba(39, 34, 33, 0.384);
   font-size: var(--typewriter);
 }
 
+  // En savoir + projets
+  @media screen and (max-width: 768px) {
+    .short-text {
+      display: block;
+    }
+    .full-text {
+      display: none;
+    }
+    .full-text.show {
+      display: block;
+    }
+    .en-savoir-plus {
+      display: inline-block;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .en-savoir-plus {
+      display: none;
+    }
+    .full-text {
+      display: block;
+    }
+  }
+
 
 
 /*CONTACT ROUE*/
@@ -727,7 +752,7 @@ textarea{
     }
 }
 
-#second-h2{
+.second-h2{
   font-size: 4rem;
 }
 
@@ -1033,7 +1058,7 @@ textarea{
   .grid-col3-item p{
       width: 80vw;
   }
-  #second-h2{
+  .second-h2{
     font-size: 2rem;
   }
   }
@@ -1086,7 +1111,7 @@ textarea{
   .Typewriter{
     font-size: var(--typewriterM);
   }
-  #second-h2{
+  .second-h2{
     font-size: 1.7rem;
   }
   } 
@@ -1194,3 +1219,7 @@ textarea{
   font-size: 2rem;
 }
   } 
+
+
+
+

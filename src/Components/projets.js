@@ -516,6 +516,22 @@ function Projets() {
   };
 
 
+// EN savoir + description projet
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [showFullText, setShowFullText] = useState(false);
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 768);
+  };
+  const toggleFullText = () => {
+    setShowFullText(!showFullText);
+  };
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 return (
 
 <div className='section'>
@@ -551,13 +567,27 @@ return (
 
   {/* //Div 2 avec le texte */}       
   <div className='project-description' ref={descriptionRef}>
-    <h2 className='project-title'>{projectsArr[index].baseline[baselineIndex]}</h2>
-    <p className='project-txt' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
-      {projectsArr[index].text[textIndex]}
-    </p>
-    <p className='project-txt' style={{ paddingRight: '3rem' }}>
-      {projectsArr[index].text2[text2Index]}
-    </p>
+  <h2 className='project-title'>{projectsArr[index].baseline[baselineIndex]}</h2>
+
+    {/* <p className='project-txt' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>{projectsArr[index].text[textIndex]}</p>
+    <p className='project-txt' style={{ paddingRight: '3rem' }}> {projectsArr[index].text2[text2Index]} */}
+
+  {/* Texte pour mobile avec bouton "En savoir plus" */}
+  <p className='project-txt short-text' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
+    {isMobile && !showFullText
+      ? `${projectsArr[index].text[textIndex].slice(0, 200)}...`
+      : projectsArr[index].text[textIndex]}
+  </p>
+ 
+  {/* Texte complet pour les grands écrans et mobiles avec "Afficher plus" activé */}
+  <p className={`project-txt full-text ${isMobile && showFullText ? 'show' : ''}`} style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>
+    {projectsArr[index].text2[text2Index]}
+  </p>
+  {isMobile && (
+    <div className='btn-black en-savoir-plus' onClick={toggleFullText} style={{ marginLeft: '3rem' }}>
+      <p>{showFullText ? 'Afficher moins' : 'En savoir plus'}</p>
+    </div>
+  )}
 
     <div className='flex-wrap' style={{ flexWrap: 'nowrap' }}>
       {/* Aller à la page de description */}
