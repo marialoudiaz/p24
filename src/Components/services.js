@@ -3,8 +3,6 @@ import {useRef, useState, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
 import '../App.scss';
 
-import print from '../assets/icons/titres/print-gold.png';
-import web from '../assets/icons/titres/web-gold.png';
 import icon1 from '../assets/icons/services/ordi1-or.png';
 import icon2 from '../assets/icons/services/ordi-infini-or.png';
 import icon3 from '../assets/icons/services/ordi-euro-or.png';
@@ -28,7 +26,7 @@ const Services = ({infos}) => {
 
   // Définir les icônes
   const icons = [
-    icon1, icon2, icon3, icon4, icon5, icon6, icon7,
+    icon1, icon2, icon3, icon5, icon6, icon7,
     icon8, icon9, icon10, icon11, icon12, icon13
   ];
   // Combiner les icônes et les services
@@ -51,7 +49,7 @@ const Services = ({infos}) => {
         <h3 style={{width:'70%'}}>{soustitre}</h3>
         {logiciels && (
               <div className='flex-wrap'>
-                {logiciels.slice(0, 12).map((logiciel, index) => (
+                {logiciels.slice(0, 11).map((logiciel, index) => (
                   <img key={index} src={logiciel}
                   />
                 ))}

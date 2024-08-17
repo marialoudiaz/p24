@@ -1,5 +1,6 @@
 import React, { useRef, useState, useEffect} from 'react';
 import '../App.scss';
+import Typewriter from 'typewriter-effect';
 import videoReveal1 from '../assets/video/videos-introductives/D-INDEP-FR.mp4';
 import videoReveal2 from '../assets/video/videos-introductives/M-INDEP-FR.mp4';
 import videoReveal3 from '../assets/video/videos-introductives/D-STUDIO-FR.mp4';
@@ -25,9 +26,27 @@ const VideoReveal = ({infos}) => {
   // Assignez les vidéos dynamiquement
   const ordi = videoMap[infos.videoOrdi] || videoReveal1; // Valeur par défaut au cas où videoOrdi n'est pas dans le map
   const tel = videoMap[infos.videoTel] || videoReveal2; // Valeur par défaut au cas où videoTel n'est pas dans le map
-
+  const greetings = infos.presentation[0];
+  const presentation = infos.presentation;
+  
 return (
 <>
+    <div className='section' style={{marginTop:'10rem'}}>
+      <h2>{greetings}</h2>
+      
+      <Typewriter
+        options={{
+          strings: [infos.presentation.join(' ')],
+          autoStart: true,
+          loop: false,
+        }}
+      />
+      
+      {/* {presentation.slice(1,4).map((item, index) => (
+        <p key={index}>{item}</p>
+      ))} */}
+    </div>
+    
     <div className='film'>
       <div className='background-video'>
         <video className='desktop' autoPlay loop muted playsInline>
