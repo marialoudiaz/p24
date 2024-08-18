@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect} from 'react';
 import '../App.scss';
 import Typewriter from 'typewriter-effect';
+import Marquee from "react-fast-marquee";
 import videoReveal1 from '../assets/video/videos-introductives/D-INDEP-FR.mp4';
 import videoReveal2 from '../assets/video/videos-introductives/M-INDEP-FR.mp4';
 import videoReveal3 from '../assets/video/videos-introductives/D-STUDIO-FR.mp4';
@@ -9,6 +10,7 @@ import videoReveal5 from '../assets/video/videos-introductives/D-INDEP-EN.mp4';
 import videoReveal6 from '../assets/video/videos-introductives/M-INDEP-EN.mp4';
 import videoReveal7 from '../assets/video/videos-introductives/D-STUDIO-EN.mp4';
 import videoReveal8 from '../assets/video/videos-introductives/M-STUDIO-EN.mp4';
+import thumbnailSrc from '../assets/projets/thumbnail.png';
 
 
 const VideoReveal = ({infos}) => {
@@ -27,34 +29,95 @@ const VideoReveal = ({infos}) => {
   const ordi = videoMap[infos.videoOrdi] || videoReveal1; // Valeur par défaut au cas où videoOrdi n'est pas dans le map
   const tel = videoMap[infos.videoTel] || videoReveal2; // Valeur par défaut au cas où videoTel n'est pas dans le map
   const greetings = infos.presentation[0];
-  const presentation = infos.presentation;
+
+  const videoRef = useRef(null);
+  const videoRefMob = useRef(null);
+  // Lancer la video en mode plein écran
+  const handlePlayVideo = () => {
+  const videoElement = videoRef.current;
+      if (videoElement.requestFullscreen) {
+        videoElement.requestFullscreen();
+      } else if (videoElement.mozRequestFullScreen) { // Firefox
+        videoElement.mozRequestFullScreen();
+      } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+        videoElement.webkitRequestFullscreen();
+      } else if (videoElement.msRequestFullscreen) { // IE/Edge
+        videoElement.msRequestFullscreen();
+      }
+      // Une fois en plein écran, jouer la vidéo
+      videoElement.play();
+  };
+  const handlePlayVideoMob = () => {
+    const videoElement = videoRef.current;
+        if (videoElement.requestFullscreen) {
+          videoElement.requestFullscreen();
+        } else if (videoElement.mozRequestFullScreen) { // Firefox
+          videoElement.mozRequestFullScreen();
+        } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          videoElement.webkitRequestFullscreen();
+        } else if (videoElement.msRequestFullscreen) { // IE/Edge
+          videoElement.msRequestFullscreen();
+        }
+        // Une fois en plein écran, jouer la vidéo
+        videoElement.play();
+    };
+
+  // Couper la video
+ 
   
 return (
 <>
-    <div className='section' style={{marginTop:'10rem'}}>
-      <h2>{greetings}</h2>
-      
-      <Typewriter
-        options={{
-          strings: [infos.presentation.join(' ')],
+    <div className='section' style={{marginTop:'10rem', textAlign:'center'}}>
+
+    <div id='typewriter-homepage'>
+      <h1><b>{greetings}</b></h1>
+      <Typewriter 
+          options={{
+          strings: [infos.presentation.slice(1,3).join(' ')],
           autoStart: true,
-          loop: false,
+          loop: true,
+          delay: 90,
+          pauseFor: 10000,
         }}
-      />
-      
-      {/* {presentation.slice(1,4).map((item, index) => (
-        <p key={index}>{item}</p>
-      ))} */}
+      /> 
+      </div>
+      <Marquee speed='30' style={{marginTop:'5rem'}}>
+      <h2 className='syne-bold'>{infos.expertise+' '}</h2> 
+      </Marquee>
     </div>
     
     <div className='film'>
       <div className='background-video'>
-        <video className='desktop' autoPlay loop muted playsInline>
-          <source src={ordi} type="video/mp4" />
-        </video>
-        <video className='mobile' autoPlay loop muted playsInline>
-          <source src={tel} type="video/mp4" />
-        </video>
+
+        <div className='desktop'  style={{position:'relative'}}>
+          <video 
+            ref={videoRef}
+            muted 
+            playsInline
+            poster={thumbnailSrc} // Définit l'image de vignette
+            onClick={handlePlayVideo}
+            controls={false}
+          >
+            <source src={ordi} type="video/mp4" />
+          </video>
+          <div className='btn-black' style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} onClick={handlePlayVideo}><p>{infos.discover}</p></div>  
+        </div>
+
+        <div  className='mobile' style={{position:'relative'}}>
+          <video 
+            ref={videoRefMob}
+            muted 
+            playsInline
+            poster={thumbnailSrc} // Définit l'image de vignette
+            onClick={handlePlayVideo}
+            controls={false}
+          >
+            <source src={tel} type="video/mp4" />
+          </video>
+          <div className='btn-black' style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} onClick={handlePlayVideoMob}><p>{infos.discover}</p></div>  
+        </div>
+        
+      
       </div>
     </div> 
 </>

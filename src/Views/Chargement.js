@@ -48,8 +48,11 @@ const Chargement = () =>{
       Lang: 'FR',
       videoOrdi: 'videoReveal1',
       videoTel: 'videoReveal2',
+      discover: 'découvrir les projets en vidéo',
+      location: ['actuellement à','melbourne'], // location
       presentation: ['Bonjour,', "Je suis Maria Lou Diaz, directeur artistique spécialisé dans le branding.", "Du développement web au design imprimé, j'aide les travailleurs indépendants à construire leur identité visuelle et à lancer leur projet."],
-      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','site vitrine','site multipages','site marchand','vidéos & photos','réseaux sociaux','création de contenu','identité graphique', 'logotype','signalétique','packaging','illustration','affiche'],
+      expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
+      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','site vitrine','site multipages','site marchand','vidéos & photos','réseaux sociaux','articles de blog','identité graphique', 'logotype','signalétique','packaging','illustration','affiche'],
       approche: [
         'Mon approche',
         'Créer, c\'est rendre visible l\'invisible.',
@@ -79,8 +82,11 @@ const Chargement = () =>{
       Lang: 'FR',
       videoOrdi: 'videoReveal3',
       videoTel: 'videoReveal4',
+      location: ['actuellement à','melbourne'], // location
+      discover: 'découvrir le showréel',
       presentation: ['Bonjour,', "Je suis Maria Lou Diaz, directeur artistique spécialisé dans le branding.", "Du développement web au design imprimé, j'aide les travailleurs indépendants à construire leur identité visuelle et à lancer leur projet.", "Je travaille aussi avec des studios."],
-      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','développement fullstack JS', 'e-commerce','vidéo | photo | motion','réseaux sociaux','copywriting','branding','logotype','signalétique','packaging','illustration','affiche'],
+      expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
+      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','développement fullstack JS', 'e-commerce','vidéo | photo | motion','réseaux sociaux','rédaction','identité graphique','logotype','signalétique','packaging','illustration','affiche'],
       logiciels: [a1,a2,a3,a4,a5,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18],
       approche: [
         'Mon approche',
@@ -110,8 +116,11 @@ const Chargement = () =>{
       Lang: 'EN', //aide pour afficher projets en FR ou EN
       videoOrdi: 'videoReveal5',
       videoTel: 'videoReveal6',
+      discover: 'discover the showreel',
+      location: ['currently in','melbourne'], // location
       presentation: ['Hello,', "I am Maria Lou Diaz, art director specialized in branding.", "From web development to print design, I help independent workers build their visual identity and launch their project."],
-      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','showcase website', 'multipage website', 'e-commerce website','videos & photos', 'social medias', 'content creation', 'graphic identity', 'logotype', 'signage', 'packaging', 'illustration', 'poster'],
+      expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
+      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','showcase website', 'multipage website', 'e-commerce website','videos & photos', 'social medias', 'blog articles', 'visual identity', 'logotype', 'signage', 'packaging', 'illustration', 'poster'],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
 'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait1],
       deroule:['flex','Your project',"It's a tailor-made collaboration to bring it to life. Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","During a video call, we discuss your project and establish the strategy you need : together.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
@@ -126,8 +135,11 @@ const Chargement = () =>{
       Lang: 'EN', //aide pour afficher projets en FR ou EN
       videoOrdi: 'videoReveal7',
       videoTel: 'videoReveal8',
+      discover: 'discover the showreel',
+      location: ['currently in','melbourne'], // location
       presentation: ['Hello,', "I am Maria Lou Diaz, art director specialized in branding.", "From web development to print design, I help independent workers build their visual identity and launch their project.","I also work with studios."],
-      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','fullstack JS','e-commerce','video | photo | motion','social medias','copywriting','branding','logotype','signage','packaging','illustration','poster'],
+      expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
+      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','fullstack JS','e-commerce','video | photo | motion','social medias','writing','visual identity','logotype','signage','packaging','illustration','poster'],
       logiciels: [a1,a2,a3,a4,a5,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
         'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait2],
@@ -139,10 +151,10 @@ const Chargement = () =>{
 
 // Envoyer les informations correspondantes aux composants
   const selectMenu = (arrayRecue) => {
-  // envoyer l'array correspondante
-  const infosComposants = arrayRecue;
-  const id = infosComposants[0].ids;
-  navigate(`/homepage/${id}`, { state: { infosComposants } });
+    // envoyer l'array correspondante
+    const infosComposants = arrayRecue;
+    const id = infosComposants[0].ids;
+    navigate(`/homepage/${id}`, { state: { infosComposants } });
 };
   
   return (

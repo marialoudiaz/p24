@@ -10,6 +10,7 @@ const Projets = lazy(() => import('../Components/projets.js'));
 const Deroule = lazy(() => import('../Components/deroule.js'));
 const Formulaire = lazy(() => import('../Components/formulaire'));
 const Monogramme = lazy(() => import( '../Components/monogramme.js'));
+const Footer = lazy(() => import( '../Components/footer.js'));
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
     <Deroule infos={infos}/>
     <Formulaire infos={infos}/>
     <Monogramme />
+    <Footer />
   </div>
 
   </>
