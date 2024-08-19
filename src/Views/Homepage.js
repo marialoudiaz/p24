@@ -9,6 +9,7 @@ const Approche = lazy(() => import('../Components/approche.js'));
 const Projets = lazy(() => import('../Components/projets.js'));
 const Deroule = lazy(() => import('../Components/deroule.js'));
 const Formulaire = lazy(() => import('../Components/formulaire'));
+const Citation = lazy(() => import( '../Components/citation.js'));
 const Monogramme = lazy(() => import( '../Components/monogramme.js'));
 const Footer = lazy(() => import( '../Components/footer.js'));
 
@@ -36,6 +37,7 @@ const App = () => {
     <Approche infos={infos}/>
     <Projets />
     <Deroule infos={infos}/>
+    <Citation />
     <Formulaire infos={infos}/>
     <Monogramme />
     <Footer />

@@ -30,39 +30,50 @@ const VideoReveal = ({infos}) => {
   const tel = videoMap[infos.videoTel] || videoReveal2; // Valeur par défaut au cas où videoTel n'est pas dans le map
   const greetings = infos.presentation[0];
 
-  const videoRef = useRef(null);
-  const videoRefMob = useRef(null);
-  // Lancer la video en mode plein écran
-  const handlePlayVideo = () => {
-  const videoElement = videoRef.current;
-      if (videoElement.requestFullscreen) {
-        videoElement.requestFullscreen();
-      } else if (videoElement.mozRequestFullScreen) { // Firefox
-        videoElement.mozRequestFullScreen();
-      } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-        videoElement.webkitRequestFullscreen();
-      } else if (videoElement.msRequestFullscreen) { // IE/Edge
-        videoElement.msRequestFullscreen();
-      }
-      // Une fois en plein écran, jouer la vidéo
-      videoElement.play();
-  };
-  const handlePlayVideoMob = () => {
+  const desktopVideoRef = useRef(null);
+  const mobileVideoRef = useRef(null);
+
+  // Lancer la video en mode plein écran - videoRef stands for both refs (desktop+mobile)
+  const handlePlayVideo = (videoRef) => {
     const videoElement = videoRef.current;
-        if (videoElement.requestFullscreen) {
-          videoElement.requestFullscreen();
-        } else if (videoElement.mozRequestFullScreen) { // Firefox
-          videoElement.mozRequestFullScreen();
-        } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          videoElement.webkitRequestFullscreen();
-        } else if (videoElement.msRequestFullscreen) { // IE/Edge
-          videoElement.msRequestFullscreen();
-        }
-        // Une fois en plein écran, jouer la vidéo
-        videoElement.play();
-    };
+    if (videoElement.requestFullscreen) {
+      videoElement.requestFullscreen();
+    } else if (videoElement.mozRequestFullScreen) { // Firefox
+      videoElement.mozRequestFullScreen();
+    } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+      videoElement.webkitRequestFullscreen();
+    } else if (videoElement.msRequestFullscreen) { // IE/Edge
+      videoElement.msRequestFullscreen();
+    }
+    // Lecture de la vidéo en plein écran
+    videoElement.play();
+  };
 
   // Couper la video
+  const resetVideoOnFullscreenExit = (videoRef) => {
+    const videoElement = videoRef.current;
+    const handleFullscreenChange = () => {
+      if (
+        !document.fullscreenElement &&
+        !document.webkitFullscreenElement &&
+        !document.mozFullScreenElement &&
+        !document.msFullscreenElement
+      ) {
+        videoElement.pause();
+        videoElement.currentTime = 0;
+        videoElement.load()
+      }
+    };
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+    document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+    document.addEventListener('MSFullscreenChange', handleFullscreenChange);
+  };
+
+  useEffect(() => {
+    resetVideoOnFullscreenExit(desktopVideoRef);
+    resetVideoOnFullscreenExit(mobileVideoRef);
+  }, []);
  
   
 return (
@@ -91,7 +102,7 @@ return (
 
         <div className='desktop'  style={{position:'relative'}}>
           <video 
-            ref={videoRef}
+            ref={desktopVideoRef}
             muted 
             playsInline
             poster={thumbnailSrc} // Définit l'image de vignette
@@ -100,12 +111,16 @@ return (
           >
             <source src={ordi} type="video/mp4" />
           </video>
-          <div className='btn-black' style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} onClick={handlePlayVideo}><p>{infos.discover}</p></div>  
+          <div 
+            className='btn-black' 
+            style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
+            onClick={() => handlePlayVideo(desktopVideoRef)}>
+              <p>{infos.discover}</p></div>  
         </div>
 
         <div  className='mobile' style={{position:'relative'}}>
           <video 
-            ref={videoRefMob}
+            ref={mobileVideoRef}
             muted 
             playsInline
             poster={thumbnailSrc} // Définit l'image de vignette
@@ -114,7 +129,11 @@ return (
           >
             <source src={tel} type="video/mp4" />
           </video>
-          <div className='btn-black' style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} onClick={handlePlayVideoMob}><p>{infos.discover}</p></div>  
+          <div 
+            className='btn-black' 
+            style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
+            onClick={() => handlePlayVideo(mobileVideoRef)}>
+              <p>{infos.discover}</p></div>  
         </div>
         
       
