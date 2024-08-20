@@ -5,8 +5,10 @@ import '../App.scss';
 import Header from '../Components/header.js';
 import medaillon from '../assets/logo/medaillon.png';
 // CAROUSEL
-import prev from '../assets/icons/interface/icon-eye-1.png';
-import next from '../assets/icons/interface/icon-eye-2.png';
+import prev from '../assets/icons/interface/icon-eye-1-b.png';
+import next from '../assets/icons/interface/icon-eye-2-b.png';
+import { FiArrowDownRight } from "react-icons/fi";
+
 
 
 function Projet() {
@@ -54,7 +56,8 @@ return (
 
       {/* VIDEO OPENING -- full width > moitié au scroll */}
       <div className='film'>
-        <div className='background-video'>
+
+        <div className='background-video' id='bg-video-projet'>
           {isHTTPSURL(projectDescription.videoDesktop) ? (
               <iframe 
                 src={projectDescription.videoDesktop}
@@ -89,102 +92,108 @@ return (
             </video>
           )}
         </div>
+        <div className='background-video-title'>
+          <div>
+                <h3>{projectDescription.baseline[langIndex]}</h3>
+                <h2>{projectDescription.title}</h2>
+          </div>
+          <div>
+            <FiArrowDownRight color='white'/>
+            <FiArrowDownRight color='white'/>
+            <FiArrowDownRight color='white'/>
+            <p>{projectDescription.discover[langIndex]}</p>
+          </div>
+        </div>
       </div>  
 
-      <div  className='section' id='projet' style={{marginBottom: '5rem', marginTop: '5rem'}}>
-        
-        {/* SECTION 1 - FICHE INFOS */}
-        <div className='grid-col2-projet'>
+      <div  className='section' id='projet' style={{marginBottom: '5rem', marginTop: '15rem'}}>
 
-          <div className='grid-col2-img' style={{height:'auto'}}>
-            <img src={projectDescription.image} alt="image-clef du projet" style={{backgroundPosition:'center'}}/>
+       {/* DIV INFOS*/}
+       <div className='projet-infos'>
+          <div>
+            <p>Client</p>
+            <p>{projectDescription.client}</p>
+          </div>
+          <div>
+            <p>Expertises</p>
+            {projectDescription.categories[langIndex].map((categorie, index) => (
+              <p style={{fontWeight:'600'}} key={index}>{categorie}</p>
+            ))}
           </div>
 
-          <div className='flex-col' style={{ justifyContent: 'center', alignItems:'center', textAlign:'center'}}>
-            <img src={medaillon} style={{ maxWidth: '10%', alignSelf: 'center' }} alt="Medaillon"/>
-            <h2>{projectDescription.title}</h2>
-
-            {/* FONCTION MAP POUR INFOS */}
-            <div className='flex-wrap' style={{width:'auto', justifyContent:'center'}}>
-              {projectDescription.infos[langIndex].map((info, index) => (
-                <b key={index}><p>{info}</p></b>
-              ))}
-            </div>
-
-            {/* FONCTION MAP POUR CATEGORIES */}
-            <div className='flex-wrap' style={{width:'auto', justifyContent:'center'}}>
-              {projectDescription.categories[langIndex].map((categorie, index) => (
-                <p className='pill' key={index}>{categorie}</p>
-              ))}
-            </div>
-
-            {/* DÉCOUVRIR LE SITE */}
-            {projectDescription.onClick&&
-            <div className='flex-wrap' style={{width:'auto'}}>
-              <div id='carousel-btn-projet'>
-                <img src={imageSource} 
-                  alt='an icon of an eye to see the project description when clicked' 
+          {projectDescription.onClick&&
+          <div>
+            <>{Lang === 'FR' ? <p style={{fontWeight:'300'}}>Découvrir le site</p> : <p style={{fontWeight:'300'}}>Discover the website</p>}</>
+            <div id='carousel-btn-projet' 
                   onMouseOver={handleHover} 
                   onMouseOut={handleHoverOut} 
                   onClick={handleDiscoverClick}
+            >
+              <img src={imageSource} 
+                   alt='an icon of an eye to see the project description when clicked' 
                   style={imgStyle}
-                />
-              </div>
-              <div >
-              {Lang === 'FR' ? <p>Découvrir le site</p> : <p>Discover the website</p>}
-              </div>
+              />
+                <p>{Lang === 'FR' ? <p>Lien</p> : <p>Link</p>}</p>
             </div>
-            }
+            
 
-            {/* BESOINS */}
-            <div className='flex-col'>
-            {Lang === 'FR' ? <h3>Besoins</h3> : <h3>Needs</h3>}
-              <p>{projectDescription.besoins[langIndex][0]}</p>
-            </div>
           </div>
-        </div>
+          }
 
+          <div>
+            <p>Date</p>
+            <p>{projectDescription.infos[langIndex][0]}</p>
+          </div>
+
+       </div>
+
+       {/* DIV BESOINS */}
+       <div className='projet-infos-besoins'>
+            {Lang === 'FR' ? <h2>Besoins</h2> : <h2>Needs</h2>}
+            <p>{projectDescription.besoins[langIndex][0]}</p>
+       </div>
+
+
+
+  {/* DIV SECTIONS */}
          {/* SECTION 2 - EXPLICATION PROJET */}
-         {projectDescription.sections && projectDescription.sections.length > 0 && (
-            projectDescription.sections.map((section, index) => (
-              <div className='grid-col2-projet' key={index}>
-                <div className='flex-col' style={{ justifyContent: 'center', alignItems:'center', textAlign:'center'}}>
-                  {/* Chapitre 1 */}
-                  <h3>{section.subtitle[langIndex]}</h3>
-                  <div className='flex-wrap' style={{justifyContent:'center'}}>
-                   {section.categories && section.categories[langIndex].map((category, catIndex) => (
-                      <p className='pill' key={catIndex}>{category}</p>
-                    ))}
-                  </div>
-                  <p>{section.text[langIndex]}</p>
-                </div>
-                {/* IMAGE OU VIDEO */}
-                {section.image && (
-                  <div className='grid-col2-img-section' style={{height:'auto'}}>
+        {projectDescription.sections && projectDescription.sections.length > 0 && (
+          projectDescription.sections.map((section, index) => (
+         <>
+         {/* TITRE DE LA PREMIÈRE SECTION */}
+          <div className='projet-infos-titre'>
+            <h2>{section.subtitle[langIndex]}</h2>
+            <p>{section.text[langIndex]}</p>
+          </div>
+          {/* IMAGE OU VIDEO DE PREMIERE SECTION */}
+          <div className='projet-infos-img'>
+                  {section.image && (
                     <img src={section.image} alt="Section visual" />
-                  </div>
-                )}
-                {section.video && (
-                  <div className='grid-col2-video-section'>
-                    <video src={section.video} autoPlay loop muted playsInline>
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                )}
-              </div>
-            ))
-          )}
+                  )}
+                  {section.video && (
+                    <div className='grid-col2-video-section'>
+                      <video src={section.video} autoPlay loop muted playsInline>
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  )}
+          </div>
+        </>
+        ))
+        )}
 
+              
           {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES */}
           <div className='grid-col2'>
             {projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && (
               projectDescription.sectionsImg.map((sectionImg, index) => (
-                    <img key={index} src={sectionImg}  className={index === 2 ? 'div3' : ''} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center' 
+                    <img key={index} src={sectionImg}  className={index === 2 ? 'div3' : ''} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center', borderRadius:'20px' 
                     }} />
               ))
             )}
           </div>
-        </div>
+      </div>
+
       </div>
     </>
   );

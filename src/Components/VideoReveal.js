@@ -29,10 +29,8 @@ const VideoReveal = ({infos}) => {
   const ordi = videoMap[infos.videoOrdi] || videoReveal1; // Valeur par défaut au cas où videoOrdi n'est pas dans le map
   const tel = videoMap[infos.videoTel] || videoReveal2; // Valeur par défaut au cas où videoTel n'est pas dans le map
   const greetings = infos.presentation[0];
-
   const desktopVideoRef = useRef(null);
   const mobileVideoRef = useRef(null);
-
   // Lancer la video en mode plein écran - videoRef stands for both refs (desktop+mobile)
   const handlePlayVideo = (videoRef) => {
     const videoElement = videoRef.current;
@@ -48,7 +46,6 @@ const VideoReveal = ({infos}) => {
     // Lecture de la vidéo en plein écran
     videoElement.play();
   };
-
   // Couper la video
   const resetVideoOnFullscreenExit = (videoRef) => {
     const videoElement = videoRef.current;
@@ -69,7 +66,6 @@ const VideoReveal = ({infos}) => {
     document.addEventListener('mozfullscreenchange', handleFullscreenChange);
     document.addEventListener('MSFullscreenChange', handleFullscreenChange);
   };
-
   useEffect(() => {
     resetVideoOnFullscreenExit(desktopVideoRef);
     resetVideoOnFullscreenExit(mobileVideoRef);
@@ -79,26 +75,26 @@ const VideoReveal = ({infos}) => {
 return (
 <>
     <div className='section' style={{marginTop:'10rem', textAlign:'center'}}>
-
     <div id='typewriter-homepage'>
-      <h1><b>{greetings}</b></h1>
-      <Typewriter 
+      <div>
+        <h1><b>{greetings}</b></h1>
+        <Typewriter 
           options={{
-          strings: [infos.presentation.slice(1,3).join(' ')],
+          strings: [`${infos.presentation.slice(1,2)}`,`${infos.presentation.slice(2,3)}`],
           autoStart: true,
           loop: true,
           delay: 90,
-          pauseFor: 10000,
+          pauseFor: 1000,
         }}
-      /> 
+      /> </div>
+      <p style={{marginTop:'1rem'}}>{infos.presentation.slice(3, 4).join(' ')}</p>
       </div>
       <Marquee speed='30' style={{marginTop:'5rem'}}>
       <h2 className='syne-bold'>{infos.expertise+' '}</h2> 
       </Marquee>
     </div>
     
-    <div className='film'>
-      <div className='background-video'>
+      <div className='background-video-hp'>
 
         <div className='desktop'  style={{position:'relative'}}>
           <video 
@@ -138,7 +134,6 @@ return (
         
       
       </div>
-    </div> 
 </>
     
   );

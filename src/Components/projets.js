@@ -238,10 +238,16 @@ function Projets() {
     // onsight
     {
       id: 1,
+      client: 'Maria Lou Diaz',
+      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
       videoDesktop: onsightVideo,
       videoMobile: onsightVideo,
       image: onSightImage,
       title: 'Onsight',
+      baseline: [
+        "L'appli qui vous donne envie de prendre votre dose quotidienne de cinéma",
+        'The app that helps you remember to take your daily dose of cinema.',
+      ],
       infos: [['2023','Application mobile', 'IOS','Cinéma/série'],['2023','App', 'IOS','Cinema/serie']],
       categories: 
       [
@@ -276,10 +282,13 @@ function Projets() {
     // pascale
     {
       id: 2,
+      client: 'Pascale Laffon',
+      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
       videoDesktop: plVideo,
       videoMobile: plVideo,
       image: plImage,
       title: 'Pascale Laffon',
+      baseline:["Invincible est la douceur","Invincible is gentleness"],
       infos: [['2024', 'Site vitrine', 'Médecine holistique'],['2024', 'Showcase website', 'Holistic medicine']],
       categories: 
       [
@@ -352,10 +361,13 @@ function Projets() {
     // pile-poele
     {
       id: 3,
+      client: 'Maria Lou Diaz',
+      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
       videoDesktop: ppVideo, //video dintro
       videoMobile: ppVideo,
       image: ppImage,
       title: 'Pile-Poële',
+      baseline: ["Ouvrez-vous au monde par la cuisine.", 'Open Up to the World Through Cuisine'],
       infos: [
         ['2021>2024', 'Police d’écriture', 'Cuisine'],
         ['2021>2024', 'Font', 'Cuisine']
@@ -422,10 +434,13 @@ function Projets() {
     //vb
     {
       id: 4,
+      client: 'Valette & Berthelsen Avocats',
+      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
       videoDesktop: vbVideo, //video dintro
       videoMobile: vbVideo,
       image: vbImage,
       title: 'VB Avocats',
+      baseline:["Redéfinir l'excellence juridique","Redefining Legal Excellence"],
       infos: [
         ['2024', 'Identité graphique', 'Cabinet d’avocats', 'Réalisé chez Cible Publicité'],
         ['2024', 'Graphic identity', 'Law firm', 'Designed at Cible Publicité']
@@ -451,10 +466,13 @@ function Projets() {
     //anchois
     {
       id: 5,
+      client: 'Collioure',
+      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
       videoDesktop: anchoisvideo,
       videoMobile: anchoisvideo,
       image: anchoisImage,
       title: "La fête de l'Anchois",
+      baseline:["L'Anchois sur son 31","Celebrating the Ocean’s Finest: Anchovy Festival Extravaganza"],
       infos: [
         ['2024', 'Campagne', 'Evenementiel', 'Réalisé chez Cible Publicité'],
         ['2024', 'Campaign', 'Event', 'Designed at Cible Publicité']
@@ -480,10 +498,13 @@ function Projets() {
     //topographies
     {
       id: 6,
+      client: 'Maria Lou Diaz',
+      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
       videoDesktop: toposVideo, //https://www.facebook.com/watch/?v=829436065704861  
       videoMobile: toposVideo,
       image: toposImage,
       title: "Topographies",
+      baseline:["Qui a dit que l'ornement était un crime ?","Who said ornament was a crime ?"],
       infos: [
         ['2019', 'Édition', 'Dessins aux charbons'],
         ['2019', 'Publication', 'Charcoal drawings']
