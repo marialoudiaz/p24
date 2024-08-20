@@ -48,7 +48,7 @@ const Chargement = () =>{
       Lang: 'FR',
       videoOrdi: 'videoReveal1',
       videoTel: 'videoReveal2',
-      discover: "",
+      discover: "découvrir le showréel",
       location: ['actuellement à','melbourne'], // location
       presentation: ['Bonjour,', "Je suis Maria Lou Diaz", "directeur artistique spécialisé dans le branding.", "Du développement web au design imprimé, j'aide les travailleurs indépendants à construire leur identité visuelle et à lancer leur projet."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
@@ -82,8 +82,8 @@ const Chargement = () =>{
       Lang: 'FR',
       videoOrdi: 'videoReveal3',
       videoTel: 'videoReveal4',
+      discover: "découvrir le showréel",
       location: ['actuellement à','melbourne'], // location
-      discover: 'découvrir le showréel',
       presentation: ['Bonjour,', "Je suis Maria Lou Diaz", "directeur artistique spécialisé dans le branding.", "Du développement web au design imprimé, j'aide les travailleurs indépendants à construire leur identité visuelle et à lancer leur projet.", "Je travaille aussi avec des studios."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','développement fullstack JS', 'e-commerce','vidéo | photo | motion','réseaux sociaux','rédaction','identité graphique','logotype','signalétique','packaging','illustration','affiche'],
