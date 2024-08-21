@@ -77,10 +77,9 @@ return (
     <div className='section' style={{marginTop:'10rem', textAlign:'center'}}>
     <div id='typewriter-homepage'>
       <div>
-        <h1><b>{greetings}</b></h1>
         <Typewriter 
           options={{
-          strings: [`${infos.presentation.slice(1,2)}`,`${infos.presentation.slice(2,3)}`],
+          strings: [`${infos.presentation.slice(0,1)}`,`${infos.presentation.slice(1,2)}`,`${infos.presentation.slice(2,3)}`],
           autoStart: true,
           loop: true,
           delay: 90,
