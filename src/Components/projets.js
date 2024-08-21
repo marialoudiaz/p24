@@ -12,7 +12,7 @@ import onSightImage from '../assets/projets/os/os-img.png';
 import onSightSection1Image from '../assets/projets/os/os-section1.jpg';
 import onSightSection2Video from '../assets/projets/os/os-section2.mp4';
 //pascale-laffon
-import plVideo from '../assets/projets/pl/pl-video.mp4';
+import plVideo from '../assets/projets/pl/pl_video.mp4';
 import plVideoHover from '../assets/projets/pl/pl-video-hover.mp4';
 import plImage from '../assets/projets/pl/pl-img.jpg';
 import plSection1Image from '../assets/projets/pl/pl-section1.png';
