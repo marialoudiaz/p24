@@ -43,8 +43,8 @@ function Projet() {
     }
     // Ouvrir le lien
     const handleDiscoverClick = () => {
-      const [url, target] = projectDescription.onClick;
-      window.open(url, target);
+      const url = projectDescription.onClick; // Suppose que 'onClick' contient directement l'URL
+      window.open(url, '_blank'); // '_blank' ouvre le lien dans une nouvelle fenêtre ou onglet
     };
 
 
