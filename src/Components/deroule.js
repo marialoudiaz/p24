@@ -1,4 +1,11 @@
-import React from 'react'
+import React from 'react';
+import {useRef, useEffect} from 'react';
+import { useLocation} from 'react-router-dom';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
+
+import Test from '../Components/test.js'
 import '../App.scss';
 
 import cadeau from '../assets/icons/projets/cadeau-or.png';
@@ -8,12 +15,39 @@ import mail from '../assets/icons/projets/mail-or.png';
 
 const Deroule = ({infos}) => {
 
+  const location = useLocation();
+  const { infosComposants } = location.state;
+  const citation = infosComposants[0].citation;
   const affichageSection = infos.deroule;
 
+  gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
+  const el1 = useRef(null);
+  const el2 = useRef(null);
+  const el3 = useRef(null);
+
+  useEffect(() => {
+    const elements = [el1.current, el2.current, el3.current];
+    elements.forEach((el, index) => {
+      gsap.fromTo(el, 
+        { opacity: 0, y: 50 }, // bas vers haut
+        { 
+          opacity: 1, 
+          y: 0, 
+          duration: 1, 
+          ease: "power2.out", 
+          scrollTrigger: {
+            trigger: el,
+            start: "top 90%", // déclenchement quand l'élément est 80% visible
+            toggleActions: "play none none none"
+          }
+        }
+    );
+  });
+},[]);
 
   return (
   <>
-  <section id='services' className='section' style={{display:affichageSection}}>
+  <section className='section' style={{display:affichageSection}}>
 
     <div className='grid-col2'>
 
@@ -22,9 +56,9 @@ const Deroule = ({infos}) => {
         <p>{affichageSection[2]}</p>
       </div>
 
-      <div className='flex-col'>
+      <div className='flex-col' id='deroule'>
 
-          <div className='grid-col2-asym'>
+          <div id='deroule-item' className='grid-col2-asym' ref={el1}>
             <img src={couple} alt="icone à l'encre d'un couple de deux personnes"/>
             <div className='flex-wrap'>
               <h3 style={{fontWeight:'600'}}>{affichageSection[3]}</h3>
@@ -36,7 +70,7 @@ const Deroule = ({infos}) => {
             <div className='tiret'></div><div className='tiret2'></div>
           </div>
 
-          <div className='grid-col2-asym'>
+          <div id='deroule-item' className='grid-col2-asym' ref={el2}>
             <img src={mail} alt="icone à l'encre d'une enveloppe avec un coeur"/>
             <div className='flex-wrap'>
               <h3 style={{fontWeight:'600'}}>{affichageSection[5]}</h3>
@@ -49,7 +83,7 @@ const Deroule = ({infos}) => {
           </div>
 
 
-          <div className='grid-col2-asym'>
+          <div id='deroule-item' className='grid-col2-asym' ref={el3}>
           <img src={cadeau} alt="icone à l'encre d'un cadeau"/>
             <div className='flex-wrap'>
               <h3 style={{fontWeight:'600'}}>{affichageSection[7]}</h3>
@@ -58,9 +92,12 @@ const Deroule = ({infos}) => {
           </div>
 
       </div>
-
     </div>
   </section>
+  <div>
+        <Test />
+  </div>
+  
   </>
   )
 }

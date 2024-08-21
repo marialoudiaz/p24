@@ -30,7 +30,6 @@ import a18 from '../assets/icons/softs/18.png';
 const Chargement = () =>{
 
   const navigate = useNavigate();
-  
   //affiche les textes selon fr ou en recu
   // récupérer les infos
   const location = useLocation();
@@ -72,7 +71,7 @@ const Chargement = () =>{
       ],
       deroule:['flex', 'Votre projet', "C'est une collaboration sur-mesure pour lui donner vie. Chaque projet est unique tout comme vous. Ainsi, je vous accompagne à chaque étape afin de créer une solution sur-mesure le mieux adaptée à vos besoins.", "Juste une mise au point", "Lors d’une visio, nous parlons de votre projet et établissons ensemble la stratégie dont vous avez besoin.", "L’aventure commence", "Je vous retourne un devis comprenant tous les services ainsi que le temps nécessaire à leurs réalisations. La date du livrable est établie", "Tada!", "C’est le jour où vous recevez votre premier livrable. À partir de là, vous avez la possibilité de demander deux modifications (offertes)."],
       citation: 'Pour un design qui vous ressemble.',
-      form: ['Racontons','votre','histoire','Prénom','Email','Votre message','Envoyer ✉️',"Collaborons, pour emmener votre business à l’étape supérieure & le faire décoller 🚀. Des idées, des questions, une terrible envie de me contacter ? Je vous écoute."],
+      form: ['Racontons','votre','histoire','Prénom','Email','Votre message','Envoyer',"Collaborons, pour emmener votre business à l’étape supérieure & le faire décoller 🚀. Des idées, des questions, une terrible envie de me contacter ? Je vous écoute."],
       words: ['auto-entrepreneur.se','petite entreprise','start-up','porteur.se de projet','idéaliste','rêveur.se']
   },
   ];
@@ -107,7 +106,7 @@ const Chargement = () =>{
       ],
       deroule: 'none',
       citation:  'Pour un design qui vous ressemble.',
-      form: ['Ensemble','co-crééons votre','unicité','Prénom','Email','Votre message','Envoyer ✉️'],
+      form: ['Ensemble','co-crééons votre','unicité','Prénom','Email','Votre message','Envoyer'],
   },
   ];
   const indepArrayEN = [
@@ -125,7 +124,7 @@ const Chargement = () =>{
 'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait1],
       deroule:['flex','Your project',"It's a tailor-made collaboration to bring it to life. Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","During a video call, we discuss your project and establish the strategy you need : together.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
-      form: ["Let's tell",'your','story','Surname','Email','Your message','Send ✉️',"Let's collaborate to take your business to the next level and make it soar 🚀. Ideas, questions, a strong desire to get in touch? I'm listening."],
+      form: ["Let's tell",'your','story','Surname','Email','Your message','Send',"Let's collaborate to take your business to the next level and make it soar 🚀. Ideas, questions, a strong desire to get in touch? I'm listening."],
       words: ['self-employed', 'small business', 'start-up', 'project leader', 'idealist', 'dreamer']
   },
   ];
@@ -145,7 +144,7 @@ const Chargement = () =>{
         'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait2],
       deroule: 'none',
       citation: 'For a design that suits you.',
-      form: ['Together',"let's design your",'uniqueness','Surname','Email','Your message','Send ✉️'],
+      form: ['Together',"let's design your",'uniqueness','Surname','Email','Your message','Send'],
   },
   ];
 

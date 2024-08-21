@@ -26,6 +26,16 @@ function Projet() {
     return url.startsWith('htt');
   };
 
+  // Référence à la section que vous souhaitez cibler pour le scroll
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    // Scroller vers la section lors du chargement de la page
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({ behavior: 'auto' });
+    }
+  }, []); // Le tableau de dépendances est vide pour déclencher seulement au chargement
+
+
 
   // Cliquer sur découvrir
     //// Le bouton oeil pour découvrir
@@ -53,9 +63,8 @@ return (
   <div className='scrollable-container'>
 
     <Header />
-
       {/* VIDEO OPENING -- full width > moitié au scroll */}
-      <div className='film'>
+      <div className='film' ref={sectionRef}>
 
         <div className='background-video' id='bg-video-projet'>
           {isHTTPSURL(projectDescription.videoDesktop) ? (
@@ -146,13 +155,11 @@ return (
           </div>
 
        </div>
-
        {/* DIV BESOINS */}
        <div className='projet-infos-besoins'>
             {Lang === 'FR' ? <h2>Besoins</h2> : <h2>Needs</h2>}
             <p>{projectDescription.besoins[langIndex][0]}</p>
        </div>
-
 
 
   {/* DIV SECTIONS */}
@@ -181,19 +188,15 @@ return (
         </>
         ))
         )}
-
-              
           {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES */}
           <div className='grid-col2'>
             {projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && (
               projectDescription.sectionsImg.map((sectionImg, index) => (
-                    <img key={index} src={sectionImg}  className={index === 2 ? 'div3' : ''} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center', borderRadius:'20px' 
-                    }} />
+                    <img key={index} src={sectionImg}  className={index === 2 ? 'div3' : ''} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center', borderRadius:'20px' }} />
               ))
             )}
           </div>
       </div>
-
       </div>
     </>
   );

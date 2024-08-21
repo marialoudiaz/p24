@@ -89,8 +89,7 @@ body{
   padding: 0 2rem 0 2rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
-  position: relative;
-  
+  position: relative; 
 }
   
 h1{
@@ -129,12 +128,6 @@ p{
   font-weight: 300!important; //regular
   font-size: calc(var(--body)* 1.5)!important;
   padding: 0 5rem 0 5rem;
-}
-.citation{
-  font-size: 2.5rem;
-  font-family: var(--Tertiaire);
-  font-weight: bold;
-  text-align: center;
 }
 .gold{
   color: var(--gold);
@@ -877,8 +870,6 @@ justify-content: center;
 
 .div3 { grid-area: 2 / 1 / 3 / 3; }
 
-
-
 .section-img{
   display: flex;
   flex-wrap: wrap;
@@ -887,6 +878,10 @@ justify-content: center;
   & img{
     width: 50vw;
   }
+}
+
+#deroule-item{
+ margin: 4rem 0 4rem 0
 }
 
 /*CHARGEMENT*/
@@ -959,7 +954,6 @@ justify-content: center;
 .custom-animation {
   animation: customAnimation 5s ease-in-out;
 }
-
 .grid-col3-item p {
   font-weight: 400;
 }
@@ -1401,3 +1395,46 @@ flex-wrap: wrap;  padding: 0 1rem 0 1rem;
 
 
 
+/*SPLIT TEXT EFFECT*/
+
+/* CITATION */
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  }
+  
+  .body-type{
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  #citation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  .body-type p{
+  font-weight: 700;
+  font-family: var(--Tertiaire);
+  font-weight: bold;
+  color: var(--titres);
+  font-size: 8rem;
+  text-align: center;
+  margin: 0px;
+  margin-right: 1.5vw;
+  gap: .5rem
+  }
+  
+  .body-type span{
+  opacity: 0.1;
+  }
+  
+    
