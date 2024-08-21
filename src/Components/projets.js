@@ -7,11 +7,13 @@ import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-sv
 //MEDIAS
 //os
 import onsightVideo from '../assets/projets/os/video-onsight.mp4';
+import onsightVideoHover from '../assets/projets/os/video-onsight-hover.mp4';
 import onSightImage from '../assets/projets/os/os-img.png';
 import onSightSection1Image from '../assets/projets/os/os-section1.jpg';
 import onSightSection2Video from '../assets/projets/os/os-section2.mp4';
 //pascale-laffon
 import plVideo from '../assets/projets/pl/pl-video.mp4';
+import plVideoHover from '../assets/projets/pl/pl-video-hover.mp4';
 import plImage from '../assets/projets/pl/pl-img.jpg';
 import plSection1Image from '../assets/projets/pl/pl-section1.png';
 import plSection2Image from '../assets/projets/pl/pl-section2.png';
@@ -27,6 +29,7 @@ import ppSection4Image from '../assets/projets/pp/pp-section4.png';
 import ppSection5Image from '../assets/projets/pp/pp-section5.png';
 //vb
 import vbVideo from '../assets/projets/vb/vb-video.mp4';
+import vbVideoHover from '../assets/projets/vb/vb-video-hover.mp4';
 import vbImage from '../assets/projets/vb/vb-img.jpg';
 import vbSection1Image from '../assets/projets/vb/vb-section1.png';
 import vbSection2aImage from '../assets/projets/vb/vb-section2b.jpg';
@@ -36,11 +39,13 @@ import vbSection3Image from '../assets/projets/vb/vb-section3.jpg';
 //anchois - a finir(lien video)
 import anchoisImage from '../assets/projets/anchois/anchois-img.png';
 import anchoisvideo from '../assets/projets/anchois/anchoisvideo.mp4';
+import anchoisvideoHover from '../assets/projets/anchois/anchoisvideo-hover.mp4';
 import anchoisSection1Image from '../assets/projets/anchois/anchois-section1.jpg';
 import anchoisSection2Image from '../assets/projets/anchois/anchois-section2.jpeg';
 import anchoisSection3Image from '../assets/projets/anchois/anchois-section3.jpg';
 //topos
 import toposVideo from '../assets/projets/topos/topos-video.mp4';
+import toposVideoHover from '../assets/projets/topos/topos-video-hover.mp4';
 import toposImage from '../assets/projets/topos/topos-img.png';
 import toposSection1Image from '../assets/projets/topos/topos-section2.jpg';
 import toposSection2Image from '../assets/projets/topos/topos-section3.jpg';
@@ -121,7 +126,7 @@ function Projets() {
     {
       id: 1,
       image: onSightImage,
-      video: onsightVideo,
+      video: onsightVideoHover,
       title: ["OnSight","OnSight"],
       baseline: ['An app to keep an eye on your films, on sight','Une application mobile pour garder un oeil sur tes films'],
       text:[
@@ -139,7 +144,7 @@ function Projets() {
     {
       id: 2,
       image: plImage,
-      video: plVideo,
+      video: plVideoHover,
       title: ["Pascale Laffon","Pascale Laffon"],
       baseline: ['Micropracy','La micropraxie'],
       text:["Pascale Laffon is a showcase website dedicated to her work as a micropractitioner. Explore her gentle and unique universe", "Pascale Laffon est un site vitrine dédié à son activité de micropraticienne. Explorez son univers doux et unique"],
@@ -170,7 +175,7 @@ function Projets() {
     {
       id: 4,
       image: vbImage,
-      video: vbVideo,
+      video: vbVideoHover,
       title: ["VB Avocats","VB Avocats"],
       baseline: ["Modernize a graphic identity","Moderniser une identité graphique"],
       text:[
@@ -188,7 +193,7 @@ function Projets() {
     {
       id: 5,
       image: anchoisImage,
-      video: anchoisvideo,
+      video: anchoisvideoHover,
       title: ["The Anchovy fest 2024",'La fête des anchois 2024'],
       baseline: 
       [
@@ -212,7 +217,7 @@ function Projets() {
     {
       id: 6,
       image: toposImage,
-      video: toposVideo,
+      video: toposVideoHover,
       title: ["Topographies",'Topographies'],
       baseline: 
       [
@@ -409,17 +414,13 @@ function Projets() {
         //     ],
         subtitle: ['Améliorations du projet', 'Project Improvements'],
         text: [
-          "Ce fut ma première tentative d’une réponse typographique à ce questionnement. Elle restepour le moment probablement trop mécanique dans sa forme et insuffisamment inclusive d'un point de vue culturel. Pour pallier cet aspect mécanique du glyphe et des caractères, j’envisage également une variante cursive de la fonte. Parmi les autres améliorations à venir, il y aura le dessin des capitales et l’élargissement du set de glyphes pictographiques. Il me semble nécessaire de proposer un dessin des glyphes plus coloré afin de rendre davantage compte de l’aspect sensoriel et vivant propre à la cuisine. Pour l'instant, les pictogrammes sont principalement euro-centrés. L’idée serait donc de proposer l’intégralité des ustensiles et aliments existants mondialement afin que l’inclusivité devienne totale. En ce qui concerne les ligatures gender-inclusive disponibles, elles sont également incomplètes. Ce projet est encore en construction car l’idée d’une communication par le pictogramme est un réel challenge au vu de la pluralité des cultures et des langues existantes. En tant que personne européenne, ce qui pourrait me sembler comme une réponse satisfaisante à un système langagier universel, ne l’est pas forcément pour une personne issue d’une culture différente de la mienne. Communiquer autour de la cuisine ne nécessite pas seulement la traduction des ustensiles et aliments. Une multitude d’autres paramètres essentiels sont nécessaires à la transmission d’une recette, d’une technique ou d’un savoir-faire. Pile-Poële reste donc un début de réflexion à cette question très vaste de la sauvegarde du patrimoine culinaire populaire humain. Elle reste un début de réponse typographique toujours en construction.",
+          "Ce fut ma première tentative d’une réponse typographique à ce questionnement. Elle reste pour le moment probablement trop mécanique dans sa forme et insuffisamment inclusive d'un point de vue culturel. Pour pallier cet aspect mécanique du glyphe et des caractères, j’envisage également une variante cursive de la fonte. Parmi les autres améliorations à venir, il y aura le dessin des capitales et l’élargissement du set de glyphes pictographiques. Il me semble nécessaire de proposer un dessin des glyphes plus coloré afin de rendre davantage compte de l’aspect sensoriel et vivant propre à la cuisine. Pour l'instant, les pictogrammes sont principalement euro-centrés. L’idée serait donc de proposer l’intégralité des ustensiles et aliments existants mondialement afin que l’inclusivité devienne totale. En ce qui concerne les ligatures gender-inclusive disponibles, elles sont également incomplètes. Ce projet est encore en construction car l’idée d’une communication par le pictogramme est un réel challenge au vu de la pluralité des cultures et des langues existantes. En tant que personne européenne, ce qui pourrait me sembler comme une réponse satisfaisante à un système langagier universel, ne l’est pas forcément pour une personne issue d’une culture différente de la mienne. Communiquer autour de la cuisine ne nécessite pas seulement la traduction des ustensiles et aliments. Une multitude d’autres paramètres essentiels sont nécessaires à la transmission d’une recette, d’une technique ou d’un savoir-faire. Pile-Poële reste donc un début de réflexion à cette question très vaste de la sauvegarde du patrimoine culinaire populaire humain. Elle reste un début de réponse typographique toujours en construction.",
           "This was my first attempt at a typographic response to this question. At the moment, it may still be too mechanical in form and insufficiently inclusive from a cultural perspective. To address the mechanical aspect of the glyph and characters, I am also considering a cursive variant of the font. Among other forthcoming improvements, there will be the design of uppercase letters and the expansion of the set of pictographic glyphs. It seems necessary to offer a more colorful design of the glyphs to better convey the sensory and lively aspect inherent to cuisine. Currently, the pictograms are mainly Euro-centric. The idea, therefore, is to include all utensils and foods existing globally to achieve total inclusivity. Regarding the available gender-inclusive ligatures, they are also incomplete. This project is still under construction because the concept of communication through pictograms is a real challenge given the diversity of cultures and languages. As a European, what may seem like a satisfactory response to a universal language system may not necessarily be so for someone from a different culture than mine. Communicating about cuisine requires not only the translation of utensils and food items but also numerous other essential parameters for transmitting a recipe, technique, or expertise. Therefore, Pile-Poële remains the beginning of reflection on this very broad question of preserving human culinary heritage. It is an initial typographic response still under development.",
         ],
         image: ppSection2Image,
         },
 
         {title:'Pile-Poële',
-          // categories: [
-          //   ['Typographie', 'Recherche'],
-          //   ['Typography', 'Research'],
-          // ],
           subtitle: ['Publications', 'Publications'],
           text: [
             "Pile-Poele a été ajouté à l’invetaire créé par le collectif Bye-Bye Binary de 2017 à 2023.",
