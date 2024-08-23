@@ -216,7 +216,7 @@ padding: 1rem 0 1rem 0;
 }
 .background-video-hp {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   & video{
     width: 100%;
     height: auto;
@@ -565,6 +565,12 @@ border: 1px solid rgba(39, 34, 33, 0.384);
 
   // En savoir + projets
   @media screen and (max-width: 768px) {
+    .body-type p {
+      font-size: 3rem;
+    }
+    .main{
+      height: auto
+    }
     #typewriter-homepage h1,
     #typewriter-homepage div
     {
