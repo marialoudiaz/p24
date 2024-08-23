@@ -563,85 +563,6 @@ border: 1px solid rgba(39, 34, 33, 0.384);
 }
 
 
-  // En savoir + projets
-  @media screen and (max-width: 768px) {
-    .body-type p {
-      font-size: 3rem;
-    }
-    .main{
-      height: auto
-    }
-    #typewriter-homepage h1,
-    #typewriter-homepage div
-    {
-      font-family: var(--Body)!important;
-      text-transform:initial;
-      font-weight: 300!important; //regular
-      font-size: calc(var(--bodyM)* 1.2)!important;
-      padding: 0rem;
-    }
-#typewriter-homepage p
-{
-  font-family: var(--Body)!important;
-  text-transform:initial;
-  font-weight: 300!important; //regular
-  font-size: calc(var(--body)*1.02)!important;
-  padding: 0;
-}
-.background-video-title{
-  position: absolute;
-  top: 70%;
-  width: 100%;
-  display: flex;
-flex-direction: column;  
-padding: 2rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  & div{
-    gap:0;
-  }
-  & h3{
-    color: white;
-    font-weight: 600;
-    width: 100%;
-    font-size: calc(var(--sous-titres)/1.7);
-  }
-  & h2{
-    font-size: calc(var(--titres)/1.2);
-    color: white;
-  }
-  & p{
-    font-size: var(--body);
-    align-self: center;
-    padding-bottom: 2rem;
-    font-size: calc(var(--body)/1.2);
-  }
-}
-    .short-text {
-      display: block;
-    }
-    .full-text {
-      display: none;
-    }
-    .full-text.show {
-      display: block;
-    }
-    .en-savoir-plus {
-      display: inline-block;
-    }
-  }
-  @media screen and (min-width: 769px) {
-    .en-savoir-plus {
-      display: none;
-    }
-    .full-text {
-      display: block;
-    }
-  }
-
-
-
 /*CONTACT ROUE*/
 .Conteneur{
   position: fixed;
@@ -964,6 +885,51 @@ justify-content: center;
   font-weight: 400;
 }
 
+
+/*SPLIT TEXT EFFECT*/
+
+/* CITATION */
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  height: 100vh;
+  }
+  
+  .body-type{
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  }
+  #citation{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: .5rem;
+  }
+
+  .body-type p{
+  font-weight: 700;
+  font-family: var(--Tertiaire);
+  font-weight: bold;
+  color: var(--titres);
+  font-size: 8rem;
+  text-align: center;
+  margin: 0px;
+  margin-right: 1.5vw;
+  gap: .5rem
+  }
+  
+  .body-type span{
+  opacity: 0.1;
+  }
+  
+    
+
   /*MEDIA QUERIES*/
   @media screen and (max-width: 1024px) {
     .grid-col2-section {
@@ -1240,7 +1206,87 @@ flex-wrap: wrap;  padding: 0 1rem 0 1rem;
     font-size: 2rem;
   }
   }
+    // En savoir + projets
+    @media screen and (max-width: 768px) {
+      .body-type p {
+        font-size: 5rem;
+      }
+      .main{
+        height: auto
+      }
+      #typewriter-homepage h1,
+      #typewriter-homepage div
+      {
+        font-family: var(--Body)!important;
+        text-transform:initial;
+        font-weight: 300!important; //regular
+        font-size: calc(var(--bodyM)* 1.2)!important;
+        padding: 0rem;
+      }
+  #typewriter-homepage p
+  {
+    font-family: var(--Body)!important;
+    text-transform:initial;
+    font-weight: 300!important; //regular
+    font-size: calc(var(--body)*1.02)!important;
+    padding: 0;
+  }
+  .background-video-title{
+    position: absolute;
+    top: 70%;
+    width: 100%;
+    display: flex;
+  flex-direction: column;  
+  padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    & div{
+      gap:0;
+    }
+    & h3{
+      color: white;
+      font-weight: 600;
+      width: 100%;
+      font-size: calc(var(--sous-titres)/1.7);
+    }
+    & h2{
+      font-size: calc(var(--titres)/1.2);
+      color: white;
+    }
+    & p{
+      font-size: var(--body);
+      align-self: center;
+      padding-bottom: 2rem;
+      font-size: calc(var(--body)/1.2);
+    }
+  }
+      .short-text {
+        display: block;
+      }
+      .full-text {
+        display: none;
+      }
+      .full-text.show {
+        display: block;
+      }
+      .en-savoir-plus {
+        display: inline-block;
+      }
+    }
+    @media screen and (min-width: 769px) {
+      .en-savoir-plus {
+        display: none;
+      }
+      .full-text {
+        display: block;
+      }
+    }
+  
   @media screen and (max-width: 425px) {
+    .body-type p {
+      font-size: 2.5rem;
+    }
     .navbar-menu img {
       width: 2rem;
     }
@@ -1397,50 +1443,3 @@ flex-wrap: wrap;  padding: 0 1rem 0 1rem;
   font-size: 2rem;
 }
   } 
-
-
-
-
-/*SPLIT TEXT EFFECT*/
-
-/* CITATION */
-
-.main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  height: 100vh;
-  }
-  
-  .body-type{
-  width: 90vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  }
-  #citation{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: .5rem;
-  }
-
-  .body-type p{
-  font-weight: 700;
-  font-family: var(--Tertiaire);
-  font-weight: bold;
-  color: var(--titres);
-  font-size: 8rem;
-  text-align: center;
-  margin: 0px;
-  margin-right: 1.5vw;
-  gap: .5rem
-  }
-  
-  .body-type span{
-  opacity: 0.1;
-  }
-  
-    
