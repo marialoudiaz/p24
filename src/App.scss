@@ -51,15 +51,15 @@
   --non-active: white;
 
   /*TAILLES (mobile - soustraire 5 )*/
-  --titres: 4em; ///500 + inknut
-  --titresM : 2.5em;
-  --sous-titres: 2em; //500 + inknut
-  --sous-titresM: 1.5em; //500 + inknut
-  --body: 1.25rem; // 400 inknut
+  --titres: 70px; ///500 + inknut
+  --titresM : 60px;
+  --sous-titres: 34px; //500 + inknut
+  --sous-titresM: 22px; //500 + inknut
+  --body: 20px; // 400 inknut
+  --bodyM: 18px; // 400 inknut
   --typewriter: 1.5rem;
   --typewriterM: 1.2rem;
   --typewriterM2: .9rem;
-  --bodyM: 1rem; // 400 inknut
   --animate-delay: 7s;
 }
 
@@ -129,12 +129,19 @@ p{
   font-size: calc(var(--body)* 1.5)!important;
   padding: 0 5rem 0 5rem;
 }
+.Typewriter span{
+  font-size: var(--titres);
+}
 .gold{
   color: var(--gold);
 }
 .syne{
   font-family: var(--Tertiaire)!important;
   font-weight: var(--Tertiaire-Weight) !important;
+  & .Typewriter span{
+  font-size: var(--sous-titres);  
+  }
+  
 }
 
 .btn-black{
@@ -333,7 +340,7 @@ color: white;
   gap: 1rem;
   width: 90%;
   & img {
-    width: 7rem;
+    width: 5rem;
   }
 }
 
@@ -981,6 +988,15 @@ justify-content: center;
 #citation-form h2,
 #citation-form h3 {
   font-size: 2rem;
+}
+.Typewriter span{
+  font-size: var(--titresM);
+}
+.syne{
+.Typewriter span{
+  font-size: var(--sous-titresM);  
+  }
+  
 }
 .textTransition{
   font-size: 1.5rem;
