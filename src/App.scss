@@ -52,7 +52,7 @@
 
   /*TAILLES (mobile - soustraire 5 )*/
   --titres: 70px; ///500 + inknut
-  --titresM : 60px;
+  --titresM : 55px;
   --sous-titres: 34px; //500 + inknut
   --sous-titresM: 22px; //500 + inknut
   --body: 20px; // 400 inknut
@@ -1306,6 +1306,9 @@ flex-wrap: wrap;  padding: 0 1rem 0 1rem;
     .navbar-menu img {
       width: 2rem;
     }
+    .Typewriter span{
+      font-size: 35px;
+    }
     .grid-col4{
       padding: 0 2rem 0 2rem;
     }
@@ -1417,6 +1420,9 @@ flex-wrap: wrap;  padding: 0 1rem 0 1rem;
     }
     .Typewriter{
       font-size: var(--typewriterM2);
+    }
+    .Typewriter span{
+      font-size: 30px;
     }
     .text-block p {
       width: 89%;

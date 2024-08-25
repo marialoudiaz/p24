@@ -79,14 +79,14 @@ return (
       <div>
         <Typewriter 
           options={{
-          strings: [`${infos.presentation.slice(0,1)}`,`${infos.presentation.slice(1,2)}`,`${infos.presentation.slice(2,3)}`,`${infos.presentation.slice(3,4)}`],
+          strings: [`${infos.presentation.slice(0,1)}`,`${infos.presentation.slice(1,2)}`],
           autoStart: true,
           loop: true,
           delay: 90,
           pauseFor: 1000,
         }}
       /> </div>
-      <p style={{marginTop:'1rem'}}>{infos.presentation.slice(4, 5).join(' ')}</p>
+      <p style={{marginTop:'1rem'}}>{infos.presentation.slice(2, 5).join(' ')}</p>
       </div>
       <Marquee speed='30' style={{marginTop:'5rem'}}>
       <h2 className='syne-bold'>{infos.expertise+' '}</h2> 
