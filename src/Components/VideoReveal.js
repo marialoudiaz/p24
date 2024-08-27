@@ -45,6 +45,12 @@ const VideoReveal = ({infos}) => {
     }
     // Lecture de la vidéo en plein écran
     videoElement.play();
+    // Réassignation de l'ID après la lecture de la vidéo
+    videoElement.id = 'discover-hp2';
+    // Réassigner l'ID à 'discover-hp' lorsque la vidéo se termine
+  videoElement.onended = () => {
+    videoElement.id = 'discover-hp';
+  };
   };
   // Couper la video
   const resetVideoOnFullscreenExit = (videoRef) => {
