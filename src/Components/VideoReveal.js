@@ -46,12 +46,6 @@ const VideoReveal = ({infos}) => {
     }
     // Lecture de la vidéo en plein écran
     videoElement.play();
-  //   // Réassignation de l'ID après la lecture de la vidéo
-  //   btnVideoRef.id = 'discover-hp2';
-  //   // Réassigner l'ID à 'discover-hp' lorsque la vidéo se termine
-  // videoElement.onended = () => {
-  //   btnVideoRef.id = 'discover-hp';
-  // };
   };
   // Couper la video
   const resetVideoOnFullscreenExit = (videoRef) => {
@@ -128,18 +122,11 @@ return (
             muted 
             playsInline
             poster={thumbnailSrc} // Définit l'image de vignette
-            onClick={handlePlayVideo}
+            onClick={() => handlePlayVideo(mobileVideoRef)}
             controls={true}
           >
             <source src={tel} type="video/mp4" />
           </video>
-          <div 
-            className='btn-black' 
-            id='discover-hp'
-            ref= {btnVideoRef}
-            style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
-            onClick={() => handlePlayVideo(mobileVideoRef)}>
-              <p>{infos.discover}</p></div>  
         </div>
       </div>
 </>
