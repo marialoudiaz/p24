@@ -385,7 +385,7 @@ function Projets() {
       // onClick: ['https:/www.pascalelaffon.fr', '_blank'],
       besoins:[
         ["Promouvoir un humanisme inclusif axé sur la cuisine. Pile-Poële est une fonte de caractères gender-inclusive avec un set de glyphes pictographiques centré autour de la cuisine. Elle prend forme dans le cadre d’une recherche de master autour de la constitution d’un système langagier basé sur la cuisine à l’Université Toulouse Jean Jaurès à Toulouse en 2021. Cette police propose une palette de caractères qui favorise la parité des genres tout en permettant dans son code de remplacer les mots désignant outils, ustensiles et aliments par leurs symboles pictographiques. Le signe alphabétique ou pictographique vient s’inscrire dans la recherche d’une transmission interculturelle culinaire. Le but premier est de permettre une forme de communication davantage universelle autour de la cuisine. Pile-Poële possède également des ligatures non-binaires. Toutefois, ici, la notion d’inclusivité des genres n’est pas le point central du projet mais devient annexe, comme une évidence dans la communication."],
-        ["Promoting an inclusive humanism focused on cuisine.Pile-Poële is a gender-inclusive typeface with a set of pictographic glyphs centered around cuisine. It was developed as part of a master's research project on creating a language system based on cuisine at the University of Toulouse Jean Jaurès in Toulouse in 2021.This font offers a character set that promotes gender parity while allowing for the replacement of words denoting tools, utensils, and food with their pictographic symbols within its code. The alphabetic or pictographic symbols are part of a broader effort to achieve intercultural culinary communication. The primary goal is to enable a more universal form of communication around cuisine. Pile-Poële also features non-binary ligatures. However, in this context, gender inclusivity is not the project's central focus but rather an inherent aspect of communication."],
+        ["Promoting an inclusive humanism focused on cuisine. Pile-Poële is a gender-inclusive typeface with a set of pictographic glyphs centered around cuisine. It was developed as part of a master's research project on creating a language system based on cuisine at the University of Toulouse Jean Jaurès in Toulouse in 2021.This font offers a character set that promotes gender parity while allowing for the replacement of words denoting tools, utensils, and food with their pictographic symbols within its code. The alphabetic or pictographic symbols are part of a broader effort to achieve intercultural culinary communication. The primary goal is to enable a more universal form of communication around cuisine. Pile-Poële also features non-binary ligatures. However, in this context, gender inclusivity is not the project's central focus but rather an inherent aspect of communication."],
       ],
       technologies:
       [
@@ -554,6 +554,7 @@ function Projets() {
     };
   }, []);
 
+
 return (
 
 <div className='section'>
@@ -590,9 +591,6 @@ return (
   {/* //Div 2 avec le texte */}       
   <div className='project-description' ref={descriptionRef}>
   <h2 className='project-title'>{projectsArr[index].baseline[baselineIndex]}</h2>
-
-    {/* <p className='project-txt' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>{projectsArr[index].text[textIndex]}</p>
-    <p className='project-txt' style={{ paddingRight: '3rem' }}> {projectsArr[index].text2[text2Index]} */}
 
   {/* Texte pour mobile avec bouton "En savoir plus" */}
   <p className='project-txt short-text' style={{ paddingLeft: '3rem', paddingRight: '2rem' }}>

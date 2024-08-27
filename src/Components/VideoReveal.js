@@ -86,7 +86,9 @@ return (
           pauseFor: 1000,
         }}
       /> </div>
-      <p style={{marginTop:'1rem'}}>{infos.presentation.slice(2, 5).join(' ')}</p>
+      {infos.presentation.slice(2, 7).map((item, index) => (
+        <p key={index} id='p-hp'>{item}</p>
+      ))}
       </div>
       <Marquee speed='30' style={{marginTop:'5rem'}}>
       <h2 className='syne-bold'>{infos.expertise+' '}</h2> 

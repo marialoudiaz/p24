@@ -158,7 +158,7 @@ return (
        {/* DIV BESOINS */}
        <div className='projet-infos-besoins'>
             {Lang === 'FR' ? <h2>Besoins</h2> : <h2>Needs</h2>}
-            <p>{projectDescription.besoins[langIndex][0]}</p>
+              <p>{projectDescription.besoins[langIndex][0]}</p>
        </div>
 
 
