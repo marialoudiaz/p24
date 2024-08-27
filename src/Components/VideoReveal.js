@@ -128,9 +128,10 @@ return (
           </video>
           <div 
             className='btn-black' 
+            id='discover-hp'
             style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
             onClick={() => handlePlayVideo(mobileVideoRef)}>
-              <p id='discover-hp'>{infos.discover}</p></div>  
+              <p>{infos.discover}</p></div>  
         </div>
       </div>
 </>

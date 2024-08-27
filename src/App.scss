@@ -184,10 +184,10 @@ p{
 }
 #discover-hp{
   display: flex;
-   &:hover{
-    display: none;
-   }
 }
+#discover-hp:hover{
+  display: none!important;
+ }
 
 /*FOOTER*/
 .footer{
