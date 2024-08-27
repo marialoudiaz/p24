@@ -46,12 +46,12 @@ const VideoReveal = ({infos}) => {
     }
     // Lecture de la vidéo en plein écran
     videoElement.play();
-    // Réassignation de l'ID après la lecture de la vidéo
-    btnVideoRef.id = 'discover-hp2';
-    // Réassigner l'ID à 'discover-hp' lorsque la vidéo se termine
-  videoElement.onended = () => {
-    btnVideoRef.id = 'discover-hp';
-  };
+  //   // Réassignation de l'ID après la lecture de la vidéo
+  //   btnVideoRef.id = 'discover-hp2';
+  //   // Réassigner l'ID à 'discover-hp' lorsque la vidéo se termine
+  // videoElement.onended = () => {
+  //   btnVideoRef.id = 'discover-hp';
+  // };
   };
   // Couper la video
   const resetVideoOnFullscreenExit = (videoRef) => {
@@ -129,7 +129,7 @@ return (
             playsInline
             poster={thumbnailSrc} // Définit l'image de vignette
             onClick={handlePlayVideo}
-            controls={false}
+            controls={true}
           >
             <source src={tel} type="video/mp4" />
           </video>
