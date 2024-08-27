@@ -31,6 +31,7 @@ const VideoReveal = ({infos}) => {
   const greetings = infos.presentation[0];
   const desktopVideoRef = useRef(null);
   const mobileVideoRef = useRef(null);
+  const btnVideoRef = useRef(null);
   // Lancer la video en mode plein écran - videoRef stands for both refs (desktop+mobile)
   const handlePlayVideo = (videoRef) => {
     const videoElement = videoRef.current;
@@ -46,10 +47,10 @@ const VideoReveal = ({infos}) => {
     // Lecture de la vidéo en plein écran
     videoElement.play();
     // Réassignation de l'ID après la lecture de la vidéo
-    videoElement.id = 'discover-hp2';
+    btnVideoRef.id = 'discover-hp2';
     // Réassigner l'ID à 'discover-hp' lorsque la vidéo se termine
   videoElement.onended = () => {
-    videoElement.id = 'discover-hp';
+    btnVideoRef.id = 'discover-hp';
   };
   };
   // Couper la video
@@ -135,6 +136,7 @@ return (
           <div 
             className='btn-black' 
             id='discover-hp'
+            ref= {btnVideoRef}
             style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
             onClick={() => handlePlayVideo(mobileVideoRef)}>
               <p>{infos.discover}</p></div>  
