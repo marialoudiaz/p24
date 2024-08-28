@@ -13,7 +13,7 @@ const Footer = () => {
       <>
         <div className='footer'>
           <div>
-            <p className="footer-p">{infos.location[0]} {infos.location[1]} 🇦🇺</p>
+            <p className="footer-p">{infos.location[0]} {infos.location[1]}</p>
           </div>
         </div>
       </>
