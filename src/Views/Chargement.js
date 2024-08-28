@@ -48,7 +48,7 @@ const Chargement = () =>{
       videoOrdi: 'videoReveal1',
       videoTel: 'videoReveal2',
       discover: "découvrir le showréel",
-      location: ['actuellement à','melbourne'], // location
+      location: ['actuellement à','Montpellier, Fr.'], // location
       presentation: ['Bonjour,', "Je suis Maria Lou Diaz", "Directeur artistique spécialisé dans le branding.", "Du développement web au design imprimé,", "j'aide les travailleurs indépendants à construire", "leur identité visuelle et à lancer leur projet."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','site vitrine','site multipages','site marchand','vidéos & photos','réseaux sociaux','articles de blog','identité graphique', 'logotype','signalétique','packaging','illustration','affiche'],
@@ -82,7 +82,7 @@ const Chargement = () =>{
       videoOrdi: 'videoReveal3',
       videoTel: 'videoReveal4',
       discover: "découvrir le showréel",
-      location: ['actuellement à','melbourne'], // location
+      location: ['actuellement à','Montpellier, Fr.'], // location
       presentation: ['Bonjour,', "Je suis Maria Lou Diaz", "Directeur artistique spécialisé dans le branding.", "Du développement web au design imprimé,", "j'aide les travailleurs indépendants à construire", "leur identité visuelle et à lancer leur projet.", "Je travaille aussi avec des studios."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','développement fullstack JS', 'e-commerce','vidéo | photo | motion','réseaux sociaux','rédaction','identité graphique','logotype','signalétique','packaging','illustration','affiche'],
@@ -116,7 +116,7 @@ const Chargement = () =>{
       videoOrdi: 'videoReveal5',
       videoTel: 'videoReveal6',
       discover: 'discover the showreel',
-      location: ['currently in','melbourne'], // location
+      location: ['currently in','Montpellier, Fr.'], // location
       presentation: ['Hello,', "I am Maria Lou Diaz", "Art director specialized in branding.", "From web development to print design,", "I help independent workers build their", "visual identity and launch their project."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','showcase website', 'multipage website', 'e-commerce website','videos & photos', 'social medias', 'blog articles', 'visual identity', 'logotype', 'signage', 'packaging', 'illustration', 'poster'],
@@ -135,7 +135,7 @@ const Chargement = () =>{
       videoOrdi: 'videoReveal7',
       videoTel: 'videoReveal8',
       discover: 'discover the showreel',
-      location: ['currently in','melbourne'], // location
+      location: ['currently in','Montpellier, Fr.'], // location
       presentation: ['Hello,', "I am Maria Lou Diaz", "Art director specialized in branding.", "From web development to print design,", "I help independent workers build their", "visual identity and launch their project.","I also work with studios."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','fullstack JS','e-commerce','video | photo | motion','social medias','writing','visual identity','logotype','signage','packaging','illustration','poster'],
