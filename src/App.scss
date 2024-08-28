@@ -14,7 +14,7 @@
   font-style: normal;
 }
 .footer-p{
-    font-family: "Syne", sans-serif;
+    // font-family: "Syne", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -779,9 +779,9 @@ justify-content: center;
   object-fit: contain;
 }
 
-#projet p{
-  text-align: justify;
-}
+// #projet p{
+//   text-align: justify;
+// }
 .grid-col2-projet{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

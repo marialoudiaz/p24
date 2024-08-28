@@ -21,6 +21,7 @@ import plSection3Image from '../assets/projets/pl/pl-section3.png';
 import plSection4video from '../assets/projets/pl/pl-section4.mp4';
 //pile-poele
 import ppVideo from '../assets/projets/pp/video_type.mp4';
+import ppVideo2 from '../assets/projets/pp/video_type_hp.mp4';
 import ppImage from '../assets/projets/pp/pp-img.png';
 import ppSection1Image from '../assets/projets/pp/pp-section1.jpg';
 import ppSection2Image from '../assets/projets/pp/pp-section2.png';
@@ -260,7 +261,7 @@ function Projets() {
         ['Graphic design', 'User experience', 'Mobile application', 'Maintenance']
       ],
       onClick: ['https://apps.apple.com/fr/app/movies-on-sight/id6450311314', '_blank'],
-      besoins:[["Découvrez OnSight, l'application mobile de prise de notes ultime pour les cinéphiles et amateurs de séries. Plongez dans un univers graphique  aux allures rétro où chaque interaction vous transporte dans le passé. Avec OnSight, vous pouvez facilement ajouter et supprimer des films et séries de votre liste à voir, tout en profitant d'un design vintage captivant."],["Discover OnSight, the ultimate note-taking mobile app for movie and series enthusiasts. Immerse yourself in a retro graphical universe reminiscent of the 80s, where every interaction takes you back in time. With OnSight, you can easily add and remove movies and series from your watchlist, all while enjoying a captivating vintage design."]],
+      besoins:[["Découvrez OnSight, l'application mobile de prise de notes ultime pour les cinéphiles et amateurs de séries. Plongez dans un univers graphique  aux allures rétro où chaque interaction vous transporte dans le passé. Avec OnSight, vous pouvez facilement ajouter et supprimer des films et séries de votre liste, tout en profitant d'un design vintage captivant."],["Discover OnSight, the ultimate note-taking mobile app for movie and series enthusiasts. Immerse yourself in a retro graphical universe reminiscent of the 80s, where every interaction takes you back in time. With OnSight, you can easily add and remove movies and series from your watchlist, all while enjoying a captivating vintage design."]],
       technologies: ['React native', 'After effects', 'Illustrator'],
       sections: 
       [
@@ -302,7 +303,7 @@ function Projets() {
       ],
       onClick: ['https:/www.pascalelaffon.fr', '_blank'],
       besoins:[
-        ["Pascale Laffon, micropracteur de longue date, se lance désormais en tant qu'auto-entrepreneure. Pour valoriser au mieux ses services et refléter fidèlement son univers, la création d'un site vitrine s'impose comme une nécessité. Dans cette optique, nous avons entrepris de repenser sa charte graphique (incluant le logotype et l'iconographie) et de développer un site vitrine à même de transmettre l'essence de son activité."],
+        ["Pascale Laffon, micropracteur de longue date, se lance désormais en tant qu'auto-entrepreneur. Pour valoriser au mieux ses services et refléter fidèlement son univers, la création d'un site vitrine s'impose comme une nécessité. Dans cette optique, nous avons entrepris de repenser sa charte graphique (incluant le logotype et l'iconographie) et de développer un site vitrine à même de transmettre l'essence de son activité."],
         ["Pascale Laffon, a long-time micropractor is now launching as a sole proprietor. To showcase her services effectively and accurately reflect her universe, creating a showcase website is essential. With this goal in mind, we have undertaken to redesign her visual identity (including logo and iconography) and develop a showcase website that will perfectly convey the essence of her business."]],
       technologies: [
         ['Ink', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React'],
@@ -368,7 +369,7 @@ function Projets() {
       id: 3,
       client: 'Maria Lou Diaz',
       discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-      videoDesktop: ppVideo, //video dintro
+      videoDesktop: ppVideo2, //video dintro
       videoMobile: ppVideo,
       image: ppImage,
       title: 'Pile-Poële',
@@ -477,7 +478,7 @@ function Projets() {
       ],
       onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank'],
       besoins:[
-        ["La fête des Anchois se tient chaque année en Juin dans la ville de Collioure. Il est donc question durant ce week-end de festivités de créer toute la communication autour de cette fête. T-shirts pour les exposants et musiciens, affiches, communication sur les réseaux sociaux. Il était donc question de créer une identité reprenant la culture et l’esprit catalan. Les anchois vêtus de pied en cap d’une barretina, faixe et vigatanes dansent la sardane scandant des expressions catalanes au son de la cobla. Les couleurs sont donc volontairement un hommage au drapeau catalan."],
+        ["La fête des Anchois se tient chaque année en Juin dans la ville de Collioure. Durant tout ce week-end de festivités, il s'agissait de créer la communication autour de cette fête. T-shirts pour les exposants et musiciens, affiches, communication sur les réseaux sociaux. Il était donc question de créer une identité reprenant la culture et l’esprit catalan. Les anchois vêtus de pied en cap d’une barretina, faixe et vigatanes dansent la sardane scandant des expressions catalanes au son de la cobla. Les couleurs sont donc volontairement un hommage au drapeau catalan."],
         ["The Anchovy Festival takes place every year in June in the town of Collioure. Therefore, during this weekend of festivities, the focus is on creating all the communication surrounding this event. This includes T-shirts for exhibitors and musicians, posters, and social media communication. The goal was to create an identity that reflects Catalan culture and spirit. Anchovies dressed in traditional Catalan attire, including a barretina, faixa, and vigatanes, dance the sardana while chanting Catalan expressions to the sound of the cobla. The colors are intentionally a tribute to the Catalan flag."],
       ],
       technologies:
