@@ -2,7 +2,6 @@ import React, { Suspense, lazy, useRef, useState, useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import '../App.scss';
 
-
 const Header = lazy(() => import('../Components//header.js'));
 const VideoReveal = lazy(() => import('../Components/VideoReveal.js'));
 const Services = lazy(() => import('../Components/services'));

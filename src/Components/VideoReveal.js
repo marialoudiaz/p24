@@ -122,6 +122,7 @@ return (
             muted 
             playsInline
             poster={thumbnailSrc} // Définit l'image de vignette
+            posterResizeMode={'cover'}
             onClick={() => handlePlayVideo(mobileVideoRef)}
             controls={true}
           >
