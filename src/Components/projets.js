@@ -38,12 +38,12 @@ import vbSection2bImage from '../assets/projets/vb/vb-section2c.jpg';
 import vbSection2cImage from '../assets/projets/vb/vb-section2d.jpg';
 import vbSection3Image from '../assets/projets/vb/vb-section3.jpg';
 //anchois - a finir(lien video)
-import anchoisImage from '../assets/projets/anchois/anchois-img.png';
-import anchoisvideo from '../assets/projets/anchois/anchoisvideo.mp4';
-import anchoisvideoHover from '../assets/projets/anchois/anchoisvideo-hover.mp4';
-import anchoisSection1Image from '../assets/projets/anchois/anchois-section1.jpg';
-import anchoisSection2Image from '../assets/projets/anchois/anchois-section2.jpeg';
-import anchoisSection3Image from '../assets/projets/anchois/anchois-section3.jpg';
+// import anchoisImage from '../assets/projets/anchois/anchois-img.png';
+// import anchoisvideo from '../assets/projets/anchois/anchoisvideo.mp4';
+// import anchoisvideoHover from '../assets/projets/anchois/anchoisvideo-hover.mp4';
+// import anchoisSection1Image from '../assets/projets/anchois/anchois-section1.jpg';
+// import anchoisSection2Image from '../assets/projets/anchois/anchois-section2.jpeg';
+// import anchoisSection3Image from '../assets/projets/anchois/anchois-section3.jpg';
 //topos
 import toposVideo from '../assets/projets/topos/topos-video.mp4';
 import toposVideoHover from '../assets/projets/topos/topos-video-hover.mp4';
@@ -191,29 +191,29 @@ function Projets() {
       onClick: ['https://www.vb-avocats.fr', '_blank']      
     },
     //anchois
-    {
-      id: 5,
-      image: anchoisImage,
-      video: anchoisvideoHover,
-      title: ["The Anchovy fest 2024",'La fête des anchois 2024'],
-      baseline: 
-      [
-        "Design the communication for a local festival",
-        "Imaginer la communication d'un festival local"
-      ],
-      text:
-      [
-        "The Anchovy Festival 2024 celebrates Catalan culture through an annual event dedicated to these small fish. Discover how this iconic event in Collioure brings together the local community in a festive and friendly atmosphere.",
-        "La Fête des Anchois 2024 célèbre la culture catalane à travers un événement annuel dédié à ces petits poissons. Découvrez comment cet événement emblématique de Collioure réunit la communauté locale dans une ambiance festive et conviviale."
-      ],
-      text2:
-      [
-        "Immerse yourself in the unique atmosphere of the Anchovy Festival 2024, where local cuisine and Catalan tradition take center stage. This event is a vibrant celebration of regional culture and gastronomy.",
-        "Plongez dans l'atmosphère unique de la Fête des Anchois 2024, où la cuisine locale et la tradition catalane sont à l'honneur. Cet événement est une célébration vivante de la culture et de la gastronomie régionales."
-      ],
-      link: ['Discover',"Découvrir"],
-      onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
-    },
+    // {
+    //   id: 5,
+    //   image: anchoisImage,
+    //   video: anchoisvideoHover,
+    //   title: ["The Anchovy fest 2024",'La fête des anchois 2024'],
+    //   baseline: 
+    //   [
+    //     "Design the communication for a local festival",
+    //     "Imaginer la communication d'un festival local"
+    //   ],
+    //   text:
+    //   [
+    //     "The Anchovy Festival 2024 celebrates Catalan culture through an annual event dedicated to these small fish. Discover how this iconic event in Collioure brings together the local community in a festive and friendly atmosphere.",
+    //     "La Fête des Anchois 2024 célèbre la culture catalane à travers un événement annuel dédié à ces petits poissons. Découvrez comment cet événement emblématique de Collioure réunit la communauté locale dans une ambiance festive et conviviale."
+    //   ],
+    //   text2:
+    //   [
+    //     "Immerse yourself in the unique atmosphere of the Anchovy Festival 2024, where local cuisine and Catalan tradition take center stage. This event is a vibrant celebration of regional culture and gastronomy.",
+    //     "Plongez dans l'atmosphère unique de la Fête des Anchois 2024, où la cuisine locale et la tradition catalane sont à l'honneur. Cet événement est une célébration vivante de la culture et de la gastronomie régionales."
+    //   ],
+    //   link: ['Discover',"Découvrir"],
+    //   onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank']
+    // },
     //dessin
     {
       id: 6,
@@ -458,37 +458,37 @@ function Projets() {
       [vbSection2aImage,vbSection2bImage,vbSection2cImage],
     },
     //anchois
-    {
-      id: 5,
-      client: 'Collioure',
-      discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
-      videoDesktop: anchoisvideo,
-      videoMobile: anchoisvideo,
-      image: anchoisImage,
-      title: "La fête de l'Anchois",
-      baseline:["L'Anchois sur son 31","Celebrating the Ocean’s Finest: Anchovy Festival Extravaganza"],
-      infos: [
-        ['2024', 'Campagne', 'Evenementiel', 'Réalisé chez Cible Publicité'],
-        ['2024', 'Campaign', 'Event', 'Designed at Cible Publicité']
-      ],
-      categories: 
-      [
-        ['Affiches', 'Réseaux sociaux', 'Impression textile'],
-        ['Posters', 'Social media', 'Textile printing'],
-      ],
-      onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank'],
-      besoins:[
-        ["La fête des Anchois se tient chaque année en Juin dans la ville de Collioure. Durant tout ce week-end de festivités, il s'agissait de créer la communication autour de cette fête. T-shirts pour les exposants et musiciens, affiches, communication sur les réseaux sociaux. Il était donc question de créer une identité reprenant la culture et l’esprit catalan. Les anchois vêtus de pied en cap d’une barretina, faixe et vigatanes dansent la sardane scandant des expressions catalanes au son de la cobla. Les couleurs sont donc volontairement un hommage au drapeau catalan."],
-        ["The Anchovy Festival takes place every year in June in the town of Collioure. Therefore, during this weekend of festivities, the focus is on creating all the communication surrounding this event. This includes T-shirts for exhibitors and musicians, posters, and social media communication. The goal was to create an identity that reflects Catalan culture and spirit. Anchovies dressed in traditional Catalan attire, including a barretina, faixa, and vigatanes, dance the sardana while chanting Catalan expressions to the sound of the cobla. The colors are intentionally a tribute to the Catalan flag."],
-      ],
-      technologies:
-      [
-        ['Photoshop', 'Illustrator', 'Indesign'],
-        ['Photoshop', 'Illustrator', 'Indesign'],
-      ],
-      sectionsImg:
-      [anchoisSection1Image,anchoisSection2Image,anchoisSection3Image],
-    },
+    // {
+    //   id: 5,
+    //   client: 'Collioure',
+    //   discover: ["scroller pour découvrir le projet","scroll down to discover the project"],
+    //   videoDesktop: anchoisvideo,
+    //   videoMobile: anchoisvideo,
+    //   image: anchoisImage,
+    //   title: "La fête de l'Anchois",
+    //   baseline:["L'Anchois sur son 31","Celebrating the Ocean’s Finest: Anchovy Festival Extravaganza"],
+    //   infos: [
+    //     ['2024', 'Campagne', 'Evenementiel', 'Réalisé chez Cible Publicité'],
+    //     ['2024', 'Campaign', 'Event', 'Designed at Cible Publicité']
+    //   ],
+    //   categories: 
+    //   [
+    //     ['Affiches', 'Réseaux sociaux', 'Impression textile'],
+    //     ['Posters', 'Social media', 'Textile printing'],
+    //   ],
+    //   onClick: ['https://www.collioure.fr/fr/art-culture/actu_culture/collioure-fete-lanchois', '_blank'],
+    //   besoins:[
+    //     ["La fête des Anchois se tient chaque année en Juin dans la ville de Collioure. Durant tout ce week-end de festivités, il s'agissait de créer la communication autour de cette fête. T-shirts pour les exposants et musiciens, affiches, communication sur les réseaux sociaux. Il était donc question de créer une identité reprenant la culture et l’esprit catalan. Les anchois vêtus de pied en cap d’une barretina, faixe et vigatanes dansent la sardane scandant des expressions catalanes au son de la cobla. Les couleurs sont donc volontairement un hommage au drapeau catalan."],
+    //     ["The Anchovy Festival takes place every year in June in the town of Collioure. Therefore, during this weekend of festivities, the focus is on creating all the communication surrounding this event. This includes T-shirts for exhibitors and musicians, posters, and social media communication. The goal was to create an identity that reflects Catalan culture and spirit. Anchovies dressed in traditional Catalan attire, including a barretina, faixa, and vigatanes, dance the sardana while chanting Catalan expressions to the sound of the cobla. The colors are intentionally a tribute to the Catalan flag."],
+    //   ],
+    //   technologies:
+    //   [
+    //     ['Photoshop', 'Illustrator', 'Indesign'],
+    //     ['Photoshop', 'Illustrator', 'Indesign'],
+    //   ],
+    //   sectionsImg:
+    //   [anchoisSection1Image,anchoisSection2Image,anchoisSection3Image],
+    // },
     //topographies
     {
       id: 6,
