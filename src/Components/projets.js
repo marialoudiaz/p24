@@ -50,11 +50,9 @@ import toposVideoHover from '../assets/projets/topos/topos-video-hover.mp4';
 import toposImage from '../assets/projets/topos/topos-img.png';
 import toposSection1Image from '../assets/projets/topos/topos-section2.jpg';
 import toposSection2Image from '../assets/projets/topos/topos-section3.jpg';
-
 // CAROUSEL
 import prev from '../assets/icons/interface/icon-eye-1.png';
 import next from '../assets/icons/interface/icon-eye-2.png';
-// import en2024 from '../assets/icons/titres/en2024.png';
 
 function Projets() {
 
