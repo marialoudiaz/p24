@@ -3,7 +3,7 @@ import '../App.scss';
 import TextTransition, { presets } from 'react-text-transition';
 import { useLocation } from 'react-router-dom';
 import ContactForm from '../Components/contactForm.js';
-import muguet from '../assets/video/muguet.mp4'
+import muguet from '../assets/video/muguet.mp4';
 
 
 const Formulaire = ({infos}) => {
@@ -56,7 +56,6 @@ const Formulaire = ({infos}) => {
               </video>
             </div>
           </div>
-
 
         </div>
       </div>

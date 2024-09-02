@@ -32,11 +32,11 @@ import ppSection5Image from '../assets/projets/pp/pp-section5.png';
 import vbVideo from '../assets/projets/vb/vb-video.mp4';
 import vbVideoHover from '../assets/projets/vb/vb-video-hover.mp4';
 import vbImage from '../assets/projets/vb/vb-img.jpg';
-import vbSection1Image from '../assets/projets/vb/vb-section1.png';
+// import vbSection1Image from '../assets/projets/vb/vb-section1.png';
 import vbSection2aImage from '../assets/projets/vb/vb-section2b.jpg';
 import vbSection2bImage from '../assets/projets/vb/vb-section2c.jpg';
 import vbSection2cImage from '../assets/projets/vb/vb-section2d.jpg';
-import vbSection3Image from '../assets/projets/vb/vb-section3.jpg';
+// import vbSection3Image from '../assets/projets/vb/vb-section3.jpg';
 //anchois - a finir(lien video)
 // import anchoisImage from '../assets/projets/anchois/anchois-img.png';
 // import anchoisvideo from '../assets/projets/anchois/anchoisvideo.mp4';
@@ -453,7 +453,7 @@ function Projets() {
         ['Photoshop', 'Ilustrator', 'Indesign'],
       ],
       sectionsImg:
-      [vbSection2aImage,vbSection2bImage,vbSection2cImage],
+      [vbSection2aImage,vbSection2cImage,vbImage,vbSection2bImage],
     },
     //anchois
     // {

@@ -281,6 +281,29 @@ padding: 1rem 0 1rem 0;
     padding-bottom: 1rem;
   }
 }
+//HOMEPAGE
+.name{
+  width: 100vw;
+  height: auto;
+  & img{
+    width: 100%;
+  }
+}
+
+.text-homepage{
+  width: 100vw;
+  // height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    & .prez{
+      padding: 0 1rem 0 1rem;
+    }
+}
+
+
 
 /*BANDEAU ANIME*/
 /////////CIBLE//////////
@@ -344,10 +367,6 @@ animation: none; // Arrêtez l'animation au survol (facultatif)
 background-color: var(--gold);
 color: white;
 }     
-
-// #competences{
-//   height: 50vh;
-// }
 
 /*DEROULE*/
 .flex-wrap{
@@ -779,9 +798,6 @@ justify-content: center;
   object-fit: contain;
 }
 
-// #projet p{
-//   text-align: justify;
-// }
 .grid-col2-projet{
     display: grid;
     grid-template-columns: repeat(2, 1fr);

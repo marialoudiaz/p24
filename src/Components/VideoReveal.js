@@ -11,6 +11,7 @@ import videoReveal6 from '../assets/video/videos-introductives/M-INDEP-EN.mp4';
 import videoReveal7 from '../assets/video/videos-introductives/D-STUDIO-EN.mp4';
 import videoReveal8 from '../assets/video/videos-introductives/M-STUDIO-EN.mp4';
 import thumbnailSrc from '../assets/projets/thumbnail.png';
+import name from '../assets/logo/nom.png';
 
 
 const VideoReveal = ({infos}) => {
@@ -75,60 +76,68 @@ const VideoReveal = ({infos}) => {
   
 return (
 <>
-    <div className='section' style={{marginTop:'10rem', textAlign:'center'}}>
-    <div id='typewriter-homepage'>
-      <div>
-        <Typewriter 
-          options={{
-          strings: [`${infos.presentation.slice(0,1)}`,`${infos.presentation.slice(1,2)}`],
-          autoStart: true,
-          loop: true,
-          delay: 90,
-          pauseFor: 1000,
-        }}
-      /> </div>
-      {infos.presentation.slice(2, 7).map((item, index) => (
-        <p key={index} id='p-hp'>{item}</p>
-      ))}
-      </div>
-      <Marquee speed='30' style={{marginTop:'5rem'}}>
-      <h2 className='syne-bold'>{infos.expertise+' '}</h2> 
-      </Marquee>
-    </div>
-    
-      <div className='background-video-hp'>
 
-        <div className='desktop'  style={{position:'relative'}}>
-          <video 
-            ref={desktopVideoRef}
-            muted 
-            playsInline
-            poster={thumbnailSrc} // Définit l'image de vignette
-            onClick={handlePlayVideo}
-            controls={false}
-          >
-            <source src={ordi} type="video/mp4" />
-          </video>
-          <div 
-            className='btn-black' 
-            style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
-            onClick={() => handlePlayVideo(desktopVideoRef)}>
-              <p>{infos.discover}</p></div>  
-        </div>
+        <div className='background-video-hp'>
 
-        <div  className='mobile' style={{position:'relative'}}>
-          <video 
-            ref={mobileVideoRef}
-            muted 
-            playsInline
-            poster={thumbnailSrc} // Définit l'image de vignette
-            onClick={() => handlePlayVideo(mobileVideoRef)}
-            controls={true}
-          >
-            <source src={tel} type="video/mp4" />
-          </video>
+          <div className='desktop'  style={{position:'relative'}}>
+            <video 
+              ref={desktopVideoRef}
+              muted 
+              playsInline
+              poster={thumbnailSrc} // Définit l'image de vignette
+              onClick={handlePlayVideo}
+              controls={false}
+            >
+              <source src={ordi} type="video/mp4" />
+            </video>
+            <div 
+              className='btn-black' 
+              style={{position:'absolute', top:'50%', left:'50%', transform: 'translate(-50%, -50%)'}} 
+              onClick={() => handlePlayVideo(desktopVideoRef)}>
+                <p>{infos.discover}</p></div>  
+          </div>
+
+          <div  className='mobile' style={{position:'relative'}}>
+            <video 
+              ref={mobileVideoRef}
+              muted 
+              playsInline
+              poster={thumbnailSrc} // Définit l'image de vignette
+              onClick={() => handlePlayVideo(mobileVideoRef)}
+              controls={true}
+            >
+              <source src={tel} type="video/mp4" />
+            </video>
+          </div>
         </div>
-      </div>
+        
+        
+
+        <div className='text-homepage'>
+
+        <div className='name' style={{marginTop:'5rem'}}>
+          <img src={name} />
+        </div>
+        
+        <div className='prez'>
+          {infos.presentation.slice(0, 1).map((item, index) => (
+            <h3 key={index} className='syne' id='p-hp'>{item}</h3>
+          ))}
+          {infos.presentation.slice(1, 5).map((item, index) => (
+            <h3 key={index} >{item}</h3>
+          ))}
+        </div>
+        
+
+        <Marquee speed='30' style={{marginTop:'5rem', border:'1px solid black', padding:'1rem'}}>
+        <h2 className='syne-bold'>{infos.expertise+' '}</h2> 
+        </Marquee> 
+
+
+        </div>
+       
+        
+        
 </>
     
   );
