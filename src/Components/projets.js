@@ -11,11 +11,14 @@ import onsightVideoHover from '../assets/projets/os/video-onsight-hover.mp4';
 import onSightImage from '../assets/projets/os/os-img.png';
 import onSightSection1Image from '../assets/projets/os/os-section1.jpg';
 import onSightSection2Video from '../assets/projets/os/os-section2.mp4';
+import onSightSectionImg1 from '../assets/projets/os/os-sectionimg1.png';
+import onSightSectionImg2 from '../assets/projets/os/os-sectionimg2.png';
 //pascale-laffon
 import plVideo from '../assets/projets/pl/pl_video.mp4';
 import plVideoHover from '../assets/projets/pl/pl-video-hover.mp4';
 import plImage from '../assets/projets/pl/pl-img.jpg';
 import plSection1Image from '../assets/projets/pl/pl-section1.png';
+import plSection1ENImage from '../assets/projets/pl/pl-section1en.png';
 import plSection2Image from '../assets/projets/pl/pl-section2.png';
 import plSection3Image from '../assets/projets/pl/pl-section3.png';
 import plSection4video from '../assets/projets/pl/pl-section4.mp4';
@@ -32,18 +35,13 @@ import ppSection5Image from '../assets/projets/pp/pp-section5.png';
 import vbVideo from '../assets/projets/vb/vb-video.mp4';
 import vbVideoHover from '../assets/projets/vb/vb-video-hover.mp4';
 import vbImage from '../assets/projets/vb/vb-img.jpg';
-// import vbSection1Image from '../assets/projets/vb/vb-section1.png';
+import vbSection1Image from '../assets/projets/vb/vb-section1fr.png';
+import vbSection1ImageEN from '../assets/projets/vb/vb-section1en.png';
+import vbSection1aImage from '../assets/projets/vb/vb-section1afr.png';
+import vbSection1aImageEN from '../assets/projets/vb/vb-section1aen.png';
 import vbSection2aImage from '../assets/projets/vb/vb-section2b.jpg';
 import vbSection2bImage from '../assets/projets/vb/vb-section2c.jpg';
 import vbSection2cImage from '../assets/projets/vb/vb-section2d.jpg';
-// import vbSection3Image from '../assets/projets/vb/vb-section3.jpg';
-//anchois - a finir(lien video)
-// import anchoisImage from '../assets/projets/anchois/anchois-img.png';
-// import anchoisvideo from '../assets/projets/anchois/anchoisvideo.mp4';
-// import anchoisvideoHover from '../assets/projets/anchois/anchoisvideo-hover.mp4';
-// import anchoisSection1Image from '../assets/projets/anchois/anchois-section1.jpg';
-// import anchoisSection2Image from '../assets/projets/anchois/anchois-section2.jpeg';
-// import anchoisSection3Image from '../assets/projets/anchois/anchois-section3.jpg';
 //topos
 import toposVideo from '../assets/projets/topos/topos-video.mp4';
 import toposVideoHover from '../assets/projets/topos/topos-video-hover.mp4';
@@ -263,8 +261,7 @@ function Projets() {
       technologies: ['React native', 'After effects', 'Illustrator'],
       sections: 
       [
-        {title:'Onsight',
-        // categories: [['Conception graphique','Expérience utilisateur','Application mobile','Maintenance'],['Graphic Design', 'User Experience', 'Mobile Application', 'Maintenance']],
+        {
         subtitle: ['Repenser la prise de notes avec style', 'Rethinking Note-Taking with Style'],
         text: [
           "'OnSight' c'est l'idée de créer une application mobile pour garder en mémoire ses films et séries préférés en ajoutant une composante nostalgique. OnSight plonge les utilisateurs dans une ambiance vintage tout en leur offrant une plateforme élégante et intuitive pour créer et gérer leur liste de films et séries préférés. Inspirée par l'esthétique des années 80 et 90, l'interface se distingue par des tons bleus : calmes mais profonds & des fonts rétro. Les utilisateurs peuvent ajouter autant de titres qu'ils le souhaitent. Les films & séries s'ajoutent et s'empilent sous la forme de pilules comme pour rappeler à l'utilisateur de prendre sa dose quotidienne de cinéma - rendant ainsi la gestion de sa vidéothèque plus ludique.",
@@ -272,8 +269,7 @@ function Projets() {
          ],
         image: onSightSection1Image,
         },
-        {title:'Onsight',
-        // categories: [['Conception graphique','Expérience utilisateur','Application mobile','Maintenance'],['Graphic Design', 'User Experience', 'Mobile Application', 'Maintenance']],
+        {
         subtitle: ['Donner vie à l’identité graphique', 'Giving birth to the graphic identity'],
         text: [
           "Créer une identité forte pour OnSight, c'était aussi imaginer un logotype distinctif et son animation. Le logotype devait capturer l'essence de l'esthétique vintage de l'application tout en restant moderne et reconnaissable. L'animation a été conçue pour donner vie au logo, ajoutant un élément dynamique qui améliore l'expérience utilisateur. Ensemble, le logotype et son animation créent une identité de marque cohérente et mémorable, reflétant le caractère unique d'OnSight.",
@@ -282,6 +278,11 @@ function Projets() {
         video: onSightSection2Video,
         },
       ],
+      sectionsImg: 
+      [
+        [onSightSectionImg1],
+        [onSightSectionImg2]
+      ]
     },
     // pascale
     {
@@ -319,7 +320,8 @@ function Projets() {
           "L’encre de chine comme symbole d’élégance et de finesse. Raconter graphiquement la pratique de la micropraxie, c’était parvenir à parler d’un univers doux, calme mais puissant. Ainsi l’encre de chine s’est révélée comme étant le médium le plus à même de nous transporter dans l’univers de Pascale Laffon. Un titre, une signature pour faire du nom de son entreprise un concept.",
           "Chinese ink as a symbol of elegance and refinement. Graphically depicting the practice of micropraxis meant conveying a gentle, calm yet powerful universe. Thus, Chinese ink emerged as the medium best suited to transport us into Pascale Laffon's world. A title, a signature, to transform the name of her business into a concept."
          ],
-        image: plSection1Image,
+        imageEN: plSection1ENImage,
+        image: plSection1Image
         },
 
         {title:'Pascale Laffon',
@@ -421,7 +423,11 @@ function Projets() {
           },
       ],
       sectionsImg:
-      [ppSection4Image, ppSection5Image],
+      [
+        [ppSection4Image, ppSection5Image],
+        [ppSection4Image, ppSection5Image],
+      ]
+      
     },
     //vb
     {
@@ -453,7 +459,10 @@ function Projets() {
         ['Photoshop', 'Ilustrator', 'Indesign'],
       ],
       sectionsImg:
-      [vbSection2aImage,vbSection2cImage,vbImage,vbSection2bImage],
+      [
+        [vbSection1aImageEN,vbSection2aImage,vbSection1ImageEN,vbSection2cImage,vbImage,vbSection2bImage],
+        [vbSection1aImage,vbSection2aImage,vbSection1Image,vbSection2cImage,vbImage,vbSection2bImage],  
+      ]
     },
     //anchois
     // {
@@ -516,7 +525,11 @@ function Projets() {
         ['Charcoals', 'Coal', 'InDesign'],
       ],
       sectionsImg:
-      [toposSection1Image,toposSection2Image],
+      [
+        [toposSection1Image,toposSection2Image],
+        [toposSection1Image,toposSection2Image]
+      ]
+      
     },    
   ];  
   // Découvrir le projet

@@ -3,7 +3,6 @@ import {useRef, useState, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
 import '../App.scss';
 import Header from '../Components/header.js';
-import medaillon from '../assets/logo/medaillon.png';
 // CAROUSEL
 import prev from '../assets/icons/interface/icon-eye-1-b.png';
 import next from '../assets/icons/interface/icon-eye-2-b.png';
@@ -174,16 +173,20 @@ return (
           </div>
           {/* IMAGE OU VIDEO DE PREMIERE SECTION */}
           <div className='projet-infos-img'>
-                  {section.image && (
-                    <img src={section.image} alt="Section visual" />
-                  )}
-                  {section.video && (
-                    <div className='grid-col2-video-section'>
-                      <video src={section.video} autoPlay loop muted playsInline>
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  )}
+            {section.imageEN && Lang !== 'FR' ?
+             
+              <img src={section.imageEN} alt="Section visual in English" />
+              :
+              <img src={section.image} alt="Section visual" />
+            }
+              
+            {section.video && (
+              <div className='grid-col2-video-section'>
+                <video src={section.video} autoPlay loop muted playsInline>
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            )}
           </div>
         </>
         ))
@@ -191,11 +194,18 @@ return (
           {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES */}
           <div className='grid-col2'>
             {projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && (
-              projectDescription.sectionsImg.map((sectionImg, index) => (
-                    <img key={index} src={sectionImg}  className={index === 2 ? 'div3' : ''} alt={`Section ${index + 1}`} style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center', borderRadius:'20px' }} />
+              (Lang === 'FR' ? projectDescription.sectionsImg[1] : projectDescription.sectionsImg[0]).map((sectionImg, index) => (
+                <img 
+                  key={index} 
+                  src={sectionImg} 
+                  className={`section-image ${index === 2 ? 'div3' : ''}`} 
+                  alt={`Section ${index + 1}`} 
+                  style={{width:'100%', height:'100%', objectFit: 'cover', objectPosition:'center', borderRadius:'20px'}} 
+                />
               ))
             )}
           </div>
+
       </div>
       </div>
     </>
