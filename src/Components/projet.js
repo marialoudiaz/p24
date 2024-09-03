@@ -8,8 +8,6 @@ import prev from '../assets/icons/interface/icon-eye-1-b.png';
 import next from '../assets/icons/interface/icon-eye-2-b.png';
 import { FiArrowDownRight } from "react-icons/fi";
 
-
-
 function Projet() {
 
   // récupérer les infos

@@ -302,8 +302,8 @@ function Projets() {
       ],
       onClick: ['https:/www.pascalelaffon.fr', '_blank'],
       besoins:[
-        ["Pascale Laffon, micropracteur de longue date, se lance désormais en tant qu'auto-entrepreneur. Pour valoriser au mieux ses services et refléter fidèlement son univers, la création d'un site vitrine s'impose comme une nécessité. Dans cette optique, nous avons entrepris de repenser sa charte graphique (incluant le logotype et l'iconographie) et de développer un site vitrine à même de transmettre l'essence de son activité."],
-        ["Pascale Laffon, a long-time micropractor is now launching as a sole proprietor. To showcase her services effectively and accurately reflect her universe, creating a showcase website is essential. With this goal in mind, we have undertaken to redesign her visual identity (including logo and iconography) and develop a showcase website that will perfectly convey the essence of her business."]],
+        ["Pascale Laffon, micropracteur de longue date, se lance désormais en tant qu'auto-entrepreneur. Pour valoriser au mieux ses services et refléter fidèlement son univers, la création d'un site vitrine s'impose comme une nécessité. Dans cette optique, j'ai entrepris de repenser sa charte graphique (incluant le logotype et l'iconographie) et de développer un site vitrine à même de transmettre l'essence de son activité."],
+        ["Pascale Laffon, a long-time micropractor is now launching as a sole proprietor. To showcase her services effectively and accurately reflect her universe, creating a showcase website is essential. With this goal in mind, I have undertaken to redesign her visual identity (including logo and iconography) and develop a showcase website that will perfectly convey the essence of her business."]],
       technologies: [
         ['Ink', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React'],
         ['Encre', 'Illustrator', 'Photoshop', 'Premiere Pro', 'After Effects', 'Figma', 'React']
@@ -450,8 +450,8 @@ function Projets() {
       ],
       onClick: ['https:/www.avocats-vb.fr', '_blank'],
       besoins:[
-        ["VB Avocats, anciennement Valette & Berthelsen, ont exprimé le désir de revitaliser leur identité graphique tout en préservant l'essence même du cabinet. La refonte visait à insuffler un nouveau dynamisme tout en respectant les valeurs et l'histoire de l'entreprise. Nous avons donc entrepris une refonte du logotype, des éléments de papeterie et de signalétique."],
-        ["VB Avocats, formerly known as Valette & Berthelsen, sought a redesign of their graphic identity. The goal was to breathe new life into their brand without compromising the essence of the firm. Therefore, we undertook a redesign of the logo, stationery elements, and signage."],
+        ["VB Avocats, anciennement Valette & Berthelsen, ont exprimé le désir de revitaliser leur identité graphique tout en préservant l'essence même du cabinet. La refonte visait à insuffler un nouveau dynamisme tout en respectant les valeurs et l'histoire de l'entreprise. Il a donc été donc été question d'entreprendre une refonte du logotype, des éléments de papeterie et de signalétique."],
+        ["VB Avocats, formerly known as Valette & Berthelsen, sought a redesign of their graphic identity. The goal was to breathe new life into their brand without compromising the essence of the firm. Therefore, I undertook a redesign of the logo, stationery elements, and signage."],
       ],
       technologies:
       [
