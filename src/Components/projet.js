@@ -169,28 +169,33 @@ return (
             <h2>{section.subtitle[langIndex]}</h2>
             <p>{section.text[langIndex]}</p>
           </div>
+
           {/* IMAGE OU VIDEO DE PREMIERE SECTION */}
           <div className='projet-infos-img'>
-            {section.imageEN && Lang !== 'FR' ?
-             
-              <img src={section.imageEN} alt="Section visual in English" />
-              :
-              <img src={section.image} alt="Section visual" />
-            }
-              
-            {section.video && (
+            {section.video ? (
               <div className='grid-col2-video-section'>
                 <video src={section.video} autoPlay loop muted playsInline>
                   Your browser does not support the video tag.
                 </video>
               </div>
+            ) : (
+              <img 
+                src={Lang !== 'FR' && section.imageEN ? section.imageEN : section.image} 
+                alt={Lang !== 'FR' ? "Section visual in English" : "Section visual"} 
+              />
             )}
           </div>
         </>
         ))
         )}
-          {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES */}
-          <div className='grid-col2'>
+          {/* SECTION 3 - IMAGES SUPPLÉMENTAIRES*/}
+          {/* si + d'1 image grid-col2 sinon flex-wrap */}
+          <div className={
+            (projectDescription.sectionsImg && 
+            (projectDescription.sectionsImg[0]?.length > 1 || projectDescription.sectionsImg[1]?.length > 1)) 
+            ? 'grid-col2' 
+            : 'grid-col2-flex'
+            }>
             {projectDescription.sectionsImg && projectDescription.sectionsImg.length > 0 && (
               (Lang === 'FR' ? projectDescription.sectionsImg[1] : projectDescription.sectionsImg[0]).map((sectionImg, index) => (
                 <img 

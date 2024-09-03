@@ -728,10 +728,17 @@ textarea{
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
+  grid-row-gap: 1rem; 
   justify-content: center;
   align-items: flex-start;
   margin-top: 2rem;
+}
+.grid-col2-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 .grid-col2-img {
   grid-area: 1 / 1 / 2 / 2;

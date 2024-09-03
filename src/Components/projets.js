@@ -11,8 +11,8 @@ import onsightVideoHover from '../assets/projets/os/video-onsight-hover.mp4';
 import onSightImage from '../assets/projets/os/os-img.png';
 import onSightSection1Image from '../assets/projets/os/os-section1.jpg';
 import onSightSection2Video from '../assets/projets/os/os-section2.mp4';
-import onSightSectionImg1 from '../assets/projets/os/os-sectionimg1.png';
-import onSightSectionImg2 from '../assets/projets/os/os-sectionimg2.png';
+import onSightSectionImg1 from '../assets/projets/os/os-sectionimg1.jpg';
+import onSightSectionImg2 from '../assets/projets/os/os-sectionimg2.jpg';
 //pascale-laffon
 import plVideo from '../assets/projets/pl/pl_video.mp4';
 import plVideoHover from '../assets/projets/pl/pl-video-hover.mp4';
