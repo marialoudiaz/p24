@@ -298,8 +298,16 @@ padding: 1rem 0 1rem 0;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-image: url("./assets/img/fond-homepage.png");
     & .prez{
-      padding: 0 1rem 0 1rem;
+      padding: 0 1rem 5rem 1rem;
+    }
+    & img{
+      filter: invert(100%);
+      pointer-events: none;
+    }
+    & h3{
+      color: white;
     }
 }
 
@@ -423,9 +431,18 @@ align-items: baseline;
    & img{
     width: 6rem;
    }
-  //  & h3{
-  //   // font-size: calc(var(--sous-titres)/1.5);
-  //  }
+}
+
+.card-carousel{
+  border-radius: 20px;
+  padding: 20px;
+  border: 1.5px solid black;
+  & img{
+    width: 10rem;
+  }
+  & h3{
+    font-size: calc(var(--sous-titres)/1.2);
+  }
 }
 #carousel-item{
   justify-content:flex-start

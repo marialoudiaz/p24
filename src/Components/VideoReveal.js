@@ -127,15 +127,11 @@ return (
             <h3 key={index} >{item}</h3>
           ))}
         </div>
-        
+      </div>
 
-        <Marquee speed='30' style={{marginTop:'5rem', border:'1px solid black', padding:'1rem'}}>
+        <Marquee speed='30' style={{marginTop:'1rem', borderTop:'2px solid black', borderBottom:'2px solid black', padding:'1rem'}}>
         <h2 className='syne-bold'>{infos.expertise+' '}</h2> 
-        </Marquee> 
-
-
-        </div>
-       
+        </Marquee>  
         
         
 </>

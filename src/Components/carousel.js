@@ -3,23 +3,20 @@ import '../App.scss';
 import fleche from '../assets/icons/interface/fleche.png'
 
 
-function Carousel({ dataArray }) {
+function Carousel({ dataArray,customStyle}) {
 
  //L'index de l'image active  
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-
   // Fonction pour changer l'image active
   const changeActiveImage = ()=>{
     setActiveIndex((prevIndex) => (prevIndex + 3) % dataArray.length); // avancer dans l'index (index précédent +1 /longueur total array(3))
   };
-
     // Si en mode mobile, afficher tous les éléments
     const activeItems = isMobile ? dataArray : dataArray.slice(activeIndex, activeIndex + 3);
     if (!isMobile && activeItems.length < 3) {
       activeItems.push(...dataArray.slice(0, 3 - activeItems.length));
     }
-
   // Fonction pour vérifier la taille de l'écran
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
@@ -36,7 +33,7 @@ function Carousel({ dataArray }) {
 
   return (
     <>
-      <div className="grid-col4">
+      <div className="grid-col4" style={customStyle}>
         {activeItems.map((item, index) => (
           <div key={index} className="grid-col3-item" id="carousel-item">
             <img src={item.image} alt={item.alt} />
