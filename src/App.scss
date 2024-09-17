@@ -311,7 +311,9 @@ padding: 1rem 0 1rem 0;
     }
 }
 
-
+#citation-bg{
+  background-image: url("./assets/img/fond-homepage.png");
+}
 
 /*BANDEAU ANIME*/
 /////////CIBLE//////////
@@ -971,6 +973,7 @@ justify-content: center;
     flex-wrap: wrap;
     justify-content: center;
     gap: .5rem;
+    color: white;
   }
 
   .body-type p{

@@ -59,7 +59,7 @@ return letters;
 
 return (
 
-<div className='section'>
+<div className='section' id='citation-bg'>
   <main ref={container} className='main'>
     <div ref={body} className='body-type'>
     <h3 id='citation'>{splitWords(phrase)}</h3>
