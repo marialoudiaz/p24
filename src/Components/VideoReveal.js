@@ -116,7 +116,7 @@ return (
         <div className='text-homepage'>
 
         <div className='name' style={{marginTop:'5rem'}}>
-          <h1 style={{color:'#00000000'}}>Maria Lou Diaz | Art Director • Directeur artistique</h1>
+          <h1 style={{fontSize:'1px',color:'#00000000'}}>Maria Lou Diaz | Art Director • Directeur artistique</h1>
           <img src={name} />
         </div>
         
