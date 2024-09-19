@@ -10,9 +10,10 @@ function Test() {
   const location = useLocation();
   const { infosComposants } = location.state;
   const phrase = infosComposants[0].citation;
-let refs = useRef([]); // Références aux élèments (lettres séparés)
-const body = useRef(null); // hook useRef permet de créer référence (DOM)
-const container = useRef(null);
+  // animation gsap
+    let refs = useRef([]); // Références aux élèments (lettres séparés)
+    const body = useRef(null); // hook useRef permet de créer référence (DOM)
+    const container = useRef(null);
 
 useEffect( () => {
   gsap.registerPlugin(ScrollTrigger,ScrollToPlugin);
@@ -25,7 +26,7 @@ gsap.to(refs.current, { // applique anim aux elements référencés dans refs.cu
   trigger: container.current, // conteneur déclencheur
   scrub: true, // animation en douceur
   start: `top`, // debut defilement
-  end: `+=${window.innerHeight / 1.5}`, // fin défilement
+  end: `+=${window.innerHeight/4}`, // fin défilement
 },
   opacity: 1, // anime opacité (0.1 => 1)
   ease: "none",
