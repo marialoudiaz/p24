@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect} from 'react';
 import '../App.scss';
-import Typewriter from 'typewriter-effect';
 import Marquee from "react-fast-marquee";
 import videoReveal1 from '../assets/video/videos-introductives/D-INDEP-FR.mp4';
 import videoReveal2 from '../assets/video/videos-introductives/M-INDEP-FR.mp4';
@@ -10,8 +9,8 @@ import videoReveal5 from '../assets/video/videos-introductives/D-INDEP-EN.mp4';
 import videoReveal6 from '../assets/video/videos-introductives/M-INDEP-EN.mp4';
 import videoReveal7 from '../assets/video/videos-introductives/D-STUDIO-EN.mp4';
 import videoReveal8 from '../assets/video/videos-introductives/M-STUDIO-EN.mp4';
-import thumbnailSrc from '../assets/projets/thumbnail.png';
-import name from '../assets/logo/nom.png';
+import marialoudiaz_showreel from '../assets/projets/marialoudiaz_showreel.png';
+import marialoudiaz from '../assets/logo/marialoudiaz.png';
 
 
 const VideoReveal = ({infos}) => {
@@ -84,7 +83,7 @@ return (
               ref={desktopVideoRef}
               muted 
               playsInline
-              poster={thumbnailSrc} // Définit l'image de vignette
+              poster={marialoudiaz_showreel} // Définit l'image de vignette
               onClick={handlePlayVideo}
               controls={false}
             >
@@ -117,7 +116,7 @@ return (
 
         <div className='name' style={{marginTop:'5rem'}}>
           <h1 style={{fontSize:'1px',color:'#00000000'}}>Maria Lou Diaz | Art Director • Directeur artistique</h1>
-          <img src={name} />
+          <img src={marialoudiaz} />
         </div>
         
         <div className='prez'>

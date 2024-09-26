@@ -5,25 +5,25 @@ import video from '../assets/projets/chargement.mp4';
 import '../App.scss';
 import 'animate.css';
 /*MEDIAS*/
-import portrait1 from '../assets/img/portrait-mai24.jpg';
-import portrait2 from '../assets/img/portrait-mai24EN.jpg';
-import a1 from '../assets/icons/softs/1.png';
-import a2 from '../assets/icons/softs/2.png';
-import a3 from '../assets/icons/softs/3.png';
-import a4 from '../assets/icons/softs/4.png';
-import a5 from '../assets/icons/softs/5.png';
-import a7 from '../assets/icons/softs/7.png';
-import a8 from '../assets/icons/softs/8.png';
-import a9 from '../assets/icons/softs/9.png';
-import a10 from '../assets/icons/softs/10.png';
-import a11 from '../assets/icons/softs/11.png';
-import a12 from '../assets/icons/softs/12.png';
-import a13 from '../assets/icons/softs/13.png';
-import a14 from '../assets/icons/softs/14.png';
-import a15 from '../assets/icons/softs/15.png';
-import a16 from '../assets/icons/softs/16.png';
-import a17 from '../assets/icons/softs/17.png';
-import a18 from '../assets/icons/softs/18.png';
+import visual_indentity_specialist from '../assets/img/marialoudiaz-independant.jpg';
+import branding_specialist from '../assets/img/marialoudiaz-agence.jpg';
+import html from '../assets/icons/softs/html.png';
+import css from '../assets/icons/softs/css.png';
+import js from '../assets/icons/softs/js.png';
+import node from '../assets/icons/softs/node.png';
+import react from '../assets/icons/softs/react.png';
+import wordpress from '../assets/icons/softs/wordpress.png';
+import webflow from '../assets/icons/softs/webflow.png';
+import figma from '../assets/icons/softs/figma.png';
+import adobexd from '../assets/icons/softs/adobexd.png';
+import github from '../assets/icons/softs/github.png';
+import fontlab from '../assets/icons/softs/fontlab.png';
+import photoshop from '../assets/icons/softs/photoshop.png';
+import lightroom from '../assets/icons/softs/lighroom.png';
+import illustrator from '../assets/icons/softs/illustrator.png';
+import indesign from '../assets/icons/softs/indesign.png';
+import premiere from '../assets/icons/softs/premiere.png';
+import aftereffect from '../assets/icons/softs/aftereffect.png';
 
 
 const Chargement = () =>{
@@ -69,7 +69,7 @@ const Chargement = () =>{
         'Rechercher l\'essence d\'une idée. Communiquer avec puissance et mémorabilité.',
         'Couleur',
         'Exprimer une émotion, un état d\'être. Créer la vie, animer votre univers par la puissance de la couleur.',
-        portrait1
+        visual_indentity_specialist
       ],
       deroule:['flex', 'Votre projet', "C'est une collaboration sur-mesure pour lui donner vie. Chaque projet est unique tout comme vous. Ainsi, je vous accompagne à chaque étape afin de créer une solution sur-mesure la mieux adaptée à vos besoins.", "Juste une mise au point", "Lors d’une visio, nous parlons de votre projet et établissons ensemble la stratégie dont vous avez besoin.", "L’aventure commence", "Je vous retourne un devis comprenant tous les services ainsi que le temps nécessaire à leurs réalisations. La date du livrable est établie.", "Tada!", "C’est le jour où vous recevez votre premier livrable. À partir de là, vous avez la possibilité de demander deux modifications (offertes)."],
       citation: 'Pour un design qui vous ressemble.',
@@ -93,7 +93,7 @@ const Chargement = () =>{
                     ],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','développement fullstack','vidéo | photo | motion','réseaux sociaux','rédaction','identité graphique','logotype','signalétique','packaging','illustration'],
-      logiciels: [a1,a2,a3,a4,a5,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18],
+      logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
       approche: [
         'Mon approche',
         'Créer, c\'est rendre visible l\'invisible.',
@@ -109,7 +109,7 @@ const Chargement = () =>{
         'Rechercher l\'essence d\'une idée. Communiquer avec puissance et mémorabilité.',
         'Couleur',
         'Exprimer une émotion, un état d\'être. Créer la vie, animer votre univers par la puissance de la couleur.',
-        portrait2
+        branding_specialist
       ],
       deroule: 'none',
       citation:  'Pour un design qui vous ressemble.',
@@ -131,7 +131,7 @@ const Chargement = () =>{
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','showcase website', 'multipage website','videos & photos', 'social medias', 'blog', 'visual identity', 'logotype', 'signage', 'packaging', 'illustration'],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
-'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait1],
+'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",visual_indentity_specialist],
       deroule:['flex','Your project',"It's a tailor-made collaboration to bring it to life. Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","During a video call, we discuss your project and establish the strategy you need : together.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
       form: ["Let's tell",'your','story','Surname','Email','Your message','Send',"Let's collaborate to take your business to the next level and make it soar 🚀. Ideas, questions, a strong desire to get in touch? I'm listening."],
@@ -153,9 +153,9 @@ const Chargement = () =>{
                      "I also work with studios."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','fullstack JS','video | photo | motion','social medias','writing','visual identity','logotype','signage','packaging','illustration'],
-      logiciels: [a1,a2,a3,a4,a5,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18],
+      logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
-        'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",portrait2],
+        'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",branding_specialist],
       deroule: 'none',
       citation: 'For a design that suits you.',
       form: ['Together',"let's design your",'uniqueness','Surname','Email','Your message','Send'],

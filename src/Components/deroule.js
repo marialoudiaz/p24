@@ -8,9 +8,9 @@ import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import Test from '../Components/test.js'
 import '../App.scss';
 
-import cadeau from '../assets/icons/projets/cadeau-or.png';
-import couple from '../assets/icons/projets/couple-or.png';
-import mail from '../assets/icons/projets/mail-or.png';
+import livrable from '../assets/icons/projets/livrable.png';
+import projet from '../assets/icons/projets/projet.png';
+import devis from '../assets/icons/projets/devis.png';
 
 
 const Deroule = ({infos}) => {
@@ -59,7 +59,7 @@ const Deroule = ({infos}) => {
       <div className='flex-col' id='deroule'>
 
           <div id='deroule-item' className='grid-col2-asym' ref={el1}>
-            <img src={couple} alt="icone à l'encre d'un couple de deux personnes"/>
+            <img src={projet} alt="icone à l'encre d'un couple de deux personnes"/>
             <div className='flex-wrap'>
               <h3 style={{fontWeight:'600'}}>{affichageSection[3]}</h3>
               <p>{affichageSection[4]}</p>
@@ -71,7 +71,7 @@ const Deroule = ({infos}) => {
           </div>
 
           <div id='deroule-item' className='grid-col2-asym' ref={el2}>
-            <img src={mail} alt="icone à l'encre d'une enveloppe avec un coeur"/>
+            <img src={devis} alt="icone à l'encre d'une enveloppe avec un coeur"/>
             <div className='flex-wrap'>
               <h3 style={{fontWeight:'600'}}>{affichageSection[5]}</h3>
               <p>{affichageSection[6]}</p>
@@ -84,7 +84,7 @@ const Deroule = ({infos}) => {
 
 
           <div id='deroule-item' className='grid-col2-asym' ref={el3}>
-          <img src={cadeau} alt="icone à l'encre d'un cadeau"/>
+          <img src={livrable} alt="icone à l'encre d'un cadeau"/>
             <div className='flex-wrap'>
               <h3 style={{fontWeight:'600'}}>{affichageSection[7]}</h3>
               <p>{affichageSection[8]}</p>

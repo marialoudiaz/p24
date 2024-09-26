@@ -4,16 +4,16 @@ import { useLocation } from 'react-router-dom';
 import '../App.scss';
 
 import Carousel from '../Components/carousel';
-import icon1 from '../assets/icons/services/ordi1-or.png';
-import icon2 from '../assets/icons/services/ordi-infini-or.png';
-import icon5 from '../assets/icons/services/media-or.png';
-import icon6 from '../assets/icons/services/rs-or.png';
-import icon7 from '../assets/icons/services/texte-or.png';
-import icon8 from '../assets/icons/services/copyright-or.png';
-import icon9 from '../assets/icons/services/formes-or.png';
-import icon10 from '../assets/icons/services/fleches-or.png';
-import icon11 from '../assets/icons/services/packaging-or.png';
-import icon12 from '../assets/icons/services/trefle-or.png';
+import showcase from '../assets/icons/services/showcase.png';
+import multipages from '../assets/icons/services/multipages.png';
+import photo from '../assets/icons/services/photo.png';
+import socials from '../assets/icons/services/socials.png';
+import blog from '../assets/icons/services/blog.png';
+import identity from '../assets/icons/services/identity.png';
+import logo from '../assets/icons/services/logo.png';
+import signage from '../assets/icons/services/signage.png';
+import packaging from '../assets/icons/services/packaging.png';
+import illustration from '../assets/icons/services/illustration.png';
 
 
 
@@ -23,21 +23,15 @@ const Services = ({infos}) => {
   const logiciels = infos.logiciels;
   const location = useLocation();
   const { infosComposants } = location.state;
-
-  // // Combiner les icônes et les services
-  // const combinedData = services.slice(3).map((service, index) => ({
-  //   title: service,
-  //   image: icons[index]
-  // }));
-
+  
   // Les éléments de la section
   const title = services[0];
   const soustitre = services[1];
   const soustitre2 = services[2];
   // Définir les icônes
   const icons = [
-    icon1, icon2, icon5, icon6, icon7,
-    icon8, icon9, icon10, icon11, icon12
+    showcase, multipages, photo, socials, blog,
+    identity, logo, signage, packaging, illustration
   ];
   const dataArray = [
     {

@@ -1,15 +1,13 @@
 import '../App.scss';
 import { useLocation } from 'react-router-dom';
 
-import portrait from '../assets/img/portrait-mai24.jpg';
 import medaillon from '../assets/logo/medaillon.png'
-
-import oeil from '../assets/icons/approche/oeil-or.png';
-import cercle from '../assets/icons/approche/cercle-or.png';
-import harmonie from '../assets/icons/approche/harmonie-or.png';
-import nature from '../assets/icons/approche/nature-or.png';
-import trait from '../assets/icons/approche/trait-or.png';
-import trombone from '../assets/icons/approche/trombone-or.png';
+import detail from '../assets/icons/approche/detail.png';
+import authenticity from '../assets/icons/approche/authenticity.png';
+import harmony from '../assets/icons/approche/harmony.png';
+import nature from '../assets/icons/approche/nature.png';
+import color from '../assets/icons/approche/color.png';
+import minimalism from '../assets/icons/approche/minimalism.png';
 import Carousel from '../Components/carousel';
 
 import Typewriter from 'typewriter-effect';
@@ -33,21 +31,21 @@ const Approche = () => {
      const dataArray = [
       {
         index: 0,
-        image: cercle,
+        image: authenticity,
         alt: "cercle avec un trait noir au centre à l'encre de chine",
         titre: `${infosComposants[0].approche[2]}`,
         text: `${infosComposants[0].approche[3]}`,
       },
       {
         index: 1,
-        image: oeil,
+        image: detail,
         alt: "oeil à l'encre de chine",
         titre: `${infosComposants[0].approche[4]}`,
         text: `${infosComposants[0].approche[5]}`,
       },
       {
         index: 2,
-        image: harmonie,
+        image: harmony,
         alt: "symbole symétrique à l'encre de chine",
         titre: `${infosComposants[0].approche[6]}`,
         text: `${infosComposants[0].approche[7]}`,
@@ -61,14 +59,14 @@ const Approche = () => {
       },
       {
         index: 4,
-        image: trombone,
+        image: minimalism,
         alt: "trombone stylisé à l'encre de chine",
         titre: `${infosComposants[0].approche[10]}`,
         text: `${infosComposants[0].approche[11]}`,
       },
       {
         index: 5,
-        image: trait,
+        image: color,
         alt: "trait doré à l'encre de chine",
         titre: `${infosComposants[0].approche[12]}`,
         text: `${infosComposants[0].approche[13]}`,

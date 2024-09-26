@@ -3,7 +3,7 @@ import '../App.scss';
 import TextTransition, { presets } from 'react-text-transition';
 import { useLocation } from 'react-router-dom';
 import ContactForm from '../Components/contactForm.js';
-import muguet from '../assets/video/muguet.mp4';
+import create_brand_identity from '../assets/video/create_brand_identity.mp4';
 
 
 const Formulaire = ({infos}) => {
@@ -52,7 +52,7 @@ const Formulaire = ({infos}) => {
             </div>
             <div id='muguet'>
               <video id='muguetvideo' autoPlay loop muted playsInline>
-                <source src={muguet} type="video/mp4"/>
+                <source src={create_brand_identity} type="video/mp4"/>
               </video>
             </div>
           </div>
