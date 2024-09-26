@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import video from '../assets/projets/chargement.mp4';
+import branding_specialist_melbourne from '../assets/projets/branding_specialist_melbourne.mp4';
 import '../App.scss';
 import 'animate.css';
 /*MEDIAS*/
@@ -196,7 +196,7 @@ const Chargement = () =>{
           ))}
         </div>
         <video className='background-video2' autoPlay muted playsInline>
-          <source src={video} type='video/mp4'/>
+          <source src={branding_specialist_melbourne} type='video/mp4'/>
         </video> 
       </div>
     </>
