@@ -19,7 +19,7 @@ import adobexd from '../assets/icons/softs/adobexd.png';
 import github from '../assets/icons/softs/github.png';
 import fontlab from '../assets/icons/softs/fontlab.png';
 import photoshop from '../assets/icons/softs/photoshop.png';
-import lightroom from '../assets/icons/softs/lighroom.png';
+import lightroom from '../assets/icons/softs/lightroom.png';
 import illustrator from '../assets/icons/softs/illustrator.png';
 import indesign from '../assets/icons/softs/indesign.png';
 import premiere from '../assets/icons/softs/premiere.png';

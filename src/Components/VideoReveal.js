@@ -101,7 +101,7 @@ return (
               ref={mobileVideoRef}
               muted 
               playsInline
-              poster={thumbnailSrc} // Définit l'image de vignette
+              poster={marialoudiaz_showreel} // Définit l'image de vignette
               onClick={() => handlePlayVideo(mobileVideoRef)}
               controls={true}
             >
