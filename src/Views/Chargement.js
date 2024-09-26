@@ -53,7 +53,7 @@ const Chargement = () =>{
                       "j'aide les travailleurs indépendants à construire",
                       "leur identité visuelle et à lancer leur projet."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
-      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','site vitrine','site multipages','vidéos & photos','réseaux sociaux','articles de blog','identité visuelle', 'logotype','signalétique','packaging','illustration'],
+      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','Site vitrine','Site multipages','Vidéos & photos','Réseaux sociaux','Articles de blog','Identité visuelle', 'Logotype','Signalétique','Packaging','Illustration'],
       approche: [
         'Mon approche',
         'Créer, c\'est rendre visible l\'invisible.',
@@ -92,7 +92,7 @@ const Chargement = () =>{
                      "Je travaille aussi avec des studios."
                     ],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
-      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','développement fullstack','vidéo | photo | motion','réseaux sociaux','rédaction','identité graphique','logotype','signalétique','packaging','illustration'],
+      services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','Développement fullstack','Vidéo | Photo | Motion','Réseaux sociaux','Rédaction','Identité graphique','Logotype','Signalétique','Packaging','Illustration'],
       logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
       approche: [
         'Mon approche',
@@ -129,7 +129,7 @@ const Chargement = () =>{
                     "I help independent workers build their", 
                     "visual identity and launch their project."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
-      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','showcase website', 'multipage website','videos & photos', 'social medias', 'blog', 'visual identity', 'logotype', 'signage', 'packaging', 'illustration'],
+      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
 'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",visual_indentity_specialist],
       deroule:['flex','Your project',"It's a tailor-made collaboration to bring it to life. Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","During a video call, we discuss your project and establish the strategy you need : together.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
@@ -152,7 +152,7 @@ const Chargement = () =>{
                      "visual identity and launch their project.",
                      "I also work with studios."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
-      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','fullstack JS','video | photo | motion','social medias','writing','visual identity','logotype','signage','packaging','illustration'],
+      services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','Fullstack JS','Video | Photo | Motion','Social medias','Writing','Visual identity','Logotype','Signage','Packaging','Illustration'],
       logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
         'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",branding_specialist],
