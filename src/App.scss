@@ -84,6 +84,9 @@ a{
   margin:0;
   padding: 0;
 }
+img {
+  pointer-events: none;
+}
 body{
   background-color:var(--bgColor);
 }
@@ -575,6 +578,7 @@ border: 1px solid rgba(39, 34, 33, 0.384);
   & img{
     width: 30px;
     height: fit-content;
+    pointer-events: all;
   }    
 }
 #carousel-btn-projet{

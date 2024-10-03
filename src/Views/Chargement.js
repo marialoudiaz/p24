@@ -66,12 +66,12 @@ const Chargement = () =>{
         'Nature',
         'Inspirée par l\'harmonie, la symétrie et le symbolisme des plantes et des fleurs.',
         'Minimalisme',
-        'Rechercher l\'essence d\'une idée. Communiquer avec puissance et mémorabilité.',
+        'Rechercher l\'essence d\'une idée pour communiquer avec mémorabilité.',
         'Couleur',
-        'Exprimer une émotion, un état d\'être. Créer la vie, animer votre univers par la puissance de la couleur.',
+        'Exprimer une émotion & animer votre univers par la puissance de la couleur.',
         visual_indentity_specialist
       ],
-      deroule:['flex', 'Votre projet', "C'est une collaboration sur-mesure pour lui donner vie. Chaque projet est unique tout comme vous. Ainsi, je vous accompagne à chaque étape afin de créer une solution sur-mesure la mieux adaptée à vos besoins.", "Juste une mise au point", "Lors d’une visio, nous parlons de votre projet et établissons ensemble la stratégie dont vous avez besoin.", "L’aventure commence", "Je vous retourne un devis comprenant tous les services ainsi que le temps nécessaire à leurs réalisations. La date du livrable est établie.", "Tada!", "C’est le jour où vous recevez votre premier livrable. À partir de là, vous avez la possibilité de demander deux modifications (offertes)."],
+      deroule:['flex', 'Votre projet', "C'est une collaboration sur-mesure pour lui donner vie. Chaque projet est unique tout comme vous. Ainsi, je vous accompagne à chaque étape afin de créer une solution sur-mesure la mieux adaptée à vos besoins.", "Juste une mise au point", "Nous parlons de votre projet et établissons ensemble une stratégie. Nous définissons alors les services qu'il vous faut. Chaque devis est réalisé sur-mesure pour être au plus-prêt de vos besoins.", "L’aventure commence", "Je vous retourne un devis comprenant tous les services ainsi que le temps nécessaire à leurs réalisations. La date du livrable est établie.", "Tada!", "C’est le jour où vous recevez votre premier livrable. À partir de là, vous avez la possibilité de demander deux modifications (offertes)."],
       citation: 'Pour un design qui vous ressemble.',
       form: ['Racontons','votre','histoire','Prénom','Email','Votre message','Envoyer',"Collaborons, pour emmener votre business à l’étape supérieure & le faire décoller 🚀. Des idées, des questions, une terrible envie de me contacter ? Je vous écoute."],
       words: ['auto-entrepreneur.se','petite entreprise','start-up','porteur.se de projet','idéaliste','rêveur.se']
@@ -94,7 +94,7 @@ const Chargement = () =>{
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','Développement fullstack','Vidéo | Photo | Motion','Réseaux sociaux','Rédaction','Identité graphique','Logotype','Signalétique','Packaging','Illustration'],
       logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
-      approche: [
+ approche: [
         'Mon approche',
         'Créer, c\'est rendre visible l\'invisible.',
         'Authenticité',
@@ -106,9 +106,9 @@ const Chargement = () =>{
         'Nature',
         'Inspirée par l\'harmonie, la symétrie et le symbolisme des plantes et des fleurs.',
         'Minimalisme',
-        'Rechercher l\'essence d\'une idée. Communiquer avec puissance et mémorabilité.',
+        'Rechercher l\'essence d\'une idée pour communiquer avec mémorabilité.',
         'Couleur',
-        'Exprimer une émotion, un état d\'être. Créer la vie, animer votre univers par la puissance de la couleur.',
+        'Exprimer une émotion & animer votre univers par la puissance de la couleur.',
         branding_specialist
       ],
       deroule: 'none',
@@ -131,8 +131,8 @@ const Chargement = () =>{
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
-'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",visual_indentity_specialist],
-      deroule:['flex','Your project',"It's a tailor-made collaboration to bring it to life. Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","During a video call, we discuss your project and establish the strategy you need : together.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
+'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea to communicate with memorability.","Color","Express an emotion & animate your universe with the power of color.",visual_indentity_specialist],
+      deroule:['flex','Your project',"It's a tailor-made collaboration to bring it to life. Each project is unique, just like you. That's why I support you at every step, to create a custom solution that best fits your needs.","Just a clarification","We discuss your project and together establish a strategy. Depending on your project, we define the services required. Each quote is custom-made to closely match your needs.","The adventure begins","I will send you a quote including all services as well as the time needed for their completion. The delivery date is set.","Tada!","This is the day you receive your first deliverable. From then on, you have the option to request two modifications (free of charge)."],
       citation: 'For a design that suits you.',
       form: ["Let's tell",'your','story','Surname','Email','Your message','Send',"Let's collaborate to take your business to the next level and make it soar 🚀. Ideas, questions, a strong desire to get in touch? I'm listening."],
       words: ['self-employed', 'small business', 'start-up', 'project leader', 'idealist', 'dreamer']
@@ -155,7 +155,7 @@ const Chargement = () =>{
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','Fullstack JS','Video | Photo | Motion','Social medias','Writing','Visual identity','Logotype','Signage','Packaging','Illustration'],
       logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
-        'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea. Communicate with power & memorability.","Color","Express an emotion, a state of being. Create life, animate your universe with the power of color.",branding_specialist],
+'The pursuit of beauty: shape, curves of a font, the symbiosis of colors.',"Nature","Inspired by the harmony, symmetry, and symbolism of plants and flowers.","Minimalism","Seeking the essence of an idea to communicate with memorability.","Color","Express an emotion & animate your universe with the power of color.",branding_specialist],
       deroule: 'none',
       citation: 'For a design that suits you.',
       form: ['Together',"let's design your",'uniqueness','Surname','Email','Your message','Send'],
