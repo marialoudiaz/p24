@@ -9,21 +9,13 @@ import nature from '../assets/icons/approche/nature.png';
 import color from '../assets/icons/approche/color.png';
 import minimalism from '../assets/icons/approche/minimalism.png';
 import Carousel from '../Components/carousel';
-
 import Typewriter from 'typewriter-effect';
-
-
-
-
-
 const Approche = () => {
-
     // récupérer les infos
     const location = useLocation();
     const { infosComposants } = location.state; 
     // le portrait
     const portrait = infosComposants[0].approche[14];
-
     // Les éléments de la section
     const approche = infosComposants[0].approche[0];
     const citation = infosComposants[0].approche[1];

@@ -48,10 +48,7 @@ const Chargement = () =>{
       videoTel: 'videoReveal2',
       discover: "découvrir le showréel",
       location: ['actuellement à','Montpellier, Fr.'], // location
-      presentation: ["Directeur artistique spécialisé dans le branding", //0
-                      "Du développement web au design imprimé,",
-                      "j'aide les travailleurs indépendants à construire",
-                      "leur identité visuelle et à lancer leur projet."],
+      presentation: ["Directeur artistique spécialisé dans le branding","Du développement web au design imprimé,","j'aide les travailleurs indépendants à construire","leur identité visuelle et à lancer leur projet."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','Site vitrine','Site multipages','Vidéos & photos','Réseaux sociaux','Articles de blog','Identité visuelle', 'Logotype','Signalétique','Packaging','Illustration'],
       approche: [
@@ -85,12 +82,7 @@ const Chargement = () =>{
       videoTel: 'videoReveal4',
       discover: "découvrir le showréel",
       location: ['actuellement à','Montpellier, Fr.'], // location
-      presentation: ["Directeur artistique spécialisé dans le branding.", 
-                     "Du développement web au design imprimé,",
-                     "j'aide les travailleurs indépendants à construire", 
-                     "leur identité visuelle et à lancer leur projet.", 
-                     "Je travaille aussi avec des studios."
-                    ],
+      presentation: ["Directeur artistique spécialisé dans le branding.","Du développement web au design imprimé,","j'aide les travailleurs indépendants à construire","leur identité visuelle et à lancer leur projet.","Je travaille aussi avec des studios."],
       expertise: [' • Design imprimé • Packaging • Signalétique • Développement web • Motion • Vidéo • Photo • Illustration '],
       services: ['Mes services','Une multitude de compétences pour un projet unique.','Nous élaborons, ensemble, une offre sur-mesure selon vos besoins.','CMS|SEO','Développement fullstack','Vidéo | Photo | Motion','Réseaux sociaux','Rédaction','Identité graphique','Logotype','Signalétique','Packaging','Illustration'],
       logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],
@@ -124,10 +116,7 @@ const Chargement = () =>{
       videoTel: 'videoReveal6',
       discover: 'discover the showreel',
       location: ['currently in','Montpellier, Fr.'], // location
-      presentation: ["Art director specialized in branding.", 
-                    "From web development to print design,", 
-                    "I help independent workers build their", 
-                    "visual identity and launch their project."],
+      presentation: ["Art director specialized in branding.","From web development to print design,","I help independent workers build their","visual identity and launch their project."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','Showcase website', 'Multipage website','Videos & photos', 'Social medias', 'Blog', 'Visual identity', 'Logotype', 'Signage', 'Packaging', 'Illustration'],
       approche: ['My approach', 'To create is to make the invisible visible.','Authenticity','Creating a form of preciousness beyond paper.','Detail','The poetry of detail: symbolism, framing, choice of words.','Harmony',
@@ -146,11 +135,7 @@ const Chargement = () =>{
       videoTel: 'videoReveal8',
       discover: 'discover the showreel',
       location: ['currently in','Montpellier, Fr.'], // location
-      presentation: ["Art director specialized in branding.", 
-                     "From web development to print design,", 
-                     "I help independent workers build their", 
-                     "visual identity and launch their project.",
-                     "I also work with studios."],
+      presentation: ["Art director specialized in branding.","From web development to print design,","I help independent workers build their","visual identity and launch their project.","I also work with studios."],
       expertise: [' • Print • Packaging • Signage • Web development • Motion • Video • Photo • Illustration '],
       services: ['My services','A multitude of skills for a unique project.','We develop, together, a tailor-made offer according to your needs.','CMS|SEO','Fullstack JS','Video | Photo | Motion','Social medias','Writing','Visual identity','Logotype','Signage','Packaging','Illustration'],
       logiciels: [html,css,js,node,react,wordpress,webflow,figma,adobexd,github,fontlab,photoshop,lightroom,illustrator,indesign,premiere,aftereffect],

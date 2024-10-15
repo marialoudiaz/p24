@@ -21,14 +21,12 @@ function Carousel({ dataArray,customStyle}) {
   const handleResize = () => {
     setIsMobile(window.innerWidth <= 768);
   };
-
   useEffect(() => {
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
-
 
 
   return (
